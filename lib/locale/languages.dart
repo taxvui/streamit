@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 abstract class BaseLanguage {
-  static BaseLanguage of(BuildContext context) => Localizations.of<BaseLanguage>(context, BaseLanguage)!;
+  static BaseLanguage of(BuildContext context) =>
+      Localizations.of<BaseLanguage>(context, BaseLanguage)!;
 
   String get language;
 
@@ -578,6 +579,10 @@ abstract class BaseLanguage {
 
   String get flutterWavePay;
 
+  String get cinetPay;
+
+  String get lblCheckOutWithCinetPay;
+
   String get contextNotFound;
 
   String get verificationFailed;
@@ -796,6 +801,8 @@ abstract class BaseLanguage {
 
   String get dataDeletionRequest;
 
+  String get recommendedForYou;
+
   String get aboutUs;
 
   String get total;
@@ -814,7 +821,8 @@ abstract class BaseLanguage {
 
   String get french;
 
-  String doYouWantToCancelDownloading(String name, String type) => "Do you want to cancel downloading $name ($type)?";
+  String doYouWantToCancelDownloading(String name, String type) =>
+      "Do you want to cancel downloading $name ($type)?";
 
   String get german;
 
@@ -1031,6 +1039,10 @@ abstract class BaseLanguage {
   String get defaultLabel;
 
   String get quality;
+
+  String get audio;
+
+  String get audioAndQuality;
 
   String get subtitle;
 
@@ -1294,4 +1306,48 @@ abstract class BaseLanguage {
   });
 
   String get contectRestrictedForKidProfile;
+
+  String get shortDrama;
+
+  String get yourNextObsessionStartsHere;
+  
+  String get shortDramasIntenseStorytelling;
+  
+  String get exploreMore;
+  
+  String get dramaForYou;
+  
+  String get noEpisodesAvailable;
+  
+  String get audioLanguage;
+  
+  String get cantPlayThisTitleRightNow;
+  
+  String get goBack;
+  
+  String get unableToFindThisDramaForPlayback;
+  
+  String get pleaseCheckYourConnectionAndTryAgain;
+  
+  String get seasons;
+  
+  String get mute;
+  
+  String get unmute;
+  
+  String get noInternetConnection;
+
+  String get continueWatchingForYou;
+
+  String get playbackErrorVideoPluginUnavailable;
+
+  String get playbackErrorSessionExpired;
+
+  String get playbackErrorTokenExpired;
+
+  String get playbackErrorGeneric;
+
+  String get less;
+
+  String get more;
 }

@@ -25,7 +25,9 @@ class DeviceData {
       deviceName: json['device_name'] is String ? json['device_name'] : "",
       platform: json['platform'] is String ? json['platform'] : "",
       createdAt: json['created_at'] is String ? json['created_at'] : "",
-      updatedAt: json['updated_at'] is String ? json['updated_at'] : "",
+      updatedAt: json['updated_at'] is String
+          ? json['updated_at']
+          : (json['last_activity'] is String ? json['last_activity'] : ""),
     );
   }
 

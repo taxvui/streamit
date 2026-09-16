@@ -24,7 +24,6 @@ class EncryptionService {
   static const String _keyName = 'encryption_device_key_v1';
 
   static const FlutterSecureStorage _secureStorage = FlutterSecureStorage(
-    aOptions: AndroidOptions(encryptedSharedPreferences: true),
     iOptions: IOSOptions(
       accessibility: KeychainAccessibility.first_unlock_this_device,
     ),

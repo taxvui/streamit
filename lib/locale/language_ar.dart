@@ -901,6 +901,12 @@ class LanguageAr extends BaseLanguage {
   String get flutterWavePay => 'Fluttewave';
 
   @override
+  String get cinetPay => 'CinetPay';
+
+  @override
+  String get lblCheckOutWithCinetPay => 'الدفع بواسطة CinetPay';
+
+  @override
   String get contextNotFound => 'السياق غير موجود !!!!';
 
   @override
@@ -1304,10 +1310,12 @@ class LanguageAr extends BaseLanguage {
       'هل تريد تسجيل الخروج من جميع الأجهزة الأخرى؟';
 
   @override
-  String get logoutAllConfirmationMessage => 'لتطبيق حد الأجهزة الخاص بخطتك الجديدة، يجب عليك تسجيل الخروج من جميع الأجهزة فورًا.';
+  String get logoutAllConfirmationMessage =>
+      'لتطبيق حد الأجهزة الخاص بخطتك الجديدة، يجب عليك تسجيل الخروج من جميع الأجهزة فورًا.';
 
   @override
-  String get changePasswordMessage => 'تم تحديث كلمة المرور الخاصة بك. يرجى تسجيل الدخول مرة أخرى للمتابعة.';
+  String get changePasswordMessage =>
+      'تم تحديث كلمة المرور الخاصة بك. يرجى تسجيل الدخول مرة أخرى للمتابعة.';
 
   @override
   String get share => 'يشارك';
@@ -1608,6 +1616,12 @@ class LanguageAr extends BaseLanguage {
 
   @override
   String get quality => 'جودة';
+
+  @override
+  String get audio => 'صوت';
+
+  @override
+  String get audioAndQuality => 'الصوت والجودة';
 
   @override
   String get subtitle => 'الترجمة الفرعية';
@@ -2025,7 +2039,8 @@ class LanguageAr extends BaseLanguage {
   String get thePasswordDoesNotMatch => 'كلمة المرور غير متطابقة';
 
   @override
-  String get deleteMultipleDownload => 'هل تريد حذف المحتوى المحدد من التنزيلات؟';
+  String get deleteMultipleDownload =>
+      'هل تريد حذف المحتوى المحدد من التنزيلات؟';
 
   @override
   String profileLimitIncreaseMessage({
@@ -2035,9 +2050,83 @@ class LanguageAr extends BaseLanguage {
     final profileText = limit > 1 ? "ملفات شخصية" : "ملف شخصي";
 
     return "تسمح خطة $planName فقط بـ $limit $profileText. "
-       "يرجى إزالة $profileText الإضافي للمتابعة.";
+        "يرجى إزالة $profileText الإضافي للمتابعة.";
   }
 
   @override
-  String get contectRestrictedForKidProfile => 'هذا المحتوى غير مسموح به في ملف الأطفال.';
+  String get contectRestrictedForKidProfile =>
+      'هذا المحتوى غير مسموح به في ملف الأطفال.';
+
+  @override
+  String get recommendedForYou => 'موصى به لك';
+
+  @override
+  String get shortDrama => 'دراما قصيرة';
+
+  @override
+  String get yourNextObsessionStartsHere => 'هوسك القادم يبدأ هنا';
+
+  @override
+  String get shortDramasIntenseStorytelling =>
+      'دراما قصيرة، وسرد قصصي مكثف، ورومانسية عاطفية، وتقلبات مثيرة. اكتشف ترفيهًا مصممًا لكل حالة مزاجية.';
+
+  @override
+  String get exploreMore => 'استكشف المزيد';
+
+  @override
+  String get dramaForYou => 'دراما لك';
+
+  @override
+  String get noEpisodesAvailable => 'لا توجد حلقات متاحة';
+
+  @override
+  String get audioLanguage => 'لغة الصوت';
+
+  @override
+  String get cantPlayThisTitleRightNow => 'لا يمكن تشغيل هذا العنوان الآن';
+
+  @override
+  String get goBack => 'رجوع';
+
+  @override
+  String get unableToFindThisDramaForPlayback =>
+      'تعذر العثور على هذه الدراما للتشغيل.';
+
+  @override
+  String get pleaseCheckYourConnectionAndTryAgain =>
+      'يرجى التحقق من الاتصال وإعادة المحاولة.';
+
+  @override
+  String get seasons => 'مواسم';
+
+  @override
+  String get mute => 'كتم الصوت';
+
+  @override
+  String get unmute => 'إلغاء كتم الصوت';
+
+  @override
+  String get noInternetConnection => 'لا يوجد اتصال بالإنترنت';
+
+  @override
+  String get continueWatchingForYou => 'متابعة المشاهدة لك';
+
+  @override
+  String get playbackErrorGeneric => 'تعذر تشغيل هذه الحلقة في الوقت الحالي. يرجى المحاولة مرة أخرى.';
+  
+  @override
+  String get playbackErrorSessionExpired => 'انتهت جلسة الدراما القصيرة. يرجى تسجيل الدخول مرة أخرى والمحاولة مرة أخرى.';
+  
+  @override
+  String get playbackErrorTokenExpired => 'انتهت صلاحية رمز التشغيل. يرجى إعادة تشغيل هذه الحلقة.';
+  
+  @override
+  String get playbackErrorVideoPluginUnavailable => 'ملحق مشغل الفيديو غير متاح. يرجى إعادة تشغيل التطبيق والمحاولة مرة أخرى.';
+
+  @override
+  String get less => 'أقل';
+
+  @override
+  String get more => 'قراءة المزيد';
 }
+

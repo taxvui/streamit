@@ -46,7 +46,8 @@ Widget getAppBarGradient({Color? statusBarColor, String titleText = ''}) {
     child: titleText.isNotEmpty
         ? Text(
             titleText,
-            style: boldTextStyle(size: ResponsiveSize.getFontSize(Constants.labelTextSize)),
+            style: boldTextStyle(
+                size: ResponsiveSize.getFontSize(Constants.labelTextSize)),
           )
         : null,
   );
@@ -59,7 +60,9 @@ Widget get commonDivider => const Column(
     );
 
 Future<void> handleRate() async {
-  if (appConfigs.value.applicationURL.applicationURL.isNotEmpty) commonLaunchUrl(appConfigs.value.applicationURL.applicationURL, launchMode: LaunchMode.externalApplication);
+  if (appConfigs.value.applicationURL.applicationURL.isNotEmpty)
+    commonLaunchUrl(appConfigs.value.applicationURL.applicationURL,
+        launchMode: LaunchMode.externalApplication);
 }
 
 void hideKeyBoardWithoutContext() {
@@ -106,7 +109,8 @@ List<LanguageDataModel> languageList() {
   ];
 }
 
-Future<void> commonLaunchUrl(String address, {LaunchMode launchMode = LaunchMode.inAppWebView}) async {
+Future<void> commonLaunchUrl(String address,
+    {LaunchMode launchMode = LaunchMode.inAppWebView}) async {
   await launchUrl(Uri.parse(address), mode: launchMode);
 }
 
@@ -159,7 +163,8 @@ class ResponsiveSize {
   static double getVerticalPadding(double basePadding) => basePadding;
 
   // EdgeInsets helpers
-  static EdgeInsets getEdgeInsets(double baseValue) => EdgeInsets.all(baseValue);
+  static EdgeInsets getEdgeInsets(double baseValue) =>
+      EdgeInsets.all(baseValue);
 
   static EdgeInsets getSymmetricPadding({
     required double horizontal,
@@ -170,7 +175,8 @@ class ResponsiveSize {
         vertical: getVerticalPadding(vertical),
       );
 
-  static EdgeInsets getHorizontalOnly(double baseValue) => EdgeInsets.symmetric(horizontal: baseValue);
+  static EdgeInsets getHorizontalOnly(double baseValue) =>
+      EdgeInsets.symmetric(horizontal: baseValue);
 
   static EdgeInsets getFromLTRB({
     required double left,
@@ -225,15 +231,22 @@ void setupGlobalFontConfig() {
 
 //region Common TextStyle
 
-TextStyle get appButtonTextStyleGray => boldTextStyle(color: appColorSecondary, size: ResponsiveSize.getFontSize(14));
+TextStyle get appButtonTextStyleGray => boldTextStyle(
+    color: appColorSecondary, size: ResponsiveSize.getFontSize(14));
 
-TextStyle get appButtonPrimaryColorText => boldTextStyle(color: appColorPrimary);
+TextStyle get appButtonPrimaryColorText =>
+    boldTextStyle(color: appColorPrimary);
 
-TextStyle get appButtonFontColorText => boldTextStyle(color: Colors.grey, size: ResponsiveSize.getFontSize(14));
+TextStyle get appButtonFontColorText =>
+    boldTextStyle(color: Colors.grey, size: ResponsiveSize.getFontSize(14));
 
-TextStyle get appButtonTextStyleWhite => boldTextStyle(color: primaryTextColor, size: ResponsiveSize.getFontSize(14), weight: FontWeight.w600);
+TextStyle get appButtonTextStyleWhite => boldTextStyle(
+    color: primaryTextColor,
+    size: ResponsiveSize.getFontSize(14),
+    weight: FontWeight.w600);
 
-TextStyle commonSecondaryTextStyle({int? size, Color? color, FontStyle? fontStyle}) {
+TextStyle commonSecondaryTextStyle(
+    {int? size, Color? color, FontStyle? fontStyle}) {
   return secondaryTextStyle(
     weight: FontWeight.w500,
     color: color ?? secondaryTextColor,
@@ -242,7 +255,8 @@ TextStyle commonSecondaryTextStyle({int? size, Color? color, FontStyle? fontStyl
   );
 }
 
-TextStyle commonPrimaryTextStyle({int? size, Color? color, FontStyle? fontStyle}) {
+TextStyle commonPrimaryTextStyle(
+    {int? size, Color? color, FontStyle? fontStyle}) {
   return commonW500PrimaryTextStyle(
     color: color ?? primaryTextColor,
     size: ResponsiveSize.getFontSize((size ?? 16).toDouble()),
@@ -250,7 +264,8 @@ TextStyle commonPrimaryTextStyle({int? size, Color? color, FontStyle? fontStyle}
   );
 }
 
-TextStyle commonW600PrimaryTextStyle({int? size, Color? color, FontStyle? fontStyle}) {
+TextStyle commonW600PrimaryTextStyle(
+    {int? size, Color? color, FontStyle? fontStyle}) {
   return primaryTextStyle(
     weight: FontWeight.w600,
     color: color ?? primaryTextColor,
@@ -259,7 +274,8 @@ TextStyle commonW600PrimaryTextStyle({int? size, Color? color, FontStyle? fontSt
   );
 }
 
-TextStyle commonW500PrimaryTextStyle({int? size, Color? color, FontStyle? fontStyle}) {
+TextStyle commonW500PrimaryTextStyle(
+    {int? size, Color? color, FontStyle? fontStyle}) {
   return primaryTextStyle(
     weight: FontWeight.w500,
     color: color ?? primaryTextColor,
@@ -350,7 +366,8 @@ InputDecoration inputDecorationWithFillBorder(
   Color? fillColor,
 }) {
   return InputDecoration(
-    contentPadding: ResponsiveSize.getFromLTRB(left: 12, top: 10, right: 10, bottom: 10),
+    contentPadding:
+        ResponsiveSize.getFromLTRB(left: 12, top: 10, right: 10, bottom: 10),
     labelText: labelText,
     hintText: hintText,
     hintStyle: commonSecondaryTextStyle(size: 12),
@@ -391,19 +408,30 @@ InputDecoration inputDecorationWithFillBorder(
 
 //endregion
 
-Widget backButton({Object? result, double size = 20, EdgeInsets? padding, VoidCallback? onBackPressed, BuildContext? context}) {
+Widget backButton(
+    {Object? result,
+    double size = 20,
+    EdgeInsets? padding,
+    VoidCallback? onBackPressed,
+    BuildContext? context}) {
   return IconButton(
     padding: padding ?? EdgeInsets.zero,
     onPressed: onBackPressed ??
         () {
-          bool isLandscape = MediaQuery.of(context ?? Get.context!).orientation == Orientation.landscape;
+          bool isLandscape =
+              MediaQuery.of(context ?? Get.context!).orientation ==
+                  Orientation.landscape;
           if (isLandscape) {
             SystemChrome.setEnabledSystemUIMode(SystemUiMode.edgeToEdge);
-            SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp]);
+            SystemChrome.setPreferredOrientations(
+                [DeviceOrientation.portraitUp]);
           }
           Get.back(result: result);
         },
-    icon: IconWidget(imgPath: isRTL.value ? Assets.iconsCaretRight : Assets.iconsCaretLeft, color: Colors.white, size: size),
+    icon: IconWidget(
+        imgPath: isRTL.value ? Assets.iconsCaretRight : Assets.iconsCaretLeft,
+        color: Colors.white,
+        size: size),
   );
 }
 
@@ -417,7 +445,8 @@ String movieDurationTime(String time) {
   int seconds = parts.length > 2 ? int.parse(parts[2]) : 0;
 
   // Create a Duration object
-  Duration duration = Duration(hours: hours, minutes: minutes, seconds: seconds);
+  Duration duration =
+      Duration(hours: hours, minutes: minutes, seconds: seconds);
 
   // Extract hours, minutes, and seconds
   int h = duration.inHours;
@@ -459,7 +488,8 @@ String formatDuration(String time) {
   int seconds = parts.length > 2 ? int.parse(parts[2]) : 0;
 
   // Create a Duration object
-  Duration duration = Duration(hours: hours, minutes: minutes, seconds: seconds);
+  Duration duration =
+      Duration(hours: hours, minutes: minutes, seconds: seconds);
 
   // Extract hours, minutes, and seconds
   int h = duration.inHours;
@@ -479,7 +509,8 @@ String formatDuration(String time) {
 }
 
 // Pending Movie Percentage
-(double pendingPercentage, String timeLeft) calculatePendingPercentage(String totalDuration, String watchedDuration) {
+(double pendingPercentage, String timeLeft) calculatePendingPercentage(
+    String totalDuration, String watchedDuration) {
   Duration parseTime(String time) {
     if (time.isEmpty) {
       return Duration.zero; // Handle empty input
@@ -517,7 +548,8 @@ String formatDuration(String time) {
   }
 
   // Calculate the percentage
-  double pendingPercentage = (watchedTimerSeconds / totalSeconds).clamp(0.0, 1.0);
+  double pendingPercentage =
+      (watchedTimerSeconds / totalSeconds).clamp(0.0, 1.0);
 
   // Format the remaining time
   String formattedRemainingTime = formatDuration(
@@ -550,6 +582,7 @@ class DashboardCategoryType {
   static const latestMovies = 'latest_movie';
   static const advertisement = 'advertisement';
   static const top10 = 'top_10';
+  static const recommendedForYou = 'recommended_for_you';
   static const payPerView = 'pay_per_view';
   static const customAd = 'custom_ad';
   static const basedOnPreviousWatch = 'based_on_previous_watch';
@@ -576,16 +609,20 @@ String formatMobileNumber(String mobileNumber) {
   return formattedNumber;
 }
 
-DateTime calculateExpirationDate(DateTime startDate, String duration, int durationTime) {
+DateTime calculateExpirationDate(
+    DateTime startDate, String duration, int durationTime) {
   int durationTimes = durationTime;
 
   switch (duration.toLowerCase()) {
     case 'month':
-      return DateTime(startDate.year, startDate.month + durationTimes, startDate.day);
+      return DateTime(
+          startDate.year, startDate.month + durationTimes, startDate.day);
     case 'year':
-      return DateTime(startDate.year + durationTimes, startDate.month, startDate.day);
+      return DateTime(
+          startDate.year + durationTimes, startDate.month, startDate.day);
     case 'quarterly':
-      return DateTime(startDate.year, startDate.month + (durationTimes * 3), startDate.day);
+      return DateTime(
+          startDate.year, startDate.month + (durationTimes * 3), startDate.day);
     case 'week':
       return startDate.add(Duration(days: durationTimes * 7));
 
@@ -619,7 +656,8 @@ DateTime calculateExpirationDate(DateTime startDate, String duration, int durati
   );
 } */
 
-Future<void> errorSnackBar({required dynamic error, SnackPosition? position}) async {
+Future<void> errorSnackBar(
+    {required dynamic error, SnackPosition? position}) async {
   String message;
   if (!await isNetworkAvailable()) {
     message = locale.value.noInternetAvailable;
@@ -636,7 +674,9 @@ Future<void> errorSnackBar({required dynamic error, SnackPosition? position}) as
     fToast.showToast(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(4.0), color: appColorPrimary.withAlpha(220)),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(4.0),
+            color: appColorPrimary.withAlpha(220)),
         child: Text(
           message,
           style: const TextStyle(color: whiteColor),
@@ -677,7 +717,8 @@ void successSnackBar(String message, {Widget? icon, SnackPosition? position}) {
     fToast.showToast(
       child: Container(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
-        decoration: BoxDecoration(borderRadius: BorderRadius.circular(4.0), color: Colors.black),
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(4.0), color: Colors.black),
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           mainAxisSize: MainAxisSize.min,
@@ -774,7 +815,8 @@ String getDaySuffix(int day) {
   }
 }
 
-IconData getDeviceIconByPlatform({required String deviceName, required String platform}) {
+IconData getDeviceIconByPlatform(
+    {required String deviceName, required String platform}) {
   final lowerName = deviceName.toLowerCase();
   final lowerPlatform = platform.toLowerCase();
 
@@ -789,7 +831,10 @@ IconData getDeviceIconByPlatform({required String deviceName, required String pl
     return Icons.computer;
   }
 
-  if (lowerName.contains('iphone') || lowerName.contains('ipad') || lowerName.contains('ios') || lowerPlatform.contains('ios')) {
+  if (lowerName.contains('iphone') ||
+      lowerName.contains('ipad') ||
+      lowerName.contains('ios') ||
+      lowerPlatform.contains('ios')) {
     return Icons.phone_iphone;
   }
 
@@ -800,7 +845,11 @@ IconData getDeviceIconByPlatform({required String deviceName, required String pl
   return Icons.phone_android;
 }
 
-Widget IconWidget({required String imgPath, Color? color, double size = 20, bool colorRequired = true}) {
+Widget IconWidget(
+    {required String imgPath,
+    Color? color,
+    double size = 20,
+    bool colorRequired = true}) {
   return CachedImageWidget(
     url: imgPath,
     width: size,
@@ -815,14 +864,76 @@ String getVideoLink(String iframeString) {
   return match?.group(1) ?? '';
 }
 
-void shareVideo({required String type, required String name}) {
+Rect? getSharePositionOrigin(BuildContext? context) {
+  try {
+    BuildContext? ctx = context ?? Get.context;
+    if (ctx != null) {
+      final RenderBox? box = ctx.findRenderObject() as RenderBox?;
+      if (box != null) {
+        final position = box.localToGlobal(Offset.zero);
+        final size = box.size;
+        if (size.width > 0 && size.height > 0) {
+          return position & size;
+        }
+      }
+    }
+  } catch (e) {
+    // ignore
+  }
+
+  // Fallback to screen center/dimensions to avoid crash on iPad
+  try {
+    final ctx = Get.context;
+    if (ctx != null) {
+      final size = MediaQuery.of(ctx).size;
+      if (size.width > 0 && size.height > 0) {
+        return Rect.fromLTWH(size.width / 2 - 50, size.height / 2 - 50, 100, 100);
+      }
+    }
+  } catch (_) {}
+
+  return const Rect.fromLTWH(0, 0, 100, 100);
+}
+
+Future<void> safeShare(ShareParams params) async {
+  try {
+    await SharePlus.instance.share(params);
+  } on PlatformException catch (e) {
+    if (e.message?.contains("sharePositionOrigin") == true || e.details?.toString().contains("sharePositionOrigin") == true || e.toString().contains("sharePositionOrigin")) {
+      try {
+        final fallbackParams = ShareParams(
+          text: params.text,
+          files: params.files,
+          uri: params.uri,
+          title: params.title,
+          subject: params.subject,
+          excludedCupertinoActivities: params.excludedCupertinoActivities,
+          downloadFallbackEnabled: params.downloadFallbackEnabled,
+          mailToFallbackEnabled: params.mailToFallbackEnabled,
+          fileNameOverrides: params.fileNameOverrides,
+          previewThumbnail: params.previewThumbnail,
+          sharePositionOrigin: const Rect.fromLTWH(0, 0, 1, 1),
+        );
+        await SharePlus.instance.share(fallbackParams);
+      } catch (_) {
+        // ignore secondary failures
+      }
+    } else {
+      rethrow;
+    }
+  } catch (_) {
+    // ignore other exceptions
+  }
+}
+
+void shareVideo({required String type, required String name, BuildContext? context}) async {
   String shareURL = "";
-  
+
   String slug = slugify(name);
 
   shareURL = '$DOMAIN_URL/$type-details/$slug';
   if (shareURL.isNotEmpty) {
-    SharePlus.instance.share(ShareParams(uri: Uri.parse(shareURL.trim())));
+    SharePlus.instance.share(ShareParams(text: shareURL.trim()));
   } else {
     toast(locale.value.sorryCouldntShareThis(type));
   }
@@ -889,9 +1000,14 @@ String getPlatformMinimumVersion() {
 
 bool getIfForceUpdate(String currentVersion) {
   if (isIOS) {
-    return appConfigs.value.mobileApp!.ios.minimumRequiredVersion.isNotEmpty && appConfigs.value.mobileApp!.ios.minimumRequiredVersion != currentVersion;
+    return appConfigs.value.mobileApp!.ios.minimumRequiredVersion.isNotEmpty &&
+        appConfigs.value.mobileApp!.ios.minimumRequiredVersion !=
+            currentVersion;
   } else {
-    return appConfigs.value.mobileApp!.android.minimumRequiredVersion.isNotEmpty && appConfigs.value.mobileApp!.android.minimumRequiredVersion != currentVersion;
+    return appConfigs
+            .value.mobileApp!.android.minimumRequiredVersion.isNotEmpty &&
+        appConfigs.value.mobileApp!.android.minimumRequiredVersion !=
+            currentVersion;
   }
 }
 
@@ -921,8 +1037,10 @@ Future<void> showAppUpdateDialog(BuildContext context) async {
         },
         sharePreferencesKey: SharedPreferenceConst.NEW_UPDATE_LAST_CALL_TIME,
       );
-      if (showNewUpdate || getIfForceUpdate(packageInfo.versionName.validate())) {
-        setIntToLocal(SharedPreferenceConst.NEW_UPDATE_LAST_CALL_TIME, DateTime.timestamp().millisecondsSinceEpoch);
+      if (showNewUpdate ||
+          getIfForceUpdate(packageInfo.versionName.validate())) {
+        setIntToLocal(SharedPreferenceConst.NEW_UPDATE_LAST_CALL_TIME,
+            DateTime.timestamp().millisecondsSinceEpoch);
         showDialog(
           context: context,
           builder: (context) => NewUpdateDialog(
@@ -967,7 +1085,8 @@ Future<void> showAppUpdateDialog(BuildContext context) async {
 // IMPORTANT: Always cancel your stream subscription when it's no longer needed
 // (e.g., in your widget's dispose method) to prevent memory leaks.
 void listenToFlexibleDownloadUpdates(BuildContext context) {
-  _downloadInfoStreamSubscription = PlayxVersionUpdate.listenToFlexibleDownloadUpdate().listen((info) {
+  _downloadInfoStreamSubscription =
+      PlayxVersionUpdate.listenToFlexibleDownloadUpdate().listen((info) {
     if (info == null) {
       return;
     }
@@ -976,7 +1095,8 @@ void listenToFlexibleDownloadUpdates(BuildContext context) {
       case PlayxDownloadStatus.downloaded:
         // The update is ready! Prompt the user to install it.
         _promptToCompleteFlexibleUpdate(context);
-        _downloadInfoStreamSubscription?.cancel(); // Stop listening once it's downloaded.
+        _downloadInfoStreamSubscription
+            ?.cancel(); // Stop listening once it's downloaded.
         break;
       case PlayxDownloadStatus.failed:
         _downloadInfoStreamSubscription?.cancel();
@@ -985,7 +1105,8 @@ void listenToFlexibleDownloadUpdates(BuildContext context) {
       case PlayxDownloadStatus.canceled:
         _downloadInfoStreamSubscription?.cancel();
         break;
-      case PlayxDownloadStatus.installed: // Added this case for completeness with new enum
+      case PlayxDownloadStatus
+            .installed: // Added this case for completeness with new enum
 
         _downloadInfoStreamSubscription?.cancel();
         break;
@@ -1018,7 +1139,9 @@ Future<void> _promptToCompleteFlexibleUpdate(BuildContext context) async {
           },
         );
       },
-      child: Text('Restart App', style: boldTextStyle(size: ResponsiveSize.getFontSize(14), color: darkGreen)),
+      child: Text('Restart App',
+          style: boldTextStyle(
+              size: ResponsiveSize.getFontSize(14), color: darkGreen)),
     ),
   );
 }
@@ -1070,7 +1193,8 @@ Widget viewAllWidget({
     children: [
       Text(
         label,
-        style: commonW600PrimaryTextStyle(size: labelSize ?? 18, color: labelColor ?? primaryTextColor),
+        style: commonW600PrimaryTextStyle(
+            size: labelSize ?? 18, color: labelColor ?? primaryTextColor),
       ).expand(),
       if (showViewAll)
         iconButton ??
@@ -1079,12 +1203,19 @@ Widget viewAllWidget({
               splashColor: Colors.transparent,
               highlightColor: Colors.transparent,
               child: IconWidget(
-                imgPath: isRTL.value ? Assets.iconsCaretLeft : Assets.iconsCaretRight,
+                imgPath: isRTL.value
+                    ? Assets.iconsCaretLeft
+                    : Assets.iconsCaretRight,
                 size: 16,
               ),
             ),
     ],
-  ).paddingSymmetric(horizontal: isSymmetricPaddingEnable ? ResponsiveSize.getHorizontalPadding(16) : 0, vertical: isSymmetricPaddingEnable ? ResponsiveSize.getVerticalPadding(16) : 0);
+  ).paddingSymmetric(
+      horizontal: isSymmetricPaddingEnable
+          ? ResponsiveSize.getHorizontalPadding(16)
+          : 0,
+      vertical:
+          isSymmetricPaddingEnable ? ResponsiveSize.getVerticalPadding(16) : 0);
 }
 
 void handleLogoutFromAllOtherDevices({
@@ -1115,7 +1246,7 @@ void handleLogoutFromAllOtherDevices({
       ),
     ),
   ).then((value) {
-    if(value == true) return;
+    if (value == true) return;
     if (!isCancelButtonShow) {
       logOutFromAllDevice(
         loaderOnOff: loaderOnOff,
@@ -1170,7 +1301,10 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               8.width,
               Marquee(
                 child: Text(
-                  locale.value.deviceLimitMessage(!planType.limitationValue.getBoolInt() ? '1' : planType.limit.value),
+                  locale.value.deviceLimitMessage(
+                      !planType.limitationValue.getBoolInt()
+                          ? '1'
+                          : planType.limit.value),
                   style: primaryTextStyle(
                     size: 12,
                     color: darkGrayTextColor,
@@ -1179,7 +1313,8 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               ).expand(),
             ],
           ),
-          edgeInsets: ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
+          edgeInsets:
+              ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
           customSymbol: SizedBox.shrink(),
           children: [],
         ),
@@ -1198,7 +1333,9 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               8.width,
               Marquee(
                 child: Text(
-                  planType.limitationValue == 1 ? locale.value.videoCastingEnabled : locale.value.videoCastingDisabled,
+                  planType.limitationValue == 1
+                      ? locale.value.videoCastingEnabled
+                      : locale.value.videoCastingDisabled,
                   style: commonPrimaryTextStyle(
                     size: 12,
                     color: darkGrayTextColor,
@@ -1207,7 +1344,8 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               ).expand(),
             ],
           ),
-          edgeInsets: ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
+          edgeInsets:
+              ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
           customSymbol: const SizedBox.shrink(),
           children: const [],
         ),
@@ -1226,7 +1364,9 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               8.width,
               Marquee(
                 child: Text(
-                  planType.limitationValue == 1 ? locale.value.adsWillBeShown : locale.value.adsWillNotBeShown,
+                  planType.limitationValue == 1
+                      ? locale.value.adsWillBeShown
+                      : locale.value.adsWillNotBeShown,
                   style: commonPrimaryTextStyle(
                     size: 12,
                     color: darkGrayTextColor,
@@ -1235,7 +1375,8 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               ).expand(),
             ],
           ),
-          edgeInsets: ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
+          edgeInsets:
+              ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
           customSymbol: const SizedBox.shrink(),
           children: const [],
         ),
@@ -1263,11 +1404,15 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               ).expand(),
             ],
           ),
-          edgeInsets: ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
+          edgeInsets:
+              ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
           customSymbol: SizedBox.shrink(),
           children: getSupportedDeviceText(
-            isDesktopSupported: planType.limit.enableLaptop.toInt().getBoolInt(),
-            isMobileSupported: !planType.limitationValue.getBoolInt() ? true : planType.limit.enableMobile.toInt().getBoolInt(),
+            isDesktopSupported:
+                planType.limit.enableLaptop.toInt().getBoolInt(),
+            isMobileSupported: !planType.limitationValue.getBoolInt()
+                ? true
+                : planType.limit.enableMobile.toInt().getBoolInt(),
             isTabletSupported: planType.limit.enableTablet.toInt().getBoolInt(),
             isTvSupported: planType.limit.enableTv.toInt().getBoolInt(),
           )
@@ -1300,7 +1445,10 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               ),
               8.width,
               Text(
-                locale.value.profileLimitMessage(!planType.limitationValue.getBoolInt() ? '1' : planType.limit.value),
+                locale.value.profileLimitMessage(
+                    !planType.limitationValue.getBoolInt()
+                        ? '1'
+                        : planType.limit.value),
                 style: primaryTextStyle(
                   size: 12,
                   color: darkGrayTextColor,
@@ -1308,7 +1456,8 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               ).expand(),
             ],
           ),
-          edgeInsets: ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
+          edgeInsets:
+              ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
           customSymbol: const SizedBox.shrink(),
           children: const [],
         ),
@@ -1336,7 +1485,8 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
               ).expand(),
             ],
           ),
-          edgeInsets: ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
+          edgeInsets:
+              ResponsiveSize.getFromLTRB(left: 16, top: 2, right: 0, bottom: 2),
           customSymbol: SizedBox.shrink(),
           children: [
             if (getDownloadQuality((planType).limit).$1.isNotEmpty)
@@ -1348,7 +1498,8 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
                     color: discountColor,
                   ),
                   2.width,
-                  Text(getDownloadQuality(planType.limit).$1, style: commonSecondaryTextStyle()),
+                  Text(getDownloadQuality(planType.limit).$1,
+                      style: commonSecondaryTextStyle()),
                 ],
               ),
             if (getDownloadQuality(planType.limit).$2.isNotEmpty)
@@ -1360,7 +1511,8 @@ Widget subscriptionBenefitsTile({required PlanType planType}) {
                     color: appColorPrimary,
                   ),
                   2.width,
-                  Text(getDownloadQuality(planType.limit).$2, style: commonSecondaryTextStyle()),
+                  Text(getDownloadQuality(planType.limit).$2,
+                      style: commonSecondaryTextStyle()),
                 ],
               )
           ],
@@ -1383,7 +1535,8 @@ double getDynamicScrollOffset() {
   }
 }
 
-String? validatePassword(String? password, {bool isNewPassword = false, bool isConfirmPassword = false}) {
+String? validatePassword(String? password,
+    {bool isNewPassword = false, bool isConfirmPassword = false}) {
   final value = password!;
 
   if (value.isEmpty) {
@@ -1422,7 +1575,8 @@ String? validatePassword(String? password, {bool isNewPassword = false, bool isC
 Widget premiumTagWidget() {
   return Container(
     padding: ResponsiveSize.getEdgeInsets(2),
-    decoration: boxDecorationDefault(shape: BoxShape.circle, color: yellowColor),
+    decoration:
+        boxDecorationDefault(shape: BoxShape.circle, color: yellowColor),
     child: IconWidget(imgPath: Assets.iconsCrown, size: 14),
   );
 }
@@ -1461,7 +1615,10 @@ Widget rentalTagWidget({required bool hasAccess, double? size}) {
   double desiredSpacing = 12,
   double desiredRunSpacing = 12,
 }) {
-  final count = (ResponsiveSize.deviceType == DeviceType.desktop || ResponsiveSize.deviceType == DeviceType.tablet) ? (crossAxisChildrenCount * 2) : crossAxisChildrenCount;
+  final count = (ResponsiveSize.deviceType == DeviceType.desktop ||
+          ResponsiveSize.deviceType == DeviceType.tablet)
+      ? (crossAxisChildrenCount * 2)
+      : crossAxisChildrenCount;
   double screenWidth = Get.width;
   double availableWidth = screenWidth - (screenPadding * 2);
 
@@ -1471,7 +1628,8 @@ Widget rentalTagWidget({required bool hasAccess, double? size}) {
   // Adjust spacing slightly if math rounding leaves small gaps
   double totalItemWidth = itemWidth * count;
   double remainingWidth = availableWidth - totalItemWidth;
-  double finalSpacing = remainingWidth > 0 ? remainingWidth / (count - 1) : desiredSpacing;
+  double finalSpacing =
+      remainingWidth > 0 ? remainingWidth / (count - 1) : desiredSpacing;
 
   return (
     itemWidth,
@@ -1479,7 +1637,8 @@ Widget rentalTagWidget({required bool hasAccess, double? size}) {
   );
 }
 
-String normalizeDialCode(String code) => code.replaceAll(RegExp(r'[^\d]'), '').trim();
+String normalizeDialCode(String code) =>
+    code.replaceAll(RegExp(r'[^\d]'), '').trim();
 
 Country cloneDefaultCountry() => Country.from(json: defaultCountry.toJson());
 

@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'package:flutter/foundation.dart';
 
 import 'package:device_info_plus/device_info_plus.dart';
 import 'package:flutter/material.dart';
@@ -27,11 +28,12 @@ import 'package:streamit_laravel/screens/content/model/content_model.dart';
 import 'package:streamit_laravel/screens/dashboard/dashboard_controller.dart';
 import 'package:streamit_laravel/screens/dashboard/dashboard_screen.dart';
 import 'package:streamit_laravel/screens/device/model/device_model.dart';
+import 'package:streamit_laravel/screens/rented_content/component/rent_details_component.dart';
+import 'package:streamit_laravel/addon_bridge/short_drama/short_drama_bridge.dart';
 import 'package:streamit_laravel/screens/home/model/dashboard_res_model.dart';
 import 'package:streamit_laravel/screens/live_tv/model/live_tv_dashboard_response.dart';
 import 'package:streamit_laravel/screens/profile/model/profile_detail_resp.dart';
 import 'package:streamit_laravel/screens/profile/watching_profile/model/profile_watching_model.dart';
-import 'package:streamit_laravel/screens/rented_content/component/rent_details_component.dart';
 import 'package:streamit_laravel/services/local_storage_service.dart';
 import 'package:streamit_laravel/services/notification_service.dart';
 import 'package:streamit_laravel/utils/price_widget.dart';
@@ -710,6 +712,7 @@ Future<void> removeSecureScreen() async {
 Future<void> downloadAndOpenFile({
   required String url,
   required Function(bool) loaderOnOffCallback,
+  BuildContext? context,
 }) async {
   try {
     loaderOnOffCallback(true);
@@ -726,7 +729,13 @@ Future<void> downloadAndOpenFile({
       if (fileName.endsWith('.pdf')) {
         await OpenFile.open(file.path);
       } else {
-        await SharePlus.instance.share(ShareParams(files: [XFile(file.path)], text: fileName));
+        await safeShare(
+          ShareParams(
+            files: [XFile(file.path)],
+            text: fileName,
+            sharePositionOrigin: getSharePositionOrigin(context),
+          ),
+        );
       }
     } else {
       toast(locale.value.unableToDownloadFilePleaseTryAgainLater);
@@ -813,6 +822,15 @@ Future<void> clearAppData({bool isFromDeleteAcc = false}) async {
   loginUserData(UserData(planDetails: SubscriptionPlanModel()));
   currentSubscription(SubscriptionPlanModel());
 
+  // Clear short drama DRM tokens
+  try {
+    ShortDramaBridge.restoreSessionToken(null);
+    log('Short drama tokens cleared');
+  } catch (e) {
+    // Short drama feature not available, ignore
+    log('Short drama tokens clear skipped: $e');
+  }
+
   if (isFromDeleteAcc) {
     GoogleSignInAuthService().googleSignIn.disconnect();
     removeValue(SharedPreferenceConst.IS_REMEMBER_ME);
@@ -868,6 +886,19 @@ void removeProfileSpecificData() {
 //Get Device Information
 
 Future<void> getDeviceInfo() async {
+    if (kIsWeb) {
+    currentDevice(
+      DeviceData(
+        deviceId: 'web',
+        deviceName: 'Browser',
+        platform: 'Web',
+        createdAt: DateTime.now().toUtc().toIso8601String(),
+        updatedAt: DateTime.now().toUtc().toIso8601String(),
+      ),
+    );
+    return;
+  }
+
   if (Platform.isAndroid) {
     final androidInfo = await DeviceInfoPlugin().androidInfo;
 
@@ -916,6 +947,7 @@ Future<void> getAppConfigurations({Function(bool)? loaderOnOff}) async {
     setIntToLocal(SharedPreferenceConst.PAGE_LAST_CALL_TIME, DateTime.timestamp().millisecondsSinceEpoch);
   });
 }
+
 
 Future<void> getCacheData() async {
   Map<String, dynamic>? cachedConfigKey = await getJsonFromLocal(SharedPreferenceConst.CACHE_CONFIGURATION_RESPONSE) ?? null;

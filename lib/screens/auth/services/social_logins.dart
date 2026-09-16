@@ -17,24 +17,25 @@ class GoogleSignInAuthService {
   GoogleSignIn googleSignIn = GoogleSignIn.instance;
 
   Future<UserData?> signInWithGoogle() async {
-    await googleSignIn.initialize(clientId: FIREBASE_CLIENT_ID);
-
-    final GoogleSignInAccount googleSignInAuthentication = await googleSignIn.authenticate();
-
-    final authentication = googleSignInAuthentication.authentication;
-    final AuthCredential credential = GoogleAuthProvider.credential(
-      idToken: authentication.idToken,
-    );
-
-    final UserCredential authResult = await FirebaseAuth.instance.signInWithCredential(credential);
-    final User user = authResult.user!;
-
-    assert(!user.isAnonymous);
-
-    final User currentUser = FirebaseAuth.instance.currentUser!;
-    assert(user.uid == currentUser.uid);
-
     try {
+      await googleSignIn.initialize(clientId: FIREBASE_CLIENT_ID);
+
+      final GoogleSignInAccount googleSignInAuthentication = await googleSignIn.authenticate();
+
+      final authentication = await googleSignInAuthentication.authentication;
+
+      final AuthCredential credential = GoogleAuthProvider.credential(
+        idToken: authentication.idToken,
+      );
+
+      final UserCredential authResult = await FirebaseAuth.instance.signInWithCredential(credential);
+      final User user = authResult.user!;
+
+      assert(!user.isAnonymous);
+
+      final User currentUser = FirebaseAuth.instance.currentUser!;
+      assert(user.uid == currentUser.uid);
+
       try {
         final AuthCredential emailAuthCredential = EmailAuthProvider.credential(email: user.email!, password: Constants.DEFAULT_PASS);
         await user.linkWithCredential(emailAuthCredential);
@@ -61,8 +62,12 @@ class GoogleSignInAuthService {
         ..fullName = currentUser.displayName.validate();
 
       return tempUserData;
-    } catch (e) {
-      log(e);
+    } on GoogleSignInException {
+      rethrow;
+    } catch (e, stackTrace) {
+      log('--- signInWithGoogle ERROR ---');
+      log('Exception: $e');
+      log('StackTrace: $stackTrace');
     }
     return null;
   }

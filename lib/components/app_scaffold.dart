@@ -1,3 +1,4 @@
+import 'dart:math' as math;
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -169,9 +170,12 @@ class NewAppScaffold extends StatelessWidget {
     this.titleWidget,
     this.bottomSpace,
     this.isBodyFullScreen = false,
+
   });
 
   Widget child(BuildContext context) {
+    final double safeCollapsedHeight = math.max(collapsedHeight ?? kToolbarHeight, kToolbarHeight);
+
     return Stack(
       fit: StackFit.expand,
       children: [
@@ -208,7 +212,7 @@ class NewAppScaffold extends StatelessWidget {
                     automaticallyImplyLeading: applyLeadingBackButton,
                     leading: applyLeadingBackButton ? leadingWidget ?? backButton(onBackPressed: () => Navigator.pop(context)) : null,
                     expandedHeight: expandedHeight,
-                    collapsedHeight: collapsedHeight ?? (kToolbarHeight),
+                    collapsedHeight: safeCollapsedHeight,
                     toolbarHeight: kToolbarHeight,
                     bottom: appBarBottomWidget != null
                         ? PreferredSize(
@@ -279,6 +283,8 @@ class NewAppScaffold extends StatelessWidget {
       top: false,
       maintainBottomViewPadding: true,
       bottom: true,
+      left: false,
+      right: false,
       child: Scaffold(
         drawer: drawer,
         drawerEnableOpenDragGesture: MediaQuery.of(context).orientation == Orientation.landscape,

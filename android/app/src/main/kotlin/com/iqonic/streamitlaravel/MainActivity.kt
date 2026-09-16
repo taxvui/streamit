@@ -3,13 +3,15 @@ package com.iqonic.streamitlaravel
 import android.app.PictureInPictureParams
 import android.os.Build
 import android.util.Rational
+import android.util.Log
 import io.flutter.embedding.android.FlutterActivity
 import io.flutter.embedding.android.FlutterFragmentActivity
 import io.flutter.embedding.engine.FlutterEngine
+import io.flutter.plugins.GeneratedPluginRegistrant
 import io.flutter.plugin.common.MethodChannel
+import uz.shs.better_player_plus.BetterPlayerPlugin
 import androidx.core.view.WindowCompat
 import android.os.Bundle
-import android.view.WindowManager
 
 //FlPiPActivity()
 class MainActivity: FlutterFragmentActivity() {
@@ -19,26 +21,25 @@ class MainActivity: FlutterFragmentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         WindowCompat.setDecorFitsSystemWindows(window, false)
-        window.navigationBarColor = 0
-        window.statusBarColor = 0
-        window.attributes.layoutInDisplayCutoutMode =
-            WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
     }
 
 
     override fun onPostResume() {
         super.onPostResume()
         WindowCompat.setDecorFitsSystemWindows(window, false)
-        window.navigationBarColor = 0 
-        window.statusBarColor = 0
-        window.attributes.layoutInDisplayCutoutMode =
-            WindowManager.LayoutParams.LAYOUT_IN_DISPLAY_CUTOUT_MODE_SHORT_EDGES
     }
 
     // New
     override fun configureFlutterEngine(flutterEngine: FlutterEngine) {
         super.configureFlutterEngine(flutterEngine)
-
+        Log.i("MainActivity", "configureFlutterEngine: engine=${flutterEngine.hashCode()}")
+        GeneratedPluginRegistrant.registerWith(flutterEngine)
+        val hasBetterPlayer = flutterEngine.plugins.has(BetterPlayerPlugin::class.java)
+        Log.i("MainActivity", "configureFlutterEngine: hasBetterPlayer=$hasBetterPlayer")
+        if (!hasBetterPlayer) {
+            flutterEngine.plugins.add(BetterPlayerPlugin())
+            Log.i("MainActivity", "configureFlutterEngine: BetterPlayerPlugin added")
+        }
         channel = MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL)
         channel.setMethodCallHandler { call, result ->
             if (call.method == "showNativeView") {

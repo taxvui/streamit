@@ -4,6 +4,7 @@ import 'dart:io';
 import 'package:get/get.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:nb_utils/nb_utils.dart';
+import 'package:streamit_laravel/addon_bridge/short_drama/short_drama_bridge.dart';
 import 'package:streamit_laravel/ads/ads_helper.dart';
 import 'package:streamit_laravel/controllers/base_controller.dart';
 import 'package:streamit_laravel/screens/content/model/content_model.dart';
@@ -37,6 +38,7 @@ class HomeController extends BaseController {
   void onInit() {
     init(showLoader: true);
     initScrollListener(onNextPage: onNextPage);
+    ShortDramaBridge.initHomeFeature(this);
     if(Platform.isAndroid) {
       showAppUpdateDialog(Get.context!);
     }
@@ -604,6 +606,7 @@ class HomeController extends BaseController {
   @override
   void onClose() {
     bannerAd?.dispose();
+    ShortDramaBridge.disposeHomeFeature(this);
     super.onClose();
   }
 }

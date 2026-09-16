@@ -12,11 +12,11 @@ import 'package:streamit_laravel/screens/profile/watching_profile/watching_profi
 import 'package:streamit_laravel/screens/walk_through/model/walkthrough_model.dart';
 import 'package:streamit_laravel/screens/walk_through/walk_through_screen.dart';
 import 'package:streamit_laravel/services/local_storage_service.dart';
+import 'package:streamit_laravel/addon_bridge/short_drama/short_drama_bridge.dart';
 import 'package:streamit_laravel/utils/common_functions.dart';
 
 import '../utils/constants.dart';
 import 'dashboard/dashboard_screen.dart';
-import 'live_tv/live_tv_details/live_tv_details_screen.dart';
 
 class SplashScreenController extends BaseListController<WalkthroughModel> {
   RxBool appNotSynced = false.obs;
@@ -73,6 +73,8 @@ class SplashScreenController extends BaseListController<WalkthroughModel> {
             await Future.delayed(
               Duration(seconds: 2),
               () async {
+                if (ShortDramaBridge.deepLinkHandledThisLaunch) return;
+
                 if ((await getBoolFromLocal(SharedPreferenceConst.IS_FIRST_TIME, defaultValue: true)) && isRedirect) {
                   Get.off(() => WalkThroughScreen(walkthroughPageList: listContent));
                   await setBoolToLocal(SharedPreferenceConst.IS_FIRST_TIME, false);
@@ -110,17 +112,14 @@ class SplashScreenController extends BaseListController<WalkthroughModel> {
   }
 
   void handleDeepLinking({required String deepLink}) {
-    if (deepLink.split("/")[2] == VideoType.movie || deepLink.split("/")[2] == VideoType.episode || deepLink.split("/")[2] == VideoType.tvshow || deepLink.split("/")[2] == VideoType.video) {
+    if (deepLink.contains('short-drama')) {
+      ShortDramaBridge.handleDeepLink(deepLink);
+      return;
+    }
+
+    if (deepLink.split("/")[2] == "${VideoType.movie}-details" || deepLink.split("/")[2] == "${VideoType.episode}-details" || deepLink.split("/")[2] == "${VideoType.tvshow}-details" || deepLink.split("/")[2] == "${VideoType.video}-details") {
       WidgetsBinding.instance.addPostFrameCallback((_) {
-        Get.offAll(() => ContentDetailsScreen(), arguments: PosterDataModel(id: int.parse(deepLink.split("/").last), details: ContentData(type: VideoType.episode)));
-      });
-    } else if (deepLink.split("/")[2] == locale.value.liveTv) {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        Get.offAll(() => LiveContentDetailsScreen(), arguments: PosterDataModel(id: int.parse(deepLink.split("/").last), details: ContentData(type: VideoType.liveTv)));
-      });
-    } else {
-      WidgetsBinding.instance.addPostFrameCallback((_) {
-        Get.offAll(() => DashboardScreen());
+        Get.offAll(() => ContentDetailsScreen(), arguments: PosterDataModel(id: int.parse(deepLink.split("/").last), details: ContentData(type: deepLink.split("/")[2].replaceAll("-details", ""))));
       });
     }
   }

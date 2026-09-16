@@ -13,6 +13,7 @@ import 'package:streamit_laravel/screens/profile/watching_profile/model/profile_
 import 'package:streamit_laravel/screens/profile/watching_profile/watching_profile_controller.dart';
 import 'package:streamit_laravel/screens/profile/watching_profile/watching_profile_shimmer.dart';
 import 'package:streamit_laravel/screens/slider/banner_widget.dart';
+import 'package:streamit_laravel/addon_bridge/short_drama/short_drama_bridge.dart';
 import 'package:streamit_laravel/utils/colors.dart';
 import 'package:streamit_laravel/utils/common_base.dart';
 import 'package:streamit_laravel/utils/common_functions.dart';
@@ -135,7 +136,11 @@ class WatchingProfileScreen extends StatelessWidget {
                             if (Get.arguments is ArgumentModel && (Get.arguments as ArgumentModel).boolArgument) {
                               Get.back(result: true);
                             } else {
-                              Get.offAll(() => DashboardScreen());
+                              ShortDramaBridge.resumePendingDeepLink().then((resumed) {
+                                if (!resumed) {
+                                  Get.offAll(() => DashboardScreen());
+                                }
+                              });
                             }
                           },
                           onRefreshCallback: () async {

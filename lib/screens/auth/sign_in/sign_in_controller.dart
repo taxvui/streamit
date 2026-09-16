@@ -381,15 +381,28 @@ class SignInController extends BaseController {
 
         await loginAPICall(request: request, isSocialLogin: true);
       }
-    }).catchError((e) {
+    }).catchError((e, stackTrace) {
       setLoading(false);
       String errorMessage = '';
-      if (e is GoogleSignInException &&
-          (e.code == GoogleSignInExceptionCode.uiUnavailable || e.code == GoogleSignInExceptionCode.userMismatch || e.code == GoogleSignInExceptionCode.clientConfigurationError)) {
-        errorMessage = e.description ?? 'Google sign in failed';
+      if (e is GoogleSignInException) {
+        if (e.code == GoogleSignInExceptionCode.canceled) {
+          // Silently ignore canceled sign-ins
+        } else if (e.code == GoogleSignInExceptionCode.uiUnavailable || e.code == GoogleSignInExceptionCode.userMismatch || e.code == GoogleSignInExceptionCode.clientConfigurationError) {
+          errorMessage = e.description ?? 'Google sign in failed';
+        } else {
+          errorMessage = e.description ?? e.toString();
+        }
+      } else {
+        errorMessage = e.toString();
       }
-      if (errorMessage.isNotEmpty) errorSnackBar(error: errorMessage);
-    }).whenComplete(() => setLoading(false));
+
+      if (errorMessage.isNotEmpty) {
+        errorSnackBar(error: errorMessage);
+      }
+    }).whenComplete(() {
+      log('--- Controller googleSignIn COMPLETE ---');
+      setLoading(false);
+    });
   }
 
   Future<void> appleSignIn() async {

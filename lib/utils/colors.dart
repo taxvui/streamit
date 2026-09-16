@@ -46,3 +46,17 @@ const Color shimmerHighLightBaseColor = Color(0xFF424141);
 const Color rentedColor = Color(0xFF32A071);
 const successSnackBarBackgroundColor = Color(0xFFe7fef0);
 const successColor = Color(0xFF28A745);
+
+// Short Drama Theme Colors
+const sdScreenBgColor = Color(0xFF0F0F0F);
+const sdAppBarBgColor = Color(0xFF1A1A1A);
+const sdDialogBgColor = Color(0xFF141414);
+const sdBottomSheetBgColor = Color(0xFF0D1619);
+const sdBorderColor = Color(0xFF7A7A7A);
+const sdHeaderTextColor = Color(0xFFDCE3F0);
+const sdDividerColor = Color(0x0DFFFFFF);
+const sdPlaceholderBgColor = Color(0xFF101010);
+const sdSecondaryTextColor = Color(0xFF9E9E9E);
+const sdPlayButtonGradientStart = Color(0xFF3A3A3A);
+const sdPlayButtonGradientEnd = Color(0xFF1C1C1C);
+const sdIconColorLight = Color(0xFFEEEEEE);

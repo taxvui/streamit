@@ -196,7 +196,7 @@ class LocalStorage {
       final jsonString = await getValue<String>(key, decrypt: decrypt);
       if (jsonString == null) return null;
 
-      return compute(_decodeJsonMap, jsonString);
+      return await compute(_decodeJsonMap, jsonString);
     } catch (e) {
       log('getJsonFromLocal error for key "$key": $e');
       return null;
@@ -361,7 +361,7 @@ class LocalStorage {
       final jsonString = await getValue<String>(key, decrypt: decrypt);
       if (jsonString == null) return null;
 
-      return compute(_decodeStringList, jsonString);
+      return await compute(_decodeStringList, jsonString);
     } catch (e) {
       log('getStringListFromLocal error for key "$key": $e');
       return null;

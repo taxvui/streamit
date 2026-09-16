@@ -48,6 +48,7 @@ class UserData {
   SubscriptionPlanModel planDetails;
   String pin;
   int? otp;
+  String? shortDramaSessionToken;
 
   UserData({
     this.id = -1,
@@ -67,6 +68,7 @@ class UserData {
     required this.planDetails,
     this.pin = "",
     this.otp = 0,
+    this.shortDramaSessionToken,
   });
 
   factory UserData.fromJson(Map<String, dynamic> json) {
@@ -86,6 +88,7 @@ class UserData {
       fullName: json['full_name'] is String ? json['full_name'] : "",
       profileImage: json['profile_image'] is String ? json['profile_image'] : "",
       planDetails: json['plan_details'] is Map ? SubscriptionPlanModel.fromJson(json['plan_details']) : SubscriptionPlanModel(),
+      shortDramaSessionToken: json['short_drama_session_token'] is String ? json['short_drama_session_token'] : null,
     );
   }
 
@@ -106,6 +109,7 @@ class UserData {
       'full_name': fullName,
       'profile_image': profileImage,
       'plan_details': planDetails.toJson(),
+      'short_drama_session_token': shortDramaSessionToken,
     };
   }
 }

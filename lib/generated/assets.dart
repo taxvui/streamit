@@ -86,6 +86,11 @@ class Assets {
   static const String iconsScreencast = 'assets/icons/screencast.svg';
   static const String iconsScreencastFill = 'assets/icons/screencast-fill.svg';
   static const String iconsScroll = 'assets/icons/scroll.svg';
+  static const String iconsSdBack = 'assets/icons/sd_back.svg';
+  static const String iconsSdEpisode = 'assets/icons/sd_episode.svg';
+  static const String iconsSdMute = 'assets/icons/sd_mute.svg';
+  static const String iconsSdSettings = 'assets/icons/sd_settings.svg';
+  static const String iconsSdShare = 'assets/icons/sd_share.svg';
   static const String iconsSealPercent = 'assets/icons/seal-percent.svg';
   static const String iconsSearchNotFound = 'assets/icons/search-not-found.svg';
   static const String iconsShareFat = 'assets/icons/share-fat.svg';
@@ -116,6 +121,7 @@ class Assets {
   static const String iconsWifiSlash = 'assets/icons/wifi-slash.svg';
   static const String iconsX = 'assets/icons/x.svg';
   static const String imagesIcChooseOptionBg = 'assets/images/ic_choose_option_bg.png';
+  static const String imagesExploreDrama = 'assets/images/explore_drama.png';
   static const String imagesIcForceUpdate = 'assets/images/ic_force_update.png';
   static const String imagesIcRating = 'assets/images/ic_rating.png';
   static const String imagesIcSuccessfulBg = 'assets/images/ic_successful_bg.png';
@@ -134,6 +140,7 @@ class Assets {
   static const String lottieSucess = 'assets/lottie/sucess.json';
   static const String lottieTyping = 'assets/lottie/typing.json';
   static const String lottieVoiceSearch = 'assets/lottie/voice_search.json';
+  static const String paymentLogoCinetpay = 'assets/logos/payment_logo/cinet.jpg';
   static const String paymentLogoFlutterwave = 'assets/logos/payment_logo/flutterwave.svg';
   static const String paymentLogoPaypal = 'assets/logos/payment_logo/paypal.svg';
   static const String paymentLogoPaystack = 'assets/logos/payment_logo/paystack.svg';

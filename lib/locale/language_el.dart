@@ -42,7 +42,8 @@ class LanguageEl extends BaseLanguage {
   String get reload => 'Επαναφόρτωση';
 
   @override
-  String get pressBackAgainToExitApp => 'Πατήστε πίσω ξανά για έξοδο από την εφαρμογή';
+  String get pressBackAgainToExitApp =>
+      'Πατήστε πίσω ξανά για έξοδο από την εφαρμογή';
 
   @override
   String get invalidUrl => 'Μη έγκυρο URL';
@@ -54,7 +55,8 @@ class LanguageEl extends BaseLanguage {
   String get delete => 'Διαγραφή';
 
   @override
-  String get demoUserCannotBeGrantedForThis => 'Ο δοκιμαστικός χρήστης δεν μπορεί να έχει πρόσβαση σε αυτή την ενέργεια';
+  String get demoUserCannotBeGrantedForThis =>
+      'Ο δοκιμαστικός χρήστης δεν μπορεί να έχει πρόσβαση σε αυτή την ενέργεια';
 
   @override
   String get somethingWentWrong => 'Κάτι πήγε στραβά';
@@ -72,10 +74,12 @@ class LanguageEl extends BaseLanguage {
   String get unlikedSuccessfully => 'Unliked successfully';
 
   @override
-  String get wouldYouLikeToSetProfilePhotoAs => 'Θα θέλατε να ορίσετε αυτή την εικόνα ως φωτογραφία προφίλ;';
+  String get wouldYouLikeToSetProfilePhotoAs =>
+      'Θα θέλατε να ορίσετε αυτή την εικόνα ως φωτογραφία προφίλ;';
 
   @override
-  String get yourConfirmPasswordDoesnT => 'Ο κωδικός επιβεβαίωσης δεν ταιριάζει!';
+  String get yourConfirmPasswordDoesnT =>
+      'Ο κωδικός επιβεβαίωσης δεν ταιριάζει!';
 
   @override
   String get yes => 'Ναι';
@@ -102,7 +106,8 @@ class LanguageEl extends BaseLanguage {
   String get emailIsARequiredField => 'Το email είναι υποχρεωτικό πεδίο';
 
   @override
-  String get pleaseEnterValidEmailAddress => 'Παρακαλώ εισάγετε έγκυρη διεύθυνση email!';
+  String get pleaseEnterValidEmailAddress =>
+      'Παρακαλώ εισάγετε έγκυρη διεύθυνση email!';
 
   @override
   String get signIn => 'Σύνδεση';
@@ -144,28 +149,36 @@ class LanguageEl extends BaseLanguage {
   String get logIn => 'Σύνδεση';
 
   @override
-  String get stayTunedNoNew => 'Μείνετε συντονισμένοι! Δεν υπάρχουν νέες ειδοποιήσεις.';
+  String get stayTunedNoNew =>
+      'Μείνετε συντονισμένοι! Δεν υπάρχουν νέες ειδοποιήσεις.';
 
   @override
-  String get noNewNotificationsAt => 'Δεν υπάρχουν νέες ειδοποιήσεις αυτή τη στιγμή. Θα σας ενημερώσουμε όταν υπάρξει κάποια ενημέρωση';
+  String get noNewNotificationsAt =>
+      'Δεν υπάρχουν νέες ειδοποιήσεις αυτή τη στιγμή. Θα σας ενημερώσουμε όταν υπάρξει κάποια ενημέρωση';
 
   @override
-  String get walkthroughTitle1 => 'Παρακολουθήστε σε οποιαδήποτε συσκευή: Απολαύστε το περιεχόμενό μας όπου κι αν βρίσκεστε!';
+  String get walkthroughTitle1 =>
+      'Παρακολουθήστε σε οποιαδήποτε συσκευή: Απολαύστε το περιεχόμενό μας όπου κι αν βρίσκεστε!';
 
   @override
-  String get walkthroughDesp1 => 'Μετάδοση σε όλες τις συσκευές χωρίς επιπλέον χρεώσεις.';
+  String get walkthroughDesp1 =>
+      'Μετάδοση σε όλες τις συσκευές χωρίς επιπλέον χρεώσεις.';
 
   @override
-  String get walkthroughTitle2 => 'Κατεβάστε και συνεχίστε: Πρόσβαση στο περιεχόμενό σας οπουδήποτε, οποτεδήποτε, σε οποιαδήποτε συσκευή';
+  String get walkthroughTitle2 =>
+      'Κατεβάστε και συνεχίστε: Πρόσβαση στο περιεχόμενό σας οπουδήποτε, οποτεδήποτε, σε οποιαδήποτε συσκευή';
 
   @override
-  String get walkthroughDesp2 => 'Κατεβάστε & απολαύστε περιεχόμενο εν κινήσει, οπουδήποτε, οποτεδήποτε.';
+  String get walkthroughDesp2 =>
+      'Κατεβάστε & απολαύστε περιεχόμενο εν κινήσει, οπουδήποτε, οποτεδήποτε.';
 
   @override
-  String get walkthroughTitle3 => 'Απολαύστε την ελευθερία χωρίς δεσμεύσεις ή προβλήματα - Γίνετε μέλος σήμερα!';
+  String get walkthroughTitle3 =>
+      'Απολαύστε την ελευθερία χωρίς δεσμεύσεις ή προβλήματα - Γίνετε μέλος σήμερα!';
 
   @override
-  String get walkthroughDesp3 => 'Γίνετε μέλος χωρίς προβλήματα και χωρίς συμβόλαια.';
+  String get walkthroughDesp3 =>
+      'Γίνετε μέλος χωρίς προβλήματα και χωρίς συμβόλαια.';
 
   @override
   String get lblSkip => 'Παράλειψη';
@@ -177,16 +190,19 @@ class LanguageEl extends BaseLanguage {
   String get lblGetStarted => 'Ξεκινήστε';
 
   @override
-  String get optionTitle => 'Ανακαλύψτε κορυφαίες εκπομπές με είδη προσαρμοσμένα στις προτιμήσεις σας.';
+  String get optionTitle =>
+      'Ανακαλύψτε κορυφαίες εκπομπές με είδη προσαρμοσμένα στις προτιμήσεις σας.';
 
   @override
-  String get optionDesp => 'Εξερευνήστε επιμελημένες εκπομπές σε διάφορα είδη προσαρμοσμένες στις προτιμήσεις θέασής σας.';
+  String get optionDesp =>
+      'Εξερευνήστε επιμελημένες εκπομπές σε διάφορα είδη προσαρμοσμένες στις προτιμήσεις θέασής σας.';
 
   @override
   String get welcomeBackToStreamIt => 'Καλώς ήρθατε πίσω στο $APP_NAME!';
 
   @override
-  String get weHaveEagerlyAwaitedYourReturn => 'Περιμέναμε με ανυπομονησία την επιστροφή σας.';
+  String get weHaveEagerlyAwaitedYourReturn =>
+      'Περιμέναμε με ανυπομονησία την επιστροφή σας.';
 
   @override
   String get dontHaveAnAccount => 'Δεν έχετε λογαριασμό; ';
@@ -198,7 +214,8 @@ class LanguageEl extends BaseLanguage {
   String get linkSentToYourEmail => 'Ο σύνδεσμος στάλθηκε στο email σας!';
 
   @override
-  String get checkYourInboxAndChangePassword => 'Ελέγξτε τα εισερχόμενά σας και αλλάξτε τον κωδικό σας';
+  String get checkYourInboxAndChangePassword =>
+      'Ελέγξτε τα εισερχόμενά σας και αλλάξτε τον κωδικό σας';
 
   @override
   String get continues => 'Συνέχεια';
@@ -207,10 +224,12 @@ class LanguageEl extends BaseLanguage {
   String get oTPVerification => 'Επαλήθευση OTP';
 
   @override
-  String get checkYourSmsInboxAndEnterTheCodeYouGet => 'Ελέγξτε τα SMS σας και εισάγετε τον κωδικό που λάβατε.';
+  String get checkYourSmsInboxAndEnterTheCodeYouGet =>
+      'Ελέγξτε τα SMS σας και εισάγετε τον κωδικό που λάβατε.';
 
   @override
-  String get weHaveSentVerificationCodeToMobileNumber => 'Έχουμε στείλει έναν κωδικό επαλήθευσης στον αριθμό του κινητού σας τηλεφώνου. Παρακαλώ εισάγετέ τον για να συνεχίσετε.';
+  String get weHaveSentVerificationCodeToMobileNumber =>
+      'Έχουμε στείλει έναν κωδικό επαλήθευσης στον αριθμό του κινητού σας τηλεφώνου. Παρακαλώ εισάγετέ τον για να συνεχίσετε.';
 
   @override
   String get didntGetTheOTP => 'Δεν λάβατε το OTP;';
@@ -219,10 +238,12 @@ class LanguageEl extends BaseLanguage {
   String get resendOTP => 'Επαναποστολή OTP';
 
   @override
-  String youCanResendOTPIn(int seconds) => 'Μπορείτε να επαναλάβετε την αποστολή OTP σε $seconds';
+  String youCanResendOTPIn(int seconds) =>
+      'Μπορείτε να επαναλάβετε την αποστολή OTP σε $seconds';
 
   @override
-  String get otpHasBeenResentToMobileNumber => 'Το OTP έχει σταλεί ξανά στον αριθμό του κινητού σας τηλεφώνου';
+  String get otpHasBeenResentToMobileNumber =>
+      'Το OTP έχει σταλεί ξανά στον αριθμό του κινητού σας τηλεφώνου';
 
   @override
   String get verify => 'Επαλήθευση';
@@ -234,10 +255,12 @@ class LanguageEl extends BaseLanguage {
   String get notificationDeleted => 'Η ειδοποίηση διαγράφηκε';
 
   @override
-  String get doYouWantToMarkAllNotificationAsRead => 'Θέλετε να διαγράψετε όλες τις ειδοποιήσεις';
+  String get doYouWantToMarkAllNotificationAsRead =>
+      'Θέλετε να διαγράψετε όλες τις ειδοποιήσεις';
 
   @override
-  String get doYouWantToDeleteThisNotification => 'Θέλετε να διαγράψετε αυτή την ειδοποίηση;';
+  String get doYouWantToDeleteThisNotification =>
+      'Θέλετε να διαγράψετε αυτή την ειδοποίηση;';
 
   @override
   String get successfully => 'Επιτυχώς';
@@ -246,7 +269,8 @@ class LanguageEl extends BaseLanguage {
   String get userCancelled => 'Ο χρήστης ακύρωσε';
 
   @override
-  String get appleSigninIsNot => 'Η σύνδεση με Apple δεν είναι διαθέσιμη για τη συσκευή σας';
+  String get appleSigninIsNot =>
+      'Η σύνδεση με Apple δεν είναι διαθέσιμη για τη συσκευή σας';
 
   @override
   String get searchHere => 'Αναζήτηση εδώ';
@@ -270,13 +294,15 @@ class LanguageEl extends BaseLanguage {
   String get noContinueWatchingTitle => 'Δεν υπάρχει περιεχόμενο για συνέχεια';
 
   @override
-  String get noContinueWatchingSubtitle => 'Ξεκινήστε να παρακολουθείτε περιεχόμενο για να εμφανιστεί εδώ';
+  String get noContinueWatchingSubtitle =>
+      'Ξεκινήστε να παρακολουθείτε περιεχόμενο για να εμφανιστεί εδώ';
 
   @override
   String get shareYourThoughtsWithUs => 'Μοιραστείτε τις σκέψεις σας μαζί μας!';
 
   @override
-  String get weValueYourOpinion => 'Εκτιμούμε τη γνώμη σας! Μοιραστείτε τα σχόλιά σας μαζί μας σήμερα.';
+  String get weValueYourOpinion =>
+      'Εκτιμούμε τη γνώμη σας! Μοιραστείτε τα σχόλιά σας μαζί μας σήμερα.';
 
   @override
   String get genres => 'Είδη';
@@ -354,7 +380,8 @@ class LanguageEl extends BaseLanguage {
   String get close => 'Κλείσιμο';
 
   @override
-  String get oppsLooksLikeYouReview => 'Ωχ! Φαίνεται ότι δεν έχετε προσθέσει ακόμη κριτική.';
+  String get oppsLooksLikeYouReview =>
+      'Ωχ! Φαίνεται ότι δεν έχετε προσθέσει ακόμη κριτική.';
 
   @override
   String get retry => 'Επανάληψη';
@@ -444,7 +471,8 @@ class LanguageEl extends BaseLanguage {
   String get rateOurApp => 'Βαθμολογήστε την εφαρμογή μας';
 
   @override
-  String get rateOurAppSubtitle => 'Βαθμολογήστε την εφαρμογή μας για να μας υποστηρίξετε';
+  String get rateOurAppSubtitle =>
+      'Βαθμολογήστε την εφαρμογή μας για να μας υποστηρίξετε';
 
   @override
   String get appLanguage => 'Γλώσσα εφαρμογής';
@@ -453,7 +481,8 @@ class LanguageEl extends BaseLanguage {
   String get yourDownloads => 'Οι λήψεις σας';
 
   @override
-  String get subscriptionPlanDeviceConnected => 'Πρόγραμμα συνδρομής, συνδεδεμένη συσκευή';
+  String get subscriptionPlanDeviceConnected =>
+      'Πρόγραμμα συνδρομής, συνδεδεμένη συσκευή';
 
   @override
   String get accountSettings => 'Ρυθμίσεις λογαριασμού';
@@ -462,13 +491,15 @@ class LanguageEl extends BaseLanguage {
   String get accountControl => 'Έλεγχος λογαριασμού';
 
   @override
-  String get parentalControlsSubtitle => 'Περιορίστε την πρόσβαση σε προφίλ ενηλίκων με PIN';
+  String get parentalControlsSubtitle =>
+      'Περιορίστε την πρόσβαση σε προφίλ ενηλίκων με PIN';
 
   @override
   String get subscriptionAndRentals => 'Συνδρομή & Ενοικιάσεις';
 
   @override
-  String deviceLimitMessage(String limit) => 'Μπορείτε να χρησιμοποιήσετε έως και $limit συσκευές ταυτόχρονα.';
+  String deviceLimitMessage(String limit) =>
+      'Μπορείτε να χρησιμοποιήσετε έως και $limit συσκευές ταυτόχρονα.';
 
   @override
   String get videoCastingEnabled => 'Η μετάδοση βίντεο είναι ενεργοποιημένη.';
@@ -489,25 +520,30 @@ class LanguageEl extends BaseLanguage {
   String get supportedDeviceType => 'Υποστηριζόμενος τύπος συσκευής';
 
   @override
-  String profileLimitMessage(String limit) => 'Μπορείτε να δημιουργήσετε έως και $limit προφίλ σε αυτό το πακέτο για διαφορετικούς χρήστες.';
+  String profileLimitMessage(String limit) =>
+      'Μπορείτε να δημιουργήσετε έως και $limit προφίλ σε αυτό το πακέτο για διαφορετικούς χρήστες.';
 
   @override
   String get transactionHistory => 'Ιστορικό συναλλαγών';
 
   @override
-  String get transactionHistorySubtitle => 'Διαχειριστείτε το ιστορικό συνδρομών & ενοικιάσεών σας';
+  String get transactionHistorySubtitle =>
+      'Διαχειριστείτε το ιστορικό συνδρομών & ενοικιάσεών σας';
 
   @override
-  String get subscriptionHistorySubtitle => 'Πρόσβαση στα αρχεία πληρωμών συνδρομής σας';
+  String get subscriptionHistorySubtitle =>
+      'Πρόσβαση στα αρχεία πληρωμών συνδρομής σας';
 
   @override
-  String get rentalHistorySubtitle => 'Πρόσβαση στο ιστορικό πληρωμών ενοικίασης';
+  String get rentalHistorySubtitle =>
+      'Πρόσβαση στο ιστορικό πληρωμών ενοικίασης';
 
   @override
   String get deviceManagement => 'Διαχείριση συσκευών';
 
   @override
-  String get kidsProfileCannotAccessSubscription => 'Οι δυνατότητες συνδρομής είναι περιορισμένες για τα προφίλ παιδιών.';
+  String get kidsProfileCannotAccessSubscription =>
+      'Οι δυνατότητες συνδρομής είναι περιορισμένες για τα προφίλ παιδιών.';
 
   @override
   String get accountAndActivation => 'Λογαριασμός & Ενεργοποίηση';
@@ -516,7 +552,8 @@ class LanguageEl extends BaseLanguage {
   String get accountSectionTitle => 'Λογαριασμός';
 
   @override
-  String get accountSectionSubtitle => 'Διαχείριση λογαριασμού, συνδρομών και ενοικιάσεων';
+  String get accountSectionSubtitle =>
+      'Διαχείριση λογαριασμού, συνδρομών και ενοικιάσεων';
 
   @override
   String get activateTvWeb => 'Ενεργοποίηση TV & Web';
@@ -537,13 +574,15 @@ class LanguageEl extends BaseLanguage {
   String get pickUpWhereYouLeftOff => 'Συνέχισε από εκεί που σταμάτησες';
 
   @override
-  String get continueWatchingSubtitle => 'Συνέχισε την προβολή από εκεί που σταμάτησες';
+  String get continueWatchingSubtitle =>
+      'Συνέχισε την προβολή από εκεί που σταμάτησες';
 
   @override
   String get rentals => 'Ενοικιάσεις';
 
   @override
-  String get rentalsSubtitle => 'Πρόσβαση στις ταινίες και σειρές που έχεις ενοικιάσει';
+  String get rentalsSubtitle =>
+      'Πρόσβαση στις ταινίες και σειρές που έχεις ενοικιάσει';
 
   @override
   String get rentalsAndDownloads => 'Ενοικιάσεις και Λήψεις';
@@ -555,7 +594,8 @@ class LanguageEl extends BaseLanguage {
   String get noRentedContentFound => 'Δεν βρέθηκε ενοικιασμένο περιεχόμενο';
 
   @override
-  String get noRentedContentSubtitle => 'Ενοικιάστε ταινίες, επεισόδια και βίντεο για να αποκτήσετε άμεση πρόσβαση εδώ';
+  String get noRentedContentSubtitle =>
+      'Ενοικιάστε ταινίες, επεισόδια και βίντεο για να αποκτήσετε άμεση πρόσβαση εδώ';
 
   @override
   String get autoUpdate => 'Αυτόματη ενημέρωση';
@@ -567,13 +607,15 @@ class LanguageEl extends BaseLanguage {
   String get smartDelete => 'Έξυπνη διαγραφή';
 
   @override
-  String get smartDeleteSubtitle => 'Διαγραφή των ληφθέντων μετά την ολοκλήρωση';
+  String get smartDeleteSubtitle =>
+      'Διαγραφή των ληφθέντων μετά την ολοκλήρωση';
 
   @override
   String get downloads => 'Λήψεις';
 
   @override
-  String get downloadsSubtitle => 'Προβολή και διαχείριση του περιεχομένου εκτός σύνδεσης';
+  String get downloadsSubtitle =>
+      'Προβολή και διαχείριση του περιεχομένου εκτός σύνδεσης';
 
   @override
   String get settingsAndSupport => 'Ρυθμίσεις & Υποστήριξη';
@@ -582,7 +624,8 @@ class LanguageEl extends BaseLanguage {
   String get settingsSubtitle => 'Ενημερώσεις, γλώσσα και λήψεις';
 
   @override
-  String get helpSupportSubtitle => 'Συχνές ερωτήσεις, όροι & προϋποθέσεις και πολιτική απορρήτου';
+  String get helpSupportSubtitle =>
+      'Συχνές ερωτήσεις, όροι & προϋποθέσεις και πολιτική απορρήτου';
 
   @override
   String get appVersionPrefix => 'Έκδοση εφαρμογής';
@@ -615,10 +658,12 @@ class LanguageEl extends BaseLanguage {
   String get deleteAccountPermanently => 'Οριστική διαγραφή λογαριασμού;';
 
   @override
-  String doYouWantToDeleteProfile(String profileName) => 'Θέλετε να διαγράψετε το προφίλ για $profileName;';
+  String doYouWantToDeleteProfile(String profileName) =>
+      'Θέλετε να διαγράψετε το προφίλ για $profileName;';
 
   @override
-  String shareYourThoughtsOnContent(String contentName, String type) => 'Μοιραστείτε τις σκέψεις σας για το $contentName $type';
+  String shareYourThoughtsOnContent(String contentName, String type) =>
+      'Μοιραστείτε τις σκέψεις σας για το $contentName $type';
 
   @override
   String get mobileNumber => 'Αριθμός κινητού';
@@ -633,7 +678,8 @@ class LanguageEl extends BaseLanguage {
   String get saveChanges => 'Αποθήκευση αλλαγών';
 
   @override
-  String get startWatchingFromWhereYouLeftOff => 'Ξεκινήστε να παρακολουθείτε από εκεί που σταματήσατε';
+  String get startWatchingFromWhereYouLeftOff =>
+      'Ξεκινήστε να παρακολουθείτε από εκεί που σταματήσατε';
 
   @override
   String get troubleLoggingIn => 'Πρόβλημα σύνδεσης;';
@@ -648,19 +694,22 @@ class LanguageEl extends BaseLanguage {
   String get noHelpTopicsFound => 'Δεν βρέθηκαν θέματα βοήθειας';
 
   @override
-  String get helpAndSupportTopicsSubtitle => 'Τα θέματα βοήθειας και υποστήριξης θα εμφανίζονται εδώ';
+  String get helpAndSupportTopicsSubtitle =>
+      'Τα θέματα βοήθειας και υποστήριξης θα εμφανίζονται εδώ';
 
   @override
   String get yourWatchlistIsEmpty => 'Η λίστα παρακολούθησής σας είναι κενή';
 
   @override
-  String get contentAddedToYourWatchlist => 'Το περιεχόμενο που προσθέτετε στη λίστα παρακολούθησης θα εμφανίζεται εδώ';
+  String get contentAddedToYourWatchlist =>
+      'Το περιεχόμενο που προσθέτετε στη λίστα παρακολούθησης θα εμφανίζεται εδώ';
 
   @override
   String get add => 'Προσθήκη';
 
   @override
-  String get subscribeNowAndDiveInto => 'Εγγραφείτε τώρα και βυθιστείτε σε ατελείωτη ροή';
+  String get subscribeNowAndDiveInto =>
+      'Εγγραφείτε τώρα και βυθιστείτε σε ατελείωτη ροή';
 
   @override
   String get pay => 'Πληρωμή';
@@ -684,7 +733,8 @@ class LanguageEl extends BaseLanguage {
   String get proceedPayment => 'Συνέχεια στην πληρωμή';
 
   @override
-  String get paymentFailedMessage => 'Η πληρωμή τερματίστηκε. Δοκιμάστε ξανά αν θέλετε να προχωρήσετε.';
+  String get paymentFailedMessage =>
+      'Η πληρωμή τερματίστηκε. Δοκιμάστε ξανά αν θέλετε να προχωρήσετε.';
 
   @override
   String get actors => 'Ηθοποιοί';
@@ -693,13 +743,15 @@ class LanguageEl extends BaseLanguage {
   String get movies => 'Ταινίες';
 
   @override
-  String get contentRestrictedAccess => 'Περιορισμένη πρόσβαση περιεχομένου 18+';
+  String get contentRestrictedAccess =>
+      'Περιορισμένη πρόσβαση περιεχομένου 18+';
 
   @override
   String get areYou18Above => 'Είστε άνω των 18 ετών;';
 
   @override
-  String get displayAClearProminentWarning => 'Εμφάνιση σαφούς & εμφανούς προειδοποίησης πριν την πρόσβαση στο περιεχόμενο, δηλώνοντας ότι προορίζεται για ενήλικο κοινό';
+  String get displayAClearProminentWarning =>
+      'Εμφάνιση σαφούς & εμφανούς προειδοποίησης πριν την πρόσβαση στο περιεχόμενο, δηλώνοντας ότι προορίζεται για ενήλικο κοινό';
 
   @override
   String get all => 'Όλα';
@@ -720,7 +772,8 @@ class LanguageEl extends BaseLanguage {
   String get phnRequiredText => 'Απαιτείται αριθμός κινητού';
 
   @override
-  String get inputMustBeNumberOrDigit => 'Η εισαγωγή πρέπει να είναι αριθμός ή ψηφίο';
+  String get inputMustBeNumberOrDigit =>
+      'Η εισαγωγή πρέπει να είναι αριθμός ή ψηφίο';
 
   @override
   String get dateOfBirth => 'Ημερομηνία γέννησης';
@@ -732,28 +785,33 @@ class LanguageEl extends BaseLanguage {
   String get whatYourMobileNo => 'Ποιος είναι ο αριθμός κινητού σας';
 
   @override
-  String get withAValidMobileNumberYouCanConnectWithStreamit => 'Με έναν έγκυρο αριθμό κινητού μπορείτε να συνδεθείτε με το Streamit';
+  String get withAValidMobileNumberYouCanConnectWithStreamit =>
+      'Με έναν έγκυρο αριθμό κινητού μπορείτε να συνδεθείτε με το Streamit';
 
   @override
   String get otpSentToYourSMS => 'Το OTP στάλθηκε στο SMS σας!';
 
   @override
-  String get checkYourSmsInboxAndVerifyYoourMobile => 'Ελέγξτε τα SMS σας και επαληθεύστε τον αριθμό του κινητού σας';
+  String get checkYourSmsInboxAndVerifyYoourMobile =>
+      'Ελέγξτε τα SMS σας και επαληθεύστε τον αριθμό του κινητού σας';
 
   @override
-  String get pleaseTryAgainAfterSomeTime => 'Παρακαλώ δοκιμάστε ξανά μετά από λίγο. Έχετε χρησιμοποιήσει πολλαπλές αιτήσεις επαλήθευσης!';
+  String get pleaseTryAgainAfterSomeTime =>
+      'Παρακαλώ δοκιμάστε ξανά μετά από λίγο. Έχετε χρησιμοποιήσει πολλαπλές αιτήσεις επαλήθευσης!';
 
   @override
   String get pleaseEnterAValidCode => 'Παρακαλώ εισάγετε έγκυρο OTP';
 
   @override
-  String get pleaseCheckYourMobileInternetConnection => 'Παρακαλώ ελέγξτε τη σύνδεση του κινητού σας στο διαδίκτυο';
+  String get pleaseCheckYourMobileInternetConnection =>
+      'Παρακαλώ ελέγξτε τη σύνδεση του κινητού σας στο διαδίκτυο';
 
   @override
   String get error => 'Σφάλμα';
 
   @override
-  String get sorryCouldnFindYourSearch => 'Συγγνώμη, δεν βρέθηκε η αναζήτησή σας!';
+  String get sorryCouldnFindYourSearch =>
+      'Συγγνώμη, δεν βρέθηκε η αναζήτησή σας!';
 
   @override
   String get trySomethingNew => 'Δοκιμάστε κάτι νέο.';
@@ -771,7 +829,8 @@ class LanguageEl extends BaseLanguage {
   String get confirm => 'Επιβεβαίωση';
 
   @override
-  String get doYouConfirmThisPlan => 'Επιβεβαιώνετε αυτό το πρόγραμμα συνδρομής';
+  String get doYouConfirmThisPlan =>
+      'Επιβεβαιώνετε αυτό το πρόγραμμα συνδρομής';
 
   @override
   String get transactionFailed => 'Η συναλλαγή απέτυχε';
@@ -810,22 +869,28 @@ class LanguageEl extends BaseLanguage {
   String get oldPasswordIsRequired => 'Ο παλιός κωδικός είναι υποχρεωτικός';
 
   @override
-  String get passwordLengthRule => 'Ο κωδικός πρόσβασης πρέπει να έχει μήκος 8-14 χαρακτήρες';
+  String get passwordLengthRule =>
+      'Ο κωδικός πρόσβασης πρέπει να έχει μήκος 8-14 χαρακτήρες';
 
   @override
-  String get passwordUppercaseRule => 'Ο κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον ένα κεφαλαίο γράμμα';
+  String get passwordUppercaseRule =>
+      'Ο κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον ένα κεφαλαίο γράμμα';
 
   @override
-  String get passwordLowercaseRule => 'Ο κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον ένα πεζό γράμμα';
+  String get passwordLowercaseRule =>
+      'Ο κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον ένα πεζό γράμμα';
 
   @override
-  String get passwordSpecialCharacterRule => 'Ο κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον έναν ειδικό χαρακτήρα (@\$!%*?&)';
+  String get passwordSpecialCharacterRule =>
+      'Ο κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον έναν ειδικό χαρακτήρα (@\$!%*?&)';
 
   @override
-  String get passwordDigitRule => 'Ο κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον ένα ψηφίο';
+  String get passwordDigitRule =>
+      'Ο κωδικός πρόσβασης πρέπει να περιέχει τουλάχιστον ένα ψηφίο';
 
   @override
-  String get confirmPasswordIsRequired => 'Η επιβεβαίωση κωδικού είναι υποχρεωτική';
+  String get confirmPasswordIsRequired =>
+      'Η επιβεβαίωση κωδικού είναι υποχρεωτική';
 
   @override
   String get home => 'Αρχική';
@@ -834,10 +899,12 @@ class LanguageEl extends BaseLanguage {
   String get search => 'Αναζήτηση';
 
   @override
-  String get mobileNumberIsRequired => 'Ο αριθμός κινητού είναι υποχρεωτικό πεδίο';
+  String get mobileNumberIsRequired =>
+      'Ο αριθμός κινητού είναι υποχρεωτικό πεδίο';
 
   @override
-  String get youHaveAlreadyDownloadedThisMovie => 'Έχετε ήδη κατεβάσει αυτή την ταινία';
+  String get youHaveAlreadyDownloadedThisMovie =>
+      'Έχετε ήδη κατεβάσει αυτή την ταινία';
 
   @override
   String get imdb => 'IMDB';
@@ -859,6 +926,12 @@ class LanguageEl extends BaseLanguage {
 
   @override
   String get flutterWavePay => 'Fluttewave';
+
+  @override
+  String get cinetPay => 'CinetPay';
+
+  @override
+  String get lblCheckOutWithCinetPay => 'Ολοκλήρωση αγοράς με CinetPay';
 
   @override
   String get contextNotFound => 'Το context δεν βρέθηκε!!!!';
@@ -900,7 +973,8 @@ class LanguageEl extends BaseLanguage {
   String get helpSetting => 'Βοήθεια & Ρυθμίσεις';
 
   @override
-  String get pleaseConfirmContent => 'Παρακαλώ επιβεβαιώστε την πρόσβαση σε περιορισμένο περιεχόμενο';
+  String get pleaseConfirmContent =>
+      'Παρακαλώ επιβεβαιώστε την πρόσβαση σε περιορισμένο περιεχόμενο';
 
   @override
   String get toWatch => 'Για παρακολούθηση';
@@ -915,40 +989,50 @@ class LanguageEl extends BaseLanguage {
   String get noDeviceAvailable => 'Δεν υπάρχουν διαθέσιμες συσκευές';
 
   @override
-  String get noItemsToContinueWatching => 'Δεν υπάρχουν στοιχεία για συνέχιση παρακολούθησης';
+  String get noItemsToContinueWatching =>
+      'Δεν υπάρχουν στοιχεία για συνέχιση παρακολούθησης';
 
   @override
-  String get noItemsAddedToTheWatchlist => 'Δεν έχουν προστεθεί στοιχεία στη λίστα παρακολούθησης';
+  String get noItemsAddedToTheWatchlist =>
+      'Δεν έχουν προστεθεί στοιχεία στη λίστα παρακολούθησης';
 
   @override
   String get ok => 'Εντάξει';
 
   @override
-  String removeFromContinueWatchingTitle(String title, String typeLabel) => 'Θέλετε να αφαιρέσετε το $title $typeLabel από τη λίστα Συνέχεια παρακολούθησης;';
+  String removeFromContinueWatchingTitle(String title, String typeLabel) =>
+      'Θέλετε να αφαιρέσετε το $title $typeLabel από τη λίστα Συνέχεια παρακολούθησης;';
 
   @override
-  String get addedToWatchList => 'Προστέθηκε στη λίστα παρακολούθησης με επιτυχία';
+  String get addedToWatchList =>
+      'Προστέθηκε στη λίστα παρακολούθησης με επιτυχία';
 
   @override
-  String get removedFromWatchList => 'Διαγράφηκε από τη λίστα παρακολούθησης με επιτυχία';
+  String get removedFromWatchList =>
+      'Διαγράφηκε από τη λίστα παρακολούθησης με επιτυχία';
 
   @override
-  String get removeSelectedFromWatchList => 'Θέλετε να αφαιρέσετε το επιλεγμένο περιεχόμενο από τη λίστα παρακολούθησης;';
+  String get removeSelectedFromWatchList =>
+      'Θέλετε να αφαιρέσετε το επιλεγμένο περιεχόμενο από τη λίστα παρακολούθησης;';
 
   @override
-  String get removedFromContinueWatch => 'Διαγράφηκε από τη συνέχιση παρακολούθησης με επιτυχία';
+  String get removedFromContinueWatch =>
+      'Διαγράφηκε από τη συνέχιση παρακολούθησης με επιτυχία';
 
   @override
-  String get pleaseEnterAValidMobileNo => 'Παρακαλώ εισάγετε έγκυρο αριθμό κινητού';
+  String get pleaseEnterAValidMobileNo =>
+      'Παρακαλώ εισάγετε έγκυρο αριθμό κινητού';
 
   @override
   String get pleaseAddYourReview => 'Παρακαλώ προσθέστε τη βαθμολογία σας';
 
   @override
-  String get thisMovieIsCurrentlUnavailableToWatch => 'Αυτή η ταινία δεν είναι διαθέσιμη για παρακολούθηση αυτή τη στιγμή';
+  String get thisMovieIsCurrentlUnavailableToWatch =>
+      'Αυτή η ταινία δεν είναι διαθέσιμη για παρακολούθηση αυτή τη στιγμή';
 
   @override
-  String get thisVideoIsCurrentlUnavailableToWatch => 'Αυτό το βίντεο δεν είναι διαθέσιμο για παρακολούθηση αυτή τη στιγμή';
+  String get thisVideoIsCurrentlUnavailableToWatch =>
+      'Αυτό το βίντεο δεν είναι διαθέσιμο για παρακολούθηση αυτή τη στιγμή';
 
   @override
   String get subscriptionHistory => 'Ιστορικό συνδρομών';
@@ -984,7 +1068,8 @@ class LanguageEl extends BaseLanguage {
   String get viewLess => 'Λιγότερα';
 
   @override
-  String get removeSelectedFromDownloads => 'Θέλετε να αφαιρέσετε αυτό από τις λήψεις σας';
+  String get removeSelectedFromDownloads =>
+      'Θέλετε να αφαιρέσετε αυτό από τις λήψεις σας';
 
   @override
   String get noPaymentMethodsFound => 'Δεν βρέθηκαν μέθοδοι πληρωμής';
@@ -996,7 +1081,8 @@ class LanguageEl extends BaseLanguage {
   String get completeProfile => 'Συμπληρώστε το προφίλ σας';
 
   @override
-  String get completeProfileSubtitle => 'Πείτε μας περισσότερα για τον εαυτό σας για να ξεκινήσετε';
+  String get completeProfileSubtitle =>
+      'Πείτε μας περισσότερα για τον εαυτό σας για να ξεκινήσετε';
 
   @override
   String get getVerificationCode => 'Λήψη κωδικού επαλήθευσης';
@@ -1011,10 +1097,12 @@ class LanguageEl extends BaseLanguage {
   String get addProfile => 'Προσθήκη προφίλ';
 
   @override
-  String get clearSearchHistoryConfirmation => 'Θέλετε να διαγράψετε το ιστορικό αναζήτησης;';
+  String get clearSearchHistoryConfirmation =>
+      'Θέλετε να διαγράψετε το ιστορικό αναζήτησης;';
 
   @override
-  String get clearSearchHistorySubtitle => 'Αυτή η ενέργεια δεν μπορεί να αναιρεθεί και όλες οι προηγούμενες αναζητήσεις θα διαγραφούν μόνιμα.';
+  String get clearSearchHistorySubtitle =>
+      'Αυτή η ενέργεια δεν μπορεί να αναιρεθεί και όλες οι προηγούμενες αναζητήσεις θα διαγραφούν μόνιμα.';
 
   @override
   String get searchingForDevice => 'Αναζήτηση συσκευών';
@@ -1131,7 +1219,8 @@ class LanguageEl extends BaseLanguage {
   String get goToYourDownloads => 'Μετάβαση στις λήψεις σας';
 
   @override
-  String welcomeUserMessage(String appName, String name) => "Γεια σου $name, καλώς ήρθες στο $appName! Το ταξίδι σου στην απεριόριστη ψυχαγωγία ξεκινά τώρα — βούτηξε και απόλαυσε το σόου!";
+  String welcomeUserMessage(String appName, String name) =>
+      "Γεια σου $name, καλώς ήρθες στο $appName! Το ταξίδι σου στην απεριόριστη ψυχαγωγία ξεκινά τώρα — βούτηξε και απόλαυσε το σόου!";
 
   @override
   String get bySigningYouAgreeTo => 'Με την εγγραφή, συμφωνείτε με';
@@ -1161,10 +1250,12 @@ class LanguageEl extends BaseLanguage {
   String get servicesAnd => 'Υπηρεσιών και ';
 
   @override
-  String get newProfileAddedSuccessfully => 'Το νέο προφίλ προστέθηκε με επιτυχία';
+  String get newProfileAddedSuccessfully =>
+      'Το νέο προφίλ προστέθηκε με επιτυχία';
 
   @override
-  String get doYouWantToDeleteYourReview => 'Θέλετε να διαγράψετε την κριτική σας;';
+  String get doYouWantToDeleteYourReview =>
+      'Θέλετε να διαγράψετε την κριτική σας;';
 
   @override
   String get noSearchDataFound => 'Δεν βρέθηκαν δεδομένα αναζήτησης';
@@ -1173,7 +1264,8 @@ class LanguageEl extends BaseLanguage {
   String get searchHistory => 'Ιστορικό αναζήτησης';
 
   @override
-  String get youHaveBeenLoggedOutOfYourAccountOn => 'Έχετε αποσυνδεθεί από τον λογαριασμό σας στο';
+  String get youHaveBeenLoggedOutOfYourAccountOn =>
+      'Έχετε αποσυνδεθεί από τον λογαριασμό σας στο';
 
   @override
   String get faqs => 'Συχνές ερωτήσεις';
@@ -1227,10 +1319,12 @@ class LanguageEl extends BaseLanguage {
   String get downloadHasBeenStarted => 'Η λήψη ξεκίνησε';
 
   @override
-  String get yourDeviceIsNot => 'Η συσκευή σας δεν υποστηρίζεται με το τρέχον πρόγραμμα';
+  String get yourDeviceIsNot =>
+      'Η συσκευή σας δεν υποστηρίζεται με το τρέχον πρόγραμμα';
 
   @override
-  String get pleaseUpgradeToContinue => 'Παρακαλώ αναβαθμίστε για να συνεχίσετε να απολαμβάνετε την υπηρεσία';
+  String get pleaseUpgradeToContinue =>
+      'Παρακαλώ αναβαθμίστε για να συνεχίσετε να απολαμβάνετε την υπηρεσία';
 
   @override
   String get cancelled => 'Ακυρώθηκε';
@@ -1248,13 +1342,16 @@ class LanguageEl extends BaseLanguage {
   String get connectToWIFI => 'Παρακαλώ συνδεθείτε σε WIFI';
 
   @override
-  String get logoutAllConfirmation => 'Θέλετε να αποσυνδεθείτε από όλες τις άλλες συσκευές;';
+  String get logoutAllConfirmation =>
+      'Θέλετε να αποσυνδεθείτε από όλες τις άλλες συσκευές;';
 
   @override
-  String get logoutAllConfirmationMessage => 'Για την εφαρμογή του ορίου συσκευών του νέου σας προγράμματος, πρέπει να αποσυνδεθείτε άμεσα από όλες τις συσκευές.';
+  String get logoutAllConfirmationMessage =>
+      'Για την εφαρμογή του ορίου συσκευών του νέου σας προγράμματος, πρέπει να αποσυνδεθείτε άμεσα από όλες τις συσκευές.';
 
   @override
-  String get changePasswordMessage => 'Ο κωδικός πρόσβασής σας ενημερώθηκε. Παρακαλώ συνδεθείτε ξανά για να συνεχίσετε.';
+  String get changePasswordMessage =>
+      'Ο κωδικός πρόσβασής σας ενημερώθηκε. Παρακαλώ συνδεθείτε ξανά για να συνεχίσετε.';
 
   @override
   String get share => 'Κοινοποίηση';
@@ -1269,7 +1366,8 @@ class LanguageEl extends BaseLanguage {
   String get videoCast => 'Μετάδοση';
 
   @override
-  String get castingNotSupported => 'Η μετάδοση δεν υποστηρίζεται με το τρέχον πρόγραμμα.';
+  String get castingNotSupported =>
+      'Η μετάδοση δεν υποστηρίζεται με το τρέχον πρόγραμμα.';
 
   @override
   String get left => "απομένει";
@@ -1287,22 +1385,26 @@ class LanguageEl extends BaseLanguage {
   String get changePassword => 'Αλλαγή κωδικού';
 
   @override
-  String get yourNewPasswordMust => 'Ο νέος σας κωδικός πρέπει να είναι διαφορετικός από τον προηγούμενο';
+  String get yourNewPasswordMust =>
+      'Ο νέος σας κωδικός πρέπει να είναι διαφορετικός από τον προηγούμενο';
 
   @override
   String get yourOldPasswordDoesnT => 'Ο παλιός σας κωδικός δεν είναι σωστός!';
 
   @override
-  String get yourNewPasswordDoesnT => "Ο κωδικός επιβεβαίωσης δεν ταιριάζει με τον νέο κωδικό!";
+  String get yourNewPasswordDoesnT =>
+      "Ο κωδικός επιβεβαίωσης δεν ταιριάζει με τον νέο κωδικό!";
 
   @override
   String get oldAndNewPassword => 'Ο παλιός και ο νέος κωδικός είναι ίδιοι.';
 
   @override
-  String get yourPasswordHasBeen => 'Ο κωδικός σας έχει επαναφερθεί με επιτυχία';
+  String get yourPasswordHasBeen =>
+      'Ο κωδικός σας έχει επαναφερθεί με επιτυχία';
 
   @override
-  String get youCanNowLog => 'Μπορείτε τώρα να συνδεθείτε στον νέο σας λογαριασμό με τον νέο κωδικό';
+  String get youCanNowLog =>
+      'Μπορείτε τώρα να συνδεθείτε στον νέο σας λογαριασμό με τον νέο κωδικό';
 
   @override
   String get done => 'Ολοκληρώθηκε';
@@ -1335,7 +1437,8 @@ class LanguageEl extends BaseLanguage {
   String get otpSentSuccessfully => 'Το OTP στάλθηκε με επιτυχία';
 
   @override
-  String get weHaveSentYouOTPOnYourRegisterEmailAddress => 'Σας έχουμε στείλει OTP στην καταχωρημένη διεύθυνση email σας';
+  String get weHaveSentYouOTPOnYourRegisterEmailAddress =>
+      'Σας έχουμε στείλει OTP στην καταχωρημένη διεύθυνση email σας';
 
   @override
   String get otpVerification => 'Επαλήθευση OTP';
@@ -1344,10 +1447,12 @@ class LanguageEl extends BaseLanguage {
   String get enterPIN => 'Εισαγωγή PIN';
 
   @override
-  String get enterYourNewParentalPinForYourKids => 'Εισάγετε το νέο σας γονικό PIN για τα παιδιά σας';
+  String get enterYourNewParentalPinForYourKids =>
+      'Εισάγετε το νέο σας γονικό PIN για τα παιδιά σας';
 
   @override
-  String get enterYourOldParentalPinForYourKids => 'Εισάγετε το παλιό σας γονικό PIN για τα παιδιά σας';
+  String get enterYourOldParentalPinForYourKids =>
+      'Εισάγετε το παλιό σας γονικό PIN για τα παιδιά σας';
 
   @override
   String get confirmPIN => 'Επιβεβαίωση PIN';
@@ -1368,7 +1473,8 @@ class LanguageEl extends BaseLanguage {
   String get kids => 'ΠΑΙΔΙΑ';
 
   @override
-  String get enter4DigitParentalControlPIN => 'Εισάγετε 4ψήφιο PIN γονικού ελέγχου';
+  String get enter4DigitParentalControlPIN =>
+      'Εισάγετε 4ψήφιο PIN γονικού ελέγχου';
 
   @override
   String get parentalLock => 'Γονικό κλείδωμα';
@@ -1392,7 +1498,8 @@ class LanguageEl extends BaseLanguage {
   String get codeWithColon => 'Εισάγετε κωδικό:';
 
   @override
-  String get useThisCodeToGet => 'Χρησιμοποιήστε αυτόν τον κωδικό για να πάρετε ';
+  String get useThisCodeToGet =>
+      'Χρησιμοποιήστε αυτόν τον κωδικό για να πάρετε ';
 
   @override
   String get off => ' έκπτωση';
@@ -1416,10 +1523,12 @@ class LanguageEl extends BaseLanguage {
   String get allCoupons => 'Όλα τα κουπόνια';
 
   @override
-  String get oopsWeCouldnTFind => 'Ωχ! Δεν μπορέσαμε να βρούμε κωδικούς κουπονιών που να ταιριάζουν';
+  String get oopsWeCouldnTFind =>
+      'Ωχ! Δεν μπορέσαμε να βρούμε κωδικούς κουπονιών που να ταιριάζουν';
 
   @override
-  String doYouWantToRemoveCoupon(String name) => 'Θέλετε να αφαιρέσετε αυτό το κουπόνι $name;';
+  String doYouWantToRemoveCoupon(String name) =>
+      'Θέλετε να αφαιρέσετε αυτό το κουπόνι $name;';
 
   @override
   String get noSubscriptionHistoryFound => 'Δεν βρέθηκε ιστορικό συνδρομών';
@@ -1431,7 +1540,8 @@ class LanguageEl extends BaseLanguage {
   String get linkTv => 'Σύνδεση TV';
 
   @override
-  String get youHaveBeenLoggedOutSuccessfully => 'Έχετε αποσυνδεθεί με επιτυχία';
+  String get youHaveBeenLoggedOutSuccessfully =>
+      'Έχετε αποσυνδεθεί με επιτυχία';
 
   @override
   String get rented => 'ΕΝΟΙΚΙΑΣΤΗΚΕ';
@@ -1453,16 +1563,20 @@ class LanguageEl extends BaseLanguage {
       'Έχετε $availableFor ${availableFor > 1 ? 'ημέρες' : 'ημερή'} για να ξεκινήσετε την παρακολούθηση μετά την ενοικίαση. Θα έχετε $duration ${duration > 1 ? 'ημέρες' : 'ημερή'} για να ολοκληρώσετε αφού ξεκινήσετε τη ροή.';
 
   @override
-  String youCanWatchThis(int duration) => 'Μπορείτε να παρακολουθήσετε αυτό το περιεχόμενο πολλές φορές κατά τη διάρκεια της περιόδου των $duration ${duration > 1 ? 'ημέρες' : 'ημερή'}.';
+  String youCanWatchThis(int duration) =>
+      'Μπορείτε να παρακολουθήσετε αυτό το περιεχόμενο πολλές φορές κατά τη διάρκεια της περιόδου των $duration ${duration > 1 ? 'ημέρες' : 'ημερή'}.';
 
   @override
-  String get thisIsANonRefundable => 'Αυτή είναι μια μη επιστρεφόμενη συναλλαγή.';
+  String get thisIsANonRefundable =>
+      'Αυτή είναι μια μη επιστρεφόμενη συναλλαγή.';
 
   @override
-  String get thisContentIsOnly => 'Αυτό το περιεχόμενο είναι διαθέσιμο μόνο για ενοικίαση και δεν περιλαμβάνεται στη συνδρομή Premium.';
+  String get thisContentIsOnly =>
+      'Αυτό το περιεχόμενο είναι διαθέσιμο μόνο για ενοικίαση και δεν περιλαμβάνεται στη συνδρομή Premium.';
 
   @override
-  String get youCanPlayYour => 'Μπορείτε να αναπαράγετε το περιεχόμενό σας σε υποστηριζόμενες συσκευές.';
+  String get youCanPlayYour =>
+      'Μπορείτε να αναπαράγετε το περιεχόμενό σας σε υποστηριζόμενες συσκευές.';
 
   @override
   String get validity => 'Ισχύς';
@@ -1501,7 +1615,8 @@ class LanguageEl extends BaseLanguage {
   String get byRentingYouAgreeToOur => 'Με την ενοικίαση συμφωνείτε με τους ';
 
   @override
-  String get pleaseAgreeToThe => 'Παρακαλώ συμφωνήστε με τους Όρους Χρήσης πριν συνεχίσετε.';
+  String get pleaseAgreeToThe =>
+      'Παρακαλώ συμφωνήστε με τους Όρους Χρήσης πριν συνεχίσετε.';
 
   @override
   String enjoyUntilDays(int days) => 'Απολαύστε για $days ημέρες';
@@ -1510,7 +1625,8 @@ class LanguageEl extends BaseLanguage {
   String get beginWatching => 'Έναρξη παρακολούθησης';
 
   @override
-  String doYouConfirmThis(String movieName) => 'Επιβεβαιώνετε την ενοικίαση του $movieName;';
+  String doYouConfirmThis(String movieName) =>
+      'Επιβεβαιώνετε την ενοικίαση του $movieName;';
 
   @override
   String get unlockedVideo => 'Ξεκλειδωμένο βίντεο';
@@ -1519,7 +1635,8 @@ class LanguageEl extends BaseLanguage {
   String get info => 'Πληροφορίες';
 
   @override
-  String confirmDeleteDownload(String title) => 'Θέλετε να διαγράψετε το $title από τις λήψεις σας;';
+  String confirmDeleteDownload(String title) =>
+      'Θέλετε να διαγράψετε το $title από τις λήψεις σας;';
 
   @override
   String get payPerView => 'Pay Per View';
@@ -1538,6 +1655,12 @@ class LanguageEl extends BaseLanguage {
 
   @override
   String get quality => 'Ποιότητα';
+
+  @override
+  String get audio => 'Ήχος';
+
+  @override
+  String get audioAndQuality => 'Ήχος & Ποιότητα';
 
   @override
   String get subtitle => 'Υπότιτλοι';
@@ -1564,13 +1687,15 @@ class LanguageEl extends BaseLanguage {
   String get tvLinkedSuccessfully => 'Η TV συνδέθηκε με επιτυχία!';
 
   @override
-  String get cameraPermissionDenied => 'Η άδεια κάμερας απορρίφθηκε. Παρακαλώ ενεργοποιήστε την στις ρυθμίσεις.';
+  String get cameraPermissionDenied =>
+      'Η άδεια κάμερας απορρίφθηκε. Παρακαλώ ενεργοποιήστε την στις ρυθμίσεις.';
 
   @override
   String get advertisement => 'Διαφήμιση';
 
   @override
-  String get castConnectInfo => 'Βεβαιωθείτε ότι η συσκευή Chromecast είναι ενεργοποιημένη και συνδεδεμένη στο ίδιο δίκτυο Wi-Fi.';
+  String get castConnectInfo =>
+      'Βεβαιωθείτε ότι η συσκευή Chromecast είναι ενεργοποιημένη και συνδεδεμένη στο ίδιο δίκτυο Wi-Fi.';
 
   @override
   String get connect => 'Σύνδεση';
@@ -1585,10 +1710,12 @@ class LanguageEl extends BaseLanguage {
   String get readyToCastToYourDevice => 'Έτοιμο για μετάδοση στη συσκευή σας';
 
   @override
-  String get castSupportInfo => 'Η μετάδοση υποστηρίζεται μόνο για βίντεο τύπου URL, HLS, ή τοπικά. Άλλες μορφές δεν υποστηρίζονται για μετάδοση.';
+  String get castSupportInfo =>
+      'Η μετάδοση υποστηρίζεται μόνο για βίντεο τύπου URL, HLS, ή τοπικά. Άλλες μορφές δεν υποστηρίζονται για μετάδοση.';
 
   @override
-  String doYouConfirmThisPlanWithPlanName(String planName) => 'Επιβεβαιώνετε αυτό το πρόγραμμα $planName;';
+  String doYouConfirmThisPlanWithPlanName(String planName) =>
+      'Επιβεβαιώνετε αυτό το πρόγραμμα $planName;';
 
   @override
   String get pinVerifiedSuccessfully => 'Το PIN επαληθεύτηκε με επιτυχία';
@@ -1625,7 +1752,8 @@ class LanguageEl extends BaseLanguage {
       'Έχετε $duration ${duration > 1 ? 'ημέρες' : 'ημέρα'} για να ξεκινήσετε την παρακολούθηση μετά την αγορά. Απεριόριστη ισχύς για να ολοκληρώσετε την παρακολούθηση από τη στιγμή που ξεκινάτε το streaming.';
 
   @override
-  String get purchaseInfo2 => 'Μπορείτε να παρακολουθήσετε αυτό το περιεχόμενο πολλές φορές μέχρι την ημερομηνία λήξης.';
+  String get purchaseInfo2 =>
+      'Μπορείτε να παρακολουθήσετε αυτό το περιεχόμενο πολλές φορές μέχρι την ημερομηνία λήξης.';
 
   @override
   String get address => 'Διευθύνση';
@@ -1634,28 +1762,33 @@ class LanguageEl extends BaseLanguage {
   String get subscriptionSuccessful => 'Η συνδρομή ενεργοποιήθηκε';
 
   @override
-  String get subscriptionSuccessfulSubtitle => 'Η συνδρομή σας είναι πλέον ενεργή';
+  String get subscriptionSuccessfulSubtitle =>
+      'Η συνδρομή σας είναι πλέον ενεργή';
 
   @override
-  String get startEnjoyingContent => 'Μπορείτε τώρα να απολαύσετε ατελείωτη ροή και όλες τις δυνατότητες premium';
+  String get startEnjoyingContent =>
+      'Μπορείτε τώρα να απολαύσετε ατελείωτη ροή και όλες τις δυνατότητες premium';
 
   @override
   String get noGenresFound => 'Δεν βρέθηκαν είδη';
 
   @override
-  String get noGenresAvailableSubtitle => 'Δεν υπάρχουν διαθέσιμα είδη αυτή τη στιγμή';
+  String get noGenresAvailableSubtitle =>
+      'Δεν υπάρχουν διαθέσιμα είδη αυτή τη στιγμή';
 
   @override
   String get noSubscriptionPlans => 'Δεν βρέθηκαν σχέδια συνδρομής';
 
   @override
-  String get noSubscriptionPlansSubtitle => 'Δεν υπάρχουν διαθέσιμα σχέδια συνδρομής αυτή τη στιγμή';
+  String get noSubscriptionPlansSubtitle =>
+      'Δεν υπάρχουν διαθέσιμα σχέδια συνδρομής αυτή τη στιγμή';
 
   @override
   String get noContentFound => 'Δεν βρέθηκε περιεχόμενο';
 
   @override
-  String get noContentMatchesFilter => 'Δεν υπάρχει περιεχόμενο που να ταιριάζει με τα κριτήρια φίλτρού σας';
+  String get noContentMatchesFilter =>
+      'Δεν υπάρχει περιεχόμενο που να ταιριάζει με τα κριτήρια φίλτρού σας';
 
   @override
   String get movie => 'Ταινία';
@@ -1670,7 +1803,8 @@ class LanguageEl extends BaseLanguage {
   String get episodes => 'Επεισόδια';
 
   @override
-  String get cancelSubscription => 'Είστε βέβαιοι ότι θέλετε να ακυρώσετε τη συνδρομή σας;';
+  String get cancelSubscription =>
+      'Είστε βέβαιοι ότι θέλετε να ακυρώσετε τη συνδρομή σας;';
 
   @override
   String get coupanApplied => 'Το κουπόνι εφαρμόστηκε με επιτυχία';
@@ -1682,22 +1816,27 @@ class LanguageEl extends BaseLanguage {
   String get controlYourDevices => "Ελέγξτε τις συσκευές σας";
 
   @override
-  String resendOtpCountText(int count) => 'Μπορείτε να στείλετε ξανά το OTP σε $count δευτερόλεπτα.';
+  String resendOtpCountText(int count) =>
+      'Μπορείτε να στείλετε ξανά το OTP σε $count δευτερόλεπτα.';
 
   @override
   String get comingSoonOn => 'Προσεχώς στις';
 
   @override
-  String get noComingSoonContentAvailable => 'Δεν υπάρχει διαθέσιμο περιεχόμενο που έρχεται σύντομα.';
+  String get noComingSoonContentAvailable =>
+      'Δεν υπάρχει διαθέσιμο περιεχόμενο που έρχεται σύντομα.';
 
   @override
-  String get noComingSoonMovieAvailable => 'Δεν υπάρχει διαθέσιμη ταινία που έρχεται σύντομα.';
+  String get noComingSoonMovieAvailable =>
+      'Δεν υπάρχει διαθέσιμη ταινία που έρχεται σύντομα.';
 
   @override
-  String get noComingSoonTvShowAvailable => 'Δεν υπάρχει διαθέσιμη τηλεοπτική εκπομπή που έρχεται σύντομα.';
+  String get noComingSoonTvShowAvailable =>
+      'Δεν υπάρχει διαθέσιμη τηλεοπτική εκπομπή που έρχεται σύντομα.';
 
   @override
-  String get noComingSoonVideoAvailable => 'Δεν υπάρχει διαθέσιμο βίντεο που έρχεται σύντομα.';
+  String get noComingSoonVideoAvailable =>
+      'Δεν υπάρχει διαθέσιμο βίντεο που έρχεται σύντομα.';
 
   @override
   String get clips => 'Κλιπ';
@@ -1706,10 +1845,12 @@ class LanguageEl extends BaseLanguage {
   String get checkBackAgainShortly => 'Ελέγξτε ξανά σύντομα';
 
   @override
-  String get contentInformationIsNotAvailable => 'Η πληροφορία του περιεχομένου δεν είναι διαθέσιμη';
+  String get contentInformationIsNotAvailable =>
+      'Η πληροφορία του περιεχομένου δεν είναι διαθέσιμη';
 
   @override
-  String get episodesAreNotAvailableYet => 'Τα επεισόδια δεν είναι διαθέσιμα ακόμη';
+  String get episodesAreNotAvailableYet =>
+      'Τα επεισόδια δεν είναι διαθέσιμα ακόμη';
 
   @override
   String get noContentDetails => 'Χωρίς λεπτομέρειες περιεχομένου';
@@ -1718,7 +1859,8 @@ class LanguageEl extends BaseLanguage {
   String get stayTuned => 'Παρακολουθήστε τις ενημερώσεις';
 
   @override
-  String get weArePreparingExcitingEpisodesForThisSeason => 'Προετοιμαζόμαστε εντυπωσιακά επεισόδια για αυτό το έτος';
+  String get weArePreparingExcitingEpisodesForThisSeason =>
+      'Προετοιμαζόμαστε εντυπωσιακά επεισόδια για αυτό το έτος';
 
   @override
   String get ad => 'Διαφήμιση';
@@ -1727,25 +1869,30 @@ class LanguageEl extends BaseLanguage {
   String get adsLoadingIn => 'Φόρτωση διαφημίσεων';
 
   @override
-  String get browseAndRentContentToWatchInstantly => 'Περιηγηθείτε και ενοικιάστε περιεχόμενο για άμεση παρακολούθηση';
+  String get browseAndRentContentToWatchInstantly =>
+      'Περιηγηθείτε και ενοικιάστε περιεχόμενο για άμεση παρακολούθηση';
 
   @override
-  String get byCreatingAnAccountYouAgreeTo => 'Με την δημιουργία ενός λογαριασμού συμφωνείτε με τους';
+  String get byCreatingAnAccountYouAgreeTo =>
+      'Με την δημιουργία ενός λογαριασμού συμφωνείτε με τους';
 
   @override
   String get categories => 'Κατηγορίες';
 
   @override
-  String get channelInformationIsNotAvailable => 'Η πληροφορία του καναλιού δεν είναι διαθέσιμη';
+  String get channelInformationIsNotAvailable =>
+      'Η πληροφορία του καναλιού δεν είναι διαθέσιμη';
 
   @override
-  String get chooseTheQualityForDownloadingThisContent => 'Επιλέξτε την ποιότητα για την λήψη αυτού του περιεχομένου';
+  String get chooseTheQualityForDownloadingThisContent =>
+      'Επιλέξτε την ποιότητα για την λήψη αυτού του περιεχομένου';
 
   @override
   String get deviceLogins => 'Συσκευές σύνδεσης';
 
   @override
-  String get downloadContentToWatchOffline => 'Λήψη περιεχομένου για παρακολούθηση εκτός σύνδεσης';
+  String get downloadContentToWatchOffline =>
+      'Λήψη περιεχομένου για παρακολούθηση εκτός σύνδεσης';
 
   @override
   String get inAppPurchase => 'Αγορά σε εφαρμογή';
@@ -1754,22 +1901,26 @@ class LanguageEl extends BaseLanguage {
   String get isAvailableInThisCategory => 'Διαθέσιμο σε αυτήν την κατηγορία';
 
   @override
-  String get noCastOrCrewMembersAvailable => 'Δεν υπάρχουν ηθοποιοί ή σκηνοθέτες διαθέσιμοι';
+  String get noCastOrCrewMembersAvailable =>
+      'Δεν υπάρχουν ηθοποιοί ή σκηνοθέτες διαθέσιμοι';
 
   @override
   String get noChannelDetails => 'Χωρίς λεπτομέρειες καναλιού';
 
   @override
-  String get noChannelsAreAvailableInThisCategory => 'Δεν υπάρχουν κανάλια διαθέσιμα σε αυτήν την κατηγορία';
+  String get noChannelsAreAvailableInThisCategory =>
+      'Δεν υπάρχουν κανάλια διαθέσιμα σε αυτήν την κατηγορία';
 
   @override
   String get noChannelsFound => 'Δεν βρέθηκαν κανάλια';
 
   @override
-  String get noContentAvailableInThisGenre => 'Δεν υπάρχει περιεχόμενο διαθέσιμο σε αυτήν την κατηγορία';
+  String get noContentAvailableInThisGenre =>
+      'Δεν υπάρχει περιεχόμενο διαθέσιμο σε αυτήν την κατηγορία';
 
   @override
-  String get noContentInGenre => 'Δεν υπάρχει περιεχόμενο σε αυτήν την κατηγορία';
+  String get noContentInGenre =>
+      'Δεν υπάρχει περιεχόμενο σε αυτήν την κατηγορία';
 
   @override
   String get noDownloadsFound => 'Δεν βρέθηκαν λήψεις';
@@ -1778,13 +1929,16 @@ class LanguageEl extends BaseLanguage {
   String get noLiveTvChannels => 'Δεν βρέθηκαν ζωντανές τηλεοπτικές εκπομπές';
 
   @override
-  String get noLiveTvChannelsAreCurrentlyAvailable => 'Δεν υπάρχουν ζωντανές τηλεοπτικές εκπομπές διαθέσιμες αυτή τη στιγμή';
+  String get noLiveTvChannelsAreCurrentlyAvailable =>
+      'Δεν υπάρχουν ζωντανές τηλεοπτικές εκπομπές διαθέσιμες αυτή τη στιγμή';
 
   @override
-  String noMoviesOrTvShowsFeaturing(String name) => 'Δεν υπάρχουν ταινίες ή τηλεοπτικές εκπομπές με $name';
+  String noMoviesOrTvShowsFeaturing(String name) =>
+      'Δεν υπάρχουν ταινίες ή τηλεοπτικές εκπομπές με $name';
 
   @override
-  String get noPayPerViewContent => 'Δεν υπάρχει περιεχόμενο pay per view διαθέσιμο';
+  String get noPayPerViewContent =>
+      'Δεν υπάρχει περιεχόμενο pay per view διαθέσιμο';
 
   @override
   String get noPeopleFound => 'Δεν βρέθηκαν άνθρωποι';
@@ -1833,16 +1987,19 @@ class LanguageEl extends BaseLanguage {
   String get unableToLoadDownload => 'Δεν είναι δυνατή η φόρτωση της λήψης';
 
   @override
-  String get uploadCustomProfileImage => 'Υποβολή προσαρμοσμένου εικονιδίου προφίλ';
+  String get uploadCustomProfileImage =>
+      'Υποβολή προσαρμοσμένου εικονιδίου προφίλ';
 
   @override
   String get visitAdvertiser => 'Επισκεφθείτε τον διαφημιστή';
 
   @override
-  String get youCanNotRevertThisActionLater => 'Δεν μπορείτε να ανακαλέσετε αυτήν την ενέργεια αργότερα';
+  String get youCanNotRevertThisActionLater =>
+      'Δεν μπορείτε να ανακαλέσετε αυτήν την ενέργεια αργότερα';
 
   @override
-  String get youDoNotHaveAccessToWatch => 'Δεν έχετε πρόσβαση να παρακολουθήσετε αυτό το περιεχόμενο';
+  String get youDoNotHaveAccessToWatch =>
+      'Δεν έχετε πρόσβαση να παρακολουθήσετε αυτό το περιεχόμενο';
 
   @override
   String get yourCurrentPlanSupports => 'Το τρέχον σας πρόγραμμα υποστηρίζει';
@@ -1860,93 +2017,87 @@ class LanguageEl extends BaseLanguage {
   String get noMoviesAvailable => 'Δεν υπάρχουν διαθέσιμες ταινίες';
 
   @override
-  String get noTvShowsAvailable => 'Δεν υπάρχουν διαθέσιμες τηλεοπτικές εκπομπές';
+  String get noTvShowsAvailable =>
+      'Δεν υπάρχουν διαθέσιμες τηλεοπτικές εκπομπές';
 
   @override
   String get noVideosAvailable => 'Δεν υπάρχουν διαθέσιμα βίντεο';
 
   @override
-  String noContentAvailableInContentType(String content, String contentType) => 'Δεν υπάρχει διαθέσιμο $contentType στο $content';
+  String noContentAvailableInContentType(String content, String contentType) =>
+      'Δεν υπάρχει διαθέσιμο $contentType στο $content';
 
   @override
   String get unableToDownloadFilePleaseTryAgainLater =>
       'Δεν είναι δυνατή η λήψη του αρχείου. Παρακαλώ δοκιμάστε ξανά αργότερα.';
-  
+
   @override
   String sorryCouldntShareThis(String type) =>
       'Λυπούμαστε, δεν ήταν δυνατή η κοινή χρήση αυτού του $type';
-  
+
   @override
   String errorWhileMonitoringDownloadUpdates(String error) =>
       'Σφάλμα κατά την παρακολούθηση ενημερώσεων λήψης: $error';
-  
+
   @override
   String get pleaseSelectACastingDeviceFirst =>
       'Παρακαλώ επιλέξτε πρώτα μια συσκευή μετάδοσης';
-  
+
   @override
   String get noVideoUrlAvailableForCasting =>
       'Δεν υπάρχει διαθέσιμη διεύθυνση URL βίντεο για μετάδοση';
-  
+
   @override
   String get contentTypeNotAvailableForCasting =>
       'Ο τύπος περιεχομένου δεν είναι διαθέσιμος για μετάδοση';
-  
+
   @override
-  String get invalidVideoUrlFormat =>
-      'Μη έγκυρη μορφή URL βίντεο';
-  
+  String get invalidVideoUrlFormat => 'Μη έγκυρη μορφή URL βίντεο';
+
   @override
   String get failedInitiateRazorpayPayment =>
       'Αποτυχία έναρξης πληρωμής μέσω Razorpay';
-  
+
   @override
   String cantFindPlanOnStore(String planName, String storeName) =>
       'Δεν είναι δυνατή η εύρεση του $planName στο $storeName';
-  
+
   @override
   String get paymentNotCapturedContactSupport =>
       'Η πληρωμή δεν ολοκληρώθηκε. Παρακαλώ επικοινωνήστε με την υποστήριξη.';
-  
+
   @override
-  String get downloadDeletedSuccessfully =>
-      'Η λήψη διαγράφηκε με επιτυχία!';
-  
+  String get downloadDeletedSuccessfully => 'Η λήψη διαγράφηκε με επιτυχία!';
+
   @override
-  String get pleaseSelectRating =>
-      'Παρακαλώ επιλέξτε βαθμολογία';
-  
+  String get pleaseSelectRating => 'Παρακαλώ επιλέξτε βαθμολογία';
+
   @override
   String get downloadsAllowedOnWifiOnly =>
       'Οι λήψεις επιτρέπονται μόνο μέσω Wi-Fi. Παρακαλώ συνδεθείτε σε Wi-Fi ή απενεργοποιήστε αυτήν τη ρύθμιση.';
-  
+
   @override
   String get thisContentIsNotDownloadable =>
       'Λυπούμαστε! Αυτό το περιεχόμενο δεν είναι διαθέσιμο για λήψη';
-  
-  @override
-  String get failedToStartDownload =>
-      'Αποτυχία έναρξης λήψης';
-  
-  @override
-  String get failedToResumeDownload =>
-      'Αποτυχία συνέχισης λήψης';
-  
-  @override
-  String get downloadCancelled =>
-      'Η λήψη ακυρώθηκε';
-  
-  @override
-  String get downloadCompleted =>
-      'Η λήψη ολοκληρώθηκε';
-  
-  @override
-  String get thePasswordDoesNotMatch =>
-      'Ο κωδικός πρόσβασης δεν ταιριάζει';
-  
-  @override
-  String get deleteMultipleDownload => 'Θέλετε να διαγράψετε το επιλεγμένο περιεχόμενο από τις λήψεις;';
 
+  @override
+  String get failedToStartDownload => 'Αποτυχία έναρξης λήψης';
+
+  @override
+  String get failedToResumeDownload => 'Αποτυχία συνέχισης λήψης';
+
+  @override
+  String get downloadCancelled => 'Η λήψη ακυρώθηκε';
+
+  @override
+  String get downloadCompleted => 'Η λήψη ολοκληρώθηκε';
+
+  @override
+  String get thePasswordDoesNotMatch => 'Ο κωδικός πρόσβασης δεν ταιριάζει';
+
+  @override
+  String get deleteMultipleDownload =>
+      'Θέλετε να διαγράψετε το επιλεγμένο περιεχόμενο από τις λήψεις;';
 
   @override
   String profileLimitIncreaseMessage({
@@ -1960,6 +2111,80 @@ class LanguageEl extends BaseLanguage {
   }
 
   @override
-  String get contectRestrictedForKidProfile => 'Αυτό το περιεχόμενο δεν επιτρέπεται σε παιδικό προφίλ.';
+  String get contectRestrictedForKidProfile =>
+      'Αυτό το περιεχόμενο δεν επιτρέπεται σε παιδικό προφίλ.';
 
+  @override
+  String get recommendedForYou => 'Προτεινόμενα για εσάς';
+
+  @override
+  String get shortDrama => 'Μικρό Δράμα';
+
+  @override
+  String get yourNextObsessionStartsHere => 'Η επόμενη εμμονή σας ξεκινά εδώ';
+
+  @override
+  String get shortDramasIntenseStorytelling =>
+      'Μικρά δράματα, έντονη αφήγηση, συναισθηματικό ρομάντζο και συναρπαστικές ανατροπές. Ανακαλύψτε ψυχαγωγία φτιαγμένη για κάθε διάθεση.';
+
+  @override
+  String get exploreMore => 'Εξερευνήστε περισσότερα';
+
+  @override
+  String get dramaForYou => 'Δράμα για εσάς';
+
+  @override
+  String get noEpisodesAvailable => 'Δεν υπάρχουν διαθέσιμα επεισόδια';
+
+  @override
+  String get audioLanguage => 'Γλώσσα ήχου';
+
+  @override
+  String get cantPlayThisTitleRightNow =>
+      'Δεν είναι δυνατή η αναπαραγωγή αυτού του τίτλου αυτή τη στιγμή';
+
+  @override
+  String get goBack => 'Πίσω';
+
+  @override
+  String get unableToFindThisDramaForPlayback =>
+      'Δεν είναι δυνατή η εύρεση αυτού του δράματος για αναπαραγωγή.';
+
+  @override
+  String get pleaseCheckYourConnectionAndTryAgain =>
+      'Παρακαλούμε ελέγξτε τη σύνδεσή σας και δοκιμάστε ξανά.';
+
+  @override
+  String get seasons => 'Εποχές';
+
+  @override
+  String get mute => 'Σίγαση';
+
+  @override
+  String get unmute => 'Κατάργηση σίγασης';
+
+  @override
+  String get noInternetConnection => 'Δεν υπάρχει σύνδεση στο Διαδίκτυο';
+
+  @override
+  String get continueWatchingForYou => 'Συνεχίστε την προβολή για εσάς';
+  
+  @override
+  String get playbackErrorGeneric => 'Σφάλμα αναπαραγωγής: Γενικό σφάλμα. Παρακαλώ δοκιμάστε ξανά.';
+  
+  @override
+  String get playbackErrorSessionExpired => 'Σφάλμα αναπαραγωγής: Η περίοδος σύνδεσης έχει λήξει. Παρακαλώ συνδεθείτε ξανά και δοκιμάστε ξανά.';
+  
+  @override
+  String get playbackErrorTokenExpired => 'Σφάλμα αναπαραγωγής: Η άδεια έχει λήξει. Παρακαλώ δοκιμάστε ξανά αυτό το επεισόδιο.';
+  
+  @override
+  String get playbackErrorVideoPluginUnavailable => 'Σφάλμα αναπαραγωγής: Το πρόσθετο αναπαραγωγής βίντεο δεν είναι διαθέσιμο. Παρακαλώ επανεκκινήστε την εφαρμογή και δοκιμάστε ξανά.';
+
+  @override
+  String get less => 'Λιγότερα';
+
+  @override
+  String get more => 'Διαβάστε περισσότερα';
 }
+

@@ -1,26 +1,128 @@
 {
   "project_info": {
-    "project_number": "548921580556",
-    "project_id": "tvonline-5b627",
-    "storage_bucket": "tvonline-5b627.firebasestorage.app"
+    "project_number": "YOUR_PROJECT_NUMBER",
+    "firebase_url": "YOUR_FIREBASE_URL",
+    "project_id": "YOUR_PROJECT_ID",
+    "storage_bucket": "YOUR_STORAGE_BUCKET"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:548921580556:android:0aabdebb171da62e31a229",
+        "mobilesdk_app_id": "YOUR_ANDROID_MOBILESDK_APP_ID",
         "android_client_info": {
           "package_name": "com.iqonic.streamitlaravel"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "YOUR_ANDROID_OAUTH_CLIENT_ID_1",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqonic.streamitlaravel",
+            "certificate_hash": "YOUR_CERTIFICATE_HASH_1"
+          }
+        },
+        {
+          "client_id": "YOUR_ANDROID_OAUTH_CLIENT_ID_2",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqonic.streamitlaravel",
+            "certificate_hash": "YOUR_CERTIFICATE_HASH_2"
+          }
+        },
+        {
+          "client_id": "YOUR_ANDROID_OAUTH_CLIENT_ID_3",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqonic.streamitlaravel",
+            "certificate_hash": "YOUR_CERTIFICATE_HASH_3"
+          }
+        },
+        {
+          "client_id": "YOUR_ANDROID_OAUTH_CLIENT_ID_4",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
-          "current_key": "AIzaSyCV5VU2YBfV3JCwCoqB9lBGlmQZZxY-alM"
+          "current_key": "YOUR_ANDROID_API_KEY"
         }
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "YOUR_IOS_OAUTH_CLIENT_ID_1",
+              "client_type": 3
+            },
+            {
+              "client_id": "YOUR_IOS_OAUTH_CLIENT_ID_2",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.iqonic.streamitlaravel"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "YOUR_TV_ANDROID_MOBILESDK_APP_ID",
+        "android_client_info": {
+          "package_name": "com.iqonic.streamitlaraveltv"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "YOUR_TV_ANDROID_OAUTH_CLIENT_ID_1",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqonic.streamitlaraveltv",
+            "certificate_hash": "YOUR_TV_CERTIFICATE_HASH_1"
+          }
+        },
+        {
+          "client_id": "YOUR_TV_ANDROID_OAUTH_CLIENT_ID_2",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqonic.streamitlaraveltv",
+            "certificate_hash": "YOUR_TV_CERTIFICATE_HASH_2"
+          }
+        },
+        {
+          "client_id": "YOUR_TV_ANDROID_OAUTH_CLIENT_ID_3",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.iqonic.streamitlaraveltv",
+            "certificate_hash": "YOUR_TV_CERTIFICATE_HASH_3"
+          }
+        },
+        {
+          "client_id": "YOUR_TV_ANDROID_OAUTH_CLIENT_ID_4",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "YOUR_TV_ANDROID_API_KEY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "YOUR_TV_IOS_OAUTH_CLIENT_ID_1",
+              "client_type": 3
+            },
+            {
+              "client_id": "YOUR_TV_IOS_OAUTH_CLIENT_ID_2",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.iqonic.streamitlaravel"
+              }
+            }
+          ]
         }
       }
     }

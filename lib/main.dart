@@ -15,11 +15,15 @@ import 'package:media_kit/media_kit.dart';
 import 'package:nb_utils/nb_utils.dart';
 import 'package:streamit_laravel/locale/language_en.dart';
 import 'package:streamit_laravel/routes/app_routes.dart';
+import 'package:streamit_laravel/screens/splash_controller.dart';
+import 'package:streamit_laravel/screens/splash_screen.dart';
 import 'package:streamit_laravel/screens/auth/model/app_configuration_res.dart';
 import 'package:streamit_laravel/screens/auth/model/login_response.dart';
 import 'package:streamit_laravel/screens/coming_soon/model/coming_soon_response.dart';
 import 'package:streamit_laravel/screens/home/model/dashboard_res_model.dart';
 import 'package:streamit_laravel/screens/live_tv/model/live_tv_dashboard_response.dart';
+import 'package:streamit_laravel/addon_bridge/short_drama/short_drama_bridge.dart';
+import 'package:streamit_laravel/addon_registration.dart';
 import 'package:streamit_laravel/services/encryption_service.dart';
 import 'package:streamit_laravel/services/hive_service.dart';
 import 'package:streamit_laravel/services/in_app_purhcase_service.dart';
@@ -109,7 +113,7 @@ Future<void> setFirebaseConfigData() async {
     final androidBaseUrl = reviewParameterMap['androidBaseUrl'];
     final iosBaseUrl = reviewParameterMap['iosBaseUrl'];
     final versionName = (await getPackageInfo()).versionName;
-    if(versionName == null || versionName.isEmpty) return;
+    if(versionName == null || versionName.isEmpty) return;                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
     if(isAndroidInReview && Platform.isAndroid && versionName == androidVersion) {
       isInReview = true;
       DOMAIN_URL = androidBaseUrl;
@@ -141,6 +145,7 @@ Future<void> main() async {
   // Initialize local storage
   await LocalStorage.init();
   hiveService.init();
+  ShortDramaAddon.register();
 
   appButtonBackgroundColorGlobal = appColorPrimary;
   defaultAppButtonRadius = defaultRadius;
@@ -167,6 +172,9 @@ Future<void> main() async {
   Map<String, dynamic>? cachedLoginUserDataKey = await getJsonFromLocal(SharedPreferenceConst.USER_DATA);
   if (cachedLoginUserDataKey != null) {
     loginUserData(UserData.fromJson(cachedLoginUserDataKey));
+    if ((loginUserData.value.shortDramaSessionToken ?? '').isNotEmpty) {
+      ShortDramaBridge.restoreSessionToken(loginUserData.value.shortDramaSessionToken);
+    }
   }
 
   SystemChrome.setSystemUIOverlayStyle(
@@ -184,8 +192,35 @@ Future<void> main() async {
   runApp(const MyApp());
 }
 
-class MyApp extends StatelessWidget {
+class MyApp extends StatefulWidget {
   const MyApp({super.key});
+
+  @override
+  State<MyApp> createState() => _MyAppState();
+}
+
+class _MyAppState extends State<MyApp> with WidgetsBindingObserver {
+  @override
+  void initState() {
+    super.initState();
+    WidgetsBinding.instance.addObserver(this);
+  }
+
+  @override
+  void dispose() {
+    WidgetsBinding.instance.removeObserver(this);
+    super.dispose();
+  }
+
+  @override
+  Future<bool> didPushRouteInformation(RouteInformation routeInformation) async {
+    final deepLink = routeInformation.uri.toString();
+    if (deepLink.isNotEmpty) {
+      Get.find<SplashScreenController>().handleDeepLinking(deepLink: deepLink);
+      return true;
+    }
+    return super.didPushRouteInformation(routeInformation);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -197,6 +232,36 @@ class MyApp extends StatelessWidget {
       defaultTransition: Transition.noTransition,
       supportedLocales: LanguageDataModel.languageLocales(),
       getPages: AppRoutes.routes,
+      onGenerateInitialRoutes: (String initialRoute) {
+        final knownNames = AppRoutes.routes.map((p) => p.name).toList();
+        if (initialRoute.isNotEmpty && knownNames.contains(initialRoute)) {
+          try {
+            final getPage = AppRoutes.routes.firstWhere((p) => p.name == initialRoute);
+            getPage.binding?.dependencies();
+            return [
+              GetPageRoute(
+                page: getPage.page,
+                routeName: initialRoute,
+                binding: getPage.binding,
+              ),
+            ];
+          } catch (e, st) {
+            debugPrint('MyApp.onGenerateInitialRoutes: failed to build route for "$initialRoute": $e\n$st');
+          }
+        }
+        return [
+          GetPageRoute(
+            page: () => SplashScreen(deepLink: initialRoute, link: true),
+            routeName: AppRoutes.splash,
+            binding: AppBindings(),
+          ),
+        ];
+      },
+      unknownRoute: GetPage(
+        name: AppRoutes.splash,
+        page: () => SplashScreen(deepLink: '', link: false),
+        binding: AppBindings(),
+      ),
       localizationsDelegates: const [
         AppLocalizations(),
         GlobalMaterialLocalizations.delegate,

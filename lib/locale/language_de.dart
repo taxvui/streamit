@@ -43,7 +43,8 @@ class LanguageDe extends BaseLanguage {
   String get reload => 'Neu laden';
 
   @override
-  String get pressBackAgainToExitApp => 'Drücken Sie erneut „Zurück“, um die App zu verlassen';
+  String get pressBackAgainToExitApp =>
+      'Drücken Sie erneut „Zurück“, um die App zu verlassen';
 
   @override
   String get invalidUrl => 'Ungültige URL';
@@ -55,7 +56,8 @@ class LanguageDe extends BaseLanguage {
   String get delete => 'Löschen';
 
   @override
-  String get demoUserCannotBeGrantedForThis => 'Für diese Aktion kann kein Demo-Benutzer zugelassen werden';
+  String get demoUserCannotBeGrantedForThis =>
+      'Für diese Aktion kann kein Demo-Benutzer zugelassen werden';
 
   @override
   String get somethingWentWrong => 'Etwas ist schief gelaufen';
@@ -73,10 +75,12 @@ class LanguageDe extends BaseLanguage {
   String get unlikedSuccessfully => 'Unliked successfully';
 
   @override
-  String get wouldYouLikeToSetProfilePhotoAs => 'Möchten Sie dieses Bild als Ihr Profilfoto festlegen?';
+  String get wouldYouLikeToSetProfilePhotoAs =>
+      'Möchten Sie dieses Bild als Ihr Profilfoto festlegen?';
 
   @override
-  String get yourConfirmPasswordDoesnT => 'Ihr Bestätigungspasswort stimmt nicht mit dem Passwort überein!';
+  String get yourConfirmPasswordDoesnT =>
+      'Ihr Bestätigungspasswort stimmt nicht mit dem Passwort überein!';
 
   @override
   String get yes => 'Ja';
@@ -103,7 +107,8 @@ class LanguageDe extends BaseLanguage {
   String get emailIsARequiredField => 'E-Mail ist ein Pflichtfeld';
 
   @override
-  String get pleaseEnterValidEmailAddress => 'Bitte geben Sie eine gültige E-Mail-Adresse ein!!';
+  String get pleaseEnterValidEmailAddress =>
+      'Bitte geben Sie eine gültige E-Mail-Adresse ein!!';
 
   @override
   String get signIn => 'Anmelden';
@@ -145,28 +150,36 @@ class LanguageDe extends BaseLanguage {
   String get logIn => 'EINLOGGEN';
 
   @override
-  String get stayTunedNoNew => 'Bleiben Sie dran! Keine neuen Benachrichtigungen.';
+  String get stayTunedNoNew =>
+      'Bleiben Sie dran! Keine neuen Benachrichtigungen.';
 
   @override
-  String get noNewNotificationsAt => 'Im Moment keine neuen Benachrichtigungen. Wir halten Sie auf dem Laufenden, wenn es ein Update gibt';
+  String get noNewNotificationsAt =>
+      'Im Moment keine neuen Benachrichtigungen. Wir halten Sie auf dem Laufenden, wenn es ein Update gibt';
 
   @override
-  String get walkthroughTitle1 => 'Auf jedem Gerät ansehen: Genießen Sie unsere Inhalte, wo immer Sie sind!';
+  String get walkthroughTitle1 =>
+      'Auf jedem Gerät ansehen: Genießen Sie unsere Inhalte, wo immer Sie sind!';
 
   @override
-  String get walkthroughDesp1 => 'Streamen Sie auf allen Geräten ohne zusätzliche Kosten.';
+  String get walkthroughDesp1 =>
+      'Streamen Sie auf allen Geräten ohne zusätzliche Kosten.';
 
   @override
-  String get walkthroughTitle2 => 'Herunterladen und loslegen: Greifen Sie überall, jederzeit und auf jedem Gerät auf Ihre Inhalte zu';
+  String get walkthroughTitle2 =>
+      'Herunterladen und loslegen: Greifen Sie überall, jederzeit und auf jedem Gerät auf Ihre Inhalte zu';
 
   @override
-  String get walkthroughDesp2 => 'Laden Sie Inhalte herunter und genießen Sie sie unterwegs, überall und jederzeit.';
+  String get walkthroughDesp2 =>
+      'Laden Sie Inhalte herunter und genießen Sie sie unterwegs, überall und jederzeit.';
 
   @override
-  String get walkthroughTitle3 => 'Genießen Sie die Freiheit ohne Verpflichtungen oder Ärger – schließen Sie sich uns noch heute an!';
+  String get walkthroughTitle3 =>
+      'Genießen Sie die Freiheit ohne Verpflichtungen oder Ärger – schließen Sie sich uns noch heute an!';
 
   @override
-  String get walkthroughDesp3 => 'Treten Sie uns problemlos bei und es sind keine Verträge erforderlich.';
+  String get walkthroughDesp3 =>
+      'Treten Sie uns problemlos bei und es sind keine Verträge erforderlich.';
 
   @override
   String get lblSkip => 'Überspringen';
@@ -178,16 +191,19 @@ class LanguageDe extends BaseLanguage {
   String get lblGetStarted => 'Fangen Sie an';
 
   @override
-  String get optionTitle => 'Entdecken Sie Top-Sendungen mit Genres, die auf Ihre Vorlieben zugeschnitten sind.';
+  String get optionTitle =>
+      'Entdecken Sie Top-Sendungen mit Genres, die auf Ihre Vorlieben zugeschnitten sind.';
 
   @override
-  String get optionDesp => 'Entdecken Sie kuratierte Shows verschiedener Genres, die auf Ihre Sehvorlieben zugeschnitten sind.';
+  String get optionDesp =>
+      'Entdecken Sie kuratierte Shows verschiedener Genres, die auf Ihre Sehvorlieben zugeschnitten sind.';
 
   @override
   String get welcomeBackToStreamIt => 'Willkommen zurück bei $APP_NAME!';
 
   @override
-  String get weHaveEagerlyAwaitedYourReturn => 'Wir haben sehnsüchtig auf Ihre Rückkehr gewartet.';
+  String get weHaveEagerlyAwaitedYourReturn =>
+      'Wir haben sehnsüchtig auf Ihre Rückkehr gewartet.';
 
   @override
   String get dontHaveAnAccount => 'Sie haben noch kein Konto? ';
@@ -199,7 +215,8 @@ class LanguageDe extends BaseLanguage {
   String get linkSentToYourEmail => 'Link an Ihre E-Mail gesendet!';
 
   @override
-  String get checkYourInboxAndChangePassword => 'Überprüfen Sie Ihren Posteingang und ändern Sie das Passwort';
+  String get checkYourInboxAndChangePassword =>
+      'Überprüfen Sie Ihren Posteingang und ändern Sie das Passwort';
 
   @override
   String get continues => 'Weitermachen';
@@ -208,10 +225,12 @@ class LanguageDe extends BaseLanguage {
   String get oTPVerification => 'OTP-Überprüfung';
 
   @override
-  String get checkYourSmsInboxAndEnterTheCodeYouGet => 'Überprüfen Sie Ihren SMS-Posteingang und geben Sie den Code ein, den Sie erhalten haben.';
+  String get checkYourSmsInboxAndEnterTheCodeYouGet =>
+      'Überprüfen Sie Ihren SMS-Posteingang und geben Sie den Code ein, den Sie erhalten haben.';
 
   @override
-  String get weHaveSentVerificationCodeToMobileNumber => 'Wir haben einen Bestätigungscode an Ihre Mobilnummer gesendet. Bitte geben Sie ihn ein, um fortzufahren.';
+  String get weHaveSentVerificationCodeToMobileNumber =>
+      'Wir haben einen Bestätigungscode an Ihre Mobilnummer gesendet. Bitte geben Sie ihn ein, um fortzufahren.';
 
   @override
   String get didntGetTheOTP => 'Haben Sie das OTP nicht erhalten?';
@@ -220,10 +239,12 @@ class LanguageDe extends BaseLanguage {
   String get resendOTP => 'OTP erneut senden';
 
   @override
-  String youCanResendOTPIn(int seconds) => 'Sie können das OTP in $seconds erneut senden';
+  String youCanResendOTPIn(int seconds) =>
+      'Sie können das OTP in $seconds erneut senden';
 
   @override
-  String get otpHasBeenResentToMobileNumber => 'OTP wurde erneut an Ihre Mobilnummer gesendet';
+  String get otpHasBeenResentToMobileNumber =>
+      'OTP wurde erneut an Ihre Mobilnummer gesendet';
 
   @override
   String get verify => 'Verifizieren';
@@ -235,10 +256,12 @@ class LanguageDe extends BaseLanguage {
   String get notificationDeleted => 'Benachrichtigung gelöscht';
 
   @override
-  String get doYouWantToMarkAllNotificationAsRead => 'Möchten Sie alle Benachrichtigungen löschen?';
+  String get doYouWantToMarkAllNotificationAsRead =>
+      'Möchten Sie alle Benachrichtigungen löschen?';
 
   @override
-  String get doYouWantToDeleteThisNotification => 'Möchten Sie diese Benachrichtigung löschen?';
+  String get doYouWantToDeleteThisNotification =>
+      'Möchten Sie diese Benachrichtigung löschen?';
 
   @override
   String get successfully => 'Erfolgreich';
@@ -247,7 +270,8 @@ class LanguageDe extends BaseLanguage {
   String get userCancelled => 'Benutzer hat abgesagt';
 
   @override
-  String get appleSigninIsNot => 'Apple SignIn ist für Ihr Gerät nicht verfügbar';
+  String get appleSigninIsNot =>
+      'Apple SignIn ist für Ihr Gerät nicht verfügbar';
 
   @override
   String get searchHere => 'Suchen Sie hier';
@@ -271,13 +295,15 @@ class LanguageDe extends BaseLanguage {
   String get noContinueWatchingTitle => 'Keine Titel zum Weiterschauen';
 
   @override
-  String get noContinueWatchingSubtitle => 'Beginne mit dem Ansehen von Inhalten, um sie hier zu sehen';
+  String get noContinueWatchingSubtitle =>
+      'Beginne mit dem Ansehen von Inhalten, um sie hier zu sehen';
 
   @override
   String get shareYourThoughtsWithUs => 'Teilen Sie Ihre Gedanken mit uns!';
 
   @override
-  String get weValueYourOpinion => 'Wir legen Wert auf Ihre Meinung! Teilen Sie uns noch heute Ihr Feedback mit.';
+  String get weValueYourOpinion =>
+      'Wir legen Wert auf Ihre Meinung! Teilen Sie uns noch heute Ihr Feedback mit.';
 
   @override
   String get genres => 'Genres';
@@ -355,7 +381,8 @@ class LanguageDe extends BaseLanguage {
   String get close => 'Schließen';
 
   @override
-  String get oppsLooksLikeYouReview => 'Upps! Anscheinend haben Sie noch keine Bewertung hinzugefügt.';
+  String get oppsLooksLikeYouReview =>
+      'Upps! Anscheinend haben Sie noch keine Bewertung hinzugefügt.';
 
   @override
   String get retry => 'Wiederholen';
@@ -394,7 +421,8 @@ class LanguageDe extends BaseLanguage {
   String get removeFromWatchlist => 'Aus der Beobachtungsliste entfernen';
 
   @override
-  String get searchMoviesShowsAndMore => 'Suchen Sie nach Filmen, Shows und mehr';
+  String get searchMoviesShowsAndMore =>
+      'Suchen Sie nach Filmen, Shows und mehr';
 
   @override
   String get trendingMovies => 'Trendfilme ';
@@ -433,7 +461,8 @@ class LanguageDe extends BaseLanguage {
   String get subscribeToEnjoyMore => 'Abonnieren Sie, um mehr zu genießen';
 
   @override
-  String get daysFreeTrail => 'Schalten Sie noch heute exklusive Funktionen frei';
+  String get daysFreeTrail =>
+      'Schalten Sie noch heute exklusive Funktionen frei';
 
   @override
   String get privacyPolicy => 'Datenschutzrichtlinie';
@@ -454,7 +483,8 @@ class LanguageDe extends BaseLanguage {
   String get yourDownloads => 'Ihre Downloads';
 
   @override
-  String get subscriptionPlanDeviceConnected => 'Abonnementplan, Gerät verbunden';
+  String get subscriptionPlanDeviceConnected =>
+      'Abonnementplan, Gerät verbunden';
 
   @override
   String get accountSettings => 'Kontoeinstellungen';
@@ -463,13 +493,15 @@ class LanguageDe extends BaseLanguage {
   String get accountControl => 'Kontensteuerung';
 
   @override
-  String get parentalControlsSubtitle => 'Zugriff auf Erwachsenenprofile mit einer PIN einschränken';
+  String get parentalControlsSubtitle =>
+      'Zugriff auf Erwachsenenprofile mit einer PIN einschränken';
 
   @override
   String get subscriptionAndRentals => 'Abonnement & Leihen';
 
   @override
-  String deviceLimitMessage(String limit) => 'Sie können bis zu $limit Geräte gleichzeitig verwenden.';
+  String deviceLimitMessage(String limit) =>
+      'Sie können bis zu $limit Geräte gleichzeitig verwenden.';
 
   @override
   String get videoCastingEnabled => 'Video-Casting ist aktiviert.';
@@ -490,25 +522,30 @@ class LanguageDe extends BaseLanguage {
   String get supportedDeviceType => 'Unterstützter Gerätetyp';
 
   @override
-  String profileLimitMessage(String limit) => 'Sie können bis zu $limit Profile in diesem Tarif für verschiedene Benutzer erstellen.';
+  String profileLimitMessage(String limit) =>
+      'Sie können bis zu $limit Profile in diesem Tarif für verschiedene Benutzer erstellen.';
 
   @override
   String get transactionHistory => 'Transaktionsverlauf';
 
   @override
-  String get transactionHistorySubtitle => 'Verwalten Sie Ihre Abonnement- & Leihhistorie';
+  String get transactionHistorySubtitle =>
+      'Verwalten Sie Ihre Abonnement- & Leihhistorie';
 
   @override
-  String get subscriptionHistorySubtitle => 'Greifen Sie auf Ihre Abonnement-Zahlungsaufzeichnungen zu';
+  String get subscriptionHistorySubtitle =>
+      'Greifen Sie auf Ihre Abonnement-Zahlungsaufzeichnungen zu';
 
   @override
-  String get rentalHistorySubtitle => 'Greifen Sie auf Ihre Miet-Zahlungshistorie zu';
+  String get rentalHistorySubtitle =>
+      'Greifen Sie auf Ihre Miet-Zahlungshistorie zu';
 
   @override
   String get deviceManagement => 'Geräteverwaltung';
 
   @override
-  String get kidsProfileCannotAccessSubscription => 'Abonnement-Funktionen sind für Kinderprofile eingeschränkt.';
+  String get kidsProfileCannotAccessSubscription =>
+      'Abonnement-Funktionen sind für Kinderprofile eingeschränkt.';
 
   @override
   String get accountAndActivation => 'Konto & Aktivierung';
@@ -517,7 +554,8 @@ class LanguageDe extends BaseLanguage {
   String get accountSectionTitle => 'Konto';
 
   @override
-  String get accountSectionSubtitle => 'Konto, Abonnements und Leihen verwalten';
+  String get accountSectionSubtitle =>
+      'Konto, Abonnements und Leihen verwalten';
 
   @override
   String get activateTvWeb => 'TV & Web aktivieren';
@@ -538,13 +576,15 @@ class LanguageDe extends BaseLanguage {
   String get pickUpWhereYouLeftOff => 'Dort weitermachen, wo du aufgehört hast';
 
   @override
-  String get continueWatchingSubtitle => 'Dort weiterschauen, wo du aufgehört hast';
+  String get continueWatchingSubtitle =>
+      'Dort weiterschauen, wo du aufgehört hast';
 
   @override
   String get rentals => 'Leihen';
 
   @override
-  String get rentalsSubtitle => 'Greife auf deine geliehenen Filme und Serien zu';
+  String get rentalsSubtitle =>
+      'Greife auf deine geliehenen Filme und Serien zu';
 
   @override
   String get rentalsAndDownloads => 'Leihen und Downloads';
@@ -556,7 +596,8 @@ class LanguageDe extends BaseLanguage {
   String get noRentedContentFound => 'Kein geliehener Inhalt gefunden';
 
   @override
-  String get noRentedContentSubtitle => 'Mieten Sie Filme, Episoden und Videos, um sofort hier Zugriff zu erhalten';
+  String get noRentedContentSubtitle =>
+      'Mieten Sie Filme, Episoden und Videos, um sofort hier Zugriff zu erhalten';
 
   @override
   String get autoUpdate => 'Automatische Aktualisierung';
@@ -568,7 +609,8 @@ class LanguageDe extends BaseLanguage {
   String get smartDelete => 'Intelligentes Löschen';
 
   @override
-  String get smartDeleteSubtitle => 'Heruntergeladene Inhalte nach Abschluss löschen';
+  String get smartDeleteSubtitle =>
+      'Heruntergeladene Inhalte nach Abschluss löschen';
 
   @override
   String get downloads => 'Downloads';
@@ -616,10 +658,12 @@ class LanguageDe extends BaseLanguage {
   String get deleteAccountPermanently => 'Konto dauerhaft löschen?';
 
   @override
-  String doYouWantToDeleteProfile(String profileName) => 'Möchten Sie das Profil für $profileName löschen?';
+  String doYouWantToDeleteProfile(String profileName) =>
+      'Möchten Sie das Profil für $profileName löschen?';
 
   @override
-  String shareYourThoughtsOnContent(String contentName, String type) => 'Teilen Sie Ihre Gedanken zu $contentName $type';
+  String shareYourThoughtsOnContent(String contentName, String type) =>
+      'Teilen Sie Ihre Gedanken zu $contentName $type';
 
   @override
   String get mobileNumber => 'Handynummer';
@@ -634,7 +678,8 @@ class LanguageDe extends BaseLanguage {
   String get saveChanges => 'Änderungen speichern';
 
   @override
-  String get startWatchingFromWhereYouLeftOff => 'Fangen Sie dort an, wo Sie aufgehört haben';
+  String get startWatchingFromWhereYouLeftOff =>
+      'Fangen Sie dort an, wo Sie aufgehört haben';
 
   @override
   String get troubleLoggingIn => 'Probleme beim Anmelden?';
@@ -649,19 +694,22 @@ class LanguageDe extends BaseLanguage {
   String get noHelpTopicsFound => 'Keine Hilfethemen gefunden';
 
   @override
-  String get helpAndSupportTopicsSubtitle => 'Hilfe- und Supportthemen werden hier angezeigt';
+  String get helpAndSupportTopicsSubtitle =>
+      'Hilfe- und Supportthemen werden hier angezeigt';
 
   @override
   String get yourWatchlistIsEmpty => 'Ihre Merkliste ist leer';
 
   @override
-  String get contentAddedToYourWatchlist => 'Zu Ihrer Beobachtungsliste hinzugefügte Inhalte werden hier angezeigt';
+  String get contentAddedToYourWatchlist =>
+      'Zu Ihrer Beobachtungsliste hinzugefügte Inhalte werden hier angezeigt';
 
   @override
   String get add => 'Hinzufügen';
 
   @override
-  String get subscribeNowAndDiveInto => 'Abonnieren Sie jetzt und tauchen Sie ein in endloses Streaming';
+  String get subscribeNowAndDiveInto =>
+      'Abonnieren Sie jetzt und tauchen Sie ein in endloses Streaming';
 
   @override
   String get pay => 'Zahlen';
@@ -679,13 +727,15 @@ class LanguageDe extends BaseLanguage {
   String get choosePaymentMethod => 'Wählen Sie die Zahlungsmethode';
 
   @override
-  String get secureCheckoutInSeconds => '100 % sicherer Checkout in Sekundenschnelle';
+  String get secureCheckoutInSeconds =>
+      '100 % sicherer Checkout in Sekundenschnelle';
 
   @override
   String get proceedPayment => 'Zahlung fortsetzen';
 
   @override
-  String get paymentFailedMessage => 'Zahlung abgebrochen. Bitte versuchen Sie es erneut, wenn Sie fortfahren möchten.';
+  String get paymentFailedMessage =>
+      'Zahlung abgebrochen. Bitte versuchen Sie es erneut, wenn Sie fortfahren möchten.';
 
   @override
   String get actors => 'Schauspieler';
@@ -694,13 +744,15 @@ class LanguageDe extends BaseLanguage {
   String get movies => 'Filme';
 
   @override
-  String get contentRestrictedAccess => 'Beschränkter Zugriff auf Inhalte ab 18 Jahren';
+  String get contentRestrictedAccess =>
+      'Beschränkter Zugriff auf Inhalte ab 18 Jahren';
 
   @override
   String get areYou18Above => 'Sind Sie mindestens 18 Jahre alt?';
 
   @override
-  String get displayAClearProminentWarning => 'Zeigen Sie vor dem Zugriff auf den Inhalt eine klare und deutliche Warnung an, die darauf hinweist, dass er für ein erwachsenes Publikum bestimmt ist.';
+  String get displayAClearProminentWarning =>
+      'Zeigen Sie vor dem Zugriff auf den Inhalt eine klare und deutliche Warnung an, die darauf hinweist, dass er für ein erwachsenes Publikum bestimmt ist.';
 
   @override
   String get all => 'Alle';
@@ -721,7 +773,8 @@ class LanguageDe extends BaseLanguage {
   String get phnRequiredText => 'Handynummer ist erforderlich';
 
   @override
-  String get inputMustBeNumberOrDigit => 'Die Eingabe muss eine Zahl oder Ziffer sein';
+  String get inputMustBeNumberOrDigit =>
+      'Die Eingabe muss eine Zahl oder Ziffer sein';
 
   @override
   String get dateOfBirth => 'Geburtsdatum';
@@ -733,28 +786,33 @@ class LanguageDe extends BaseLanguage {
   String get whatYourMobileNo => 'Wie lautet Ihre Handynummer?';
 
   @override
-  String get withAValidMobileNumberYouCanConnectWithStreamit => 'Mit einer gültigen Handynummer können Sie sich mit streamit verbinden';
+  String get withAValidMobileNumberYouCanConnectWithStreamit =>
+      'Mit einer gültigen Handynummer können Sie sich mit streamit verbinden';
 
   @override
   String get otpSentToYourSMS => 'OTP an Ihre SMS gesendet!';
 
   @override
-  String get checkYourSmsInboxAndVerifyYoourMobile => 'Überprüfen Sie Ihren SMS-Posteingang und bestätigen Sie Ihre Handynummer';
+  String get checkYourSmsInboxAndVerifyYoourMobile =>
+      'Überprüfen Sie Ihren SMS-Posteingang und bestätigen Sie Ihre Handynummer';
 
   @override
-  String get pleaseTryAgainAfterSomeTime => 'Bitte versuchen Sie es nach einiger Zeit erneut. Sie haben mehrere Zeitverifizierungsanfragen verwendet!';
+  String get pleaseTryAgainAfterSomeTime =>
+      'Bitte versuchen Sie es nach einiger Zeit erneut. Sie haben mehrere Zeitverifizierungsanfragen verwendet!';
 
   @override
   String get pleaseEnterAValidCode => 'Bitte geben Sie ein gültiges OTP ein';
 
   @override
-  String get pleaseCheckYourMobileInternetConnection => 'Bitte überprüfen Sie Ihre mobile Internetverbindung';
+  String get pleaseCheckYourMobileInternetConnection =>
+      'Bitte überprüfen Sie Ihre mobile Internetverbindung';
 
   @override
   String get error => 'Fehler';
 
   @override
-  String get sorryCouldnFindYourSearch => 'Leider konnte Ihre Suche nicht gefunden werden!';
+  String get sorryCouldnFindYourSearch =>
+      'Leider konnte Ihre Suche nicht gefunden werden!';
 
   @override
   String get trySomethingNew => 'Probieren Sie etwas Neues aus.';
@@ -814,19 +872,24 @@ class LanguageDe extends BaseLanguage {
   String get passwordLengthRule => 'Das Passwort muss 8–14 Zeichen lang sein';
 
   @override
-  String get passwordUppercaseRule => 'Das Passwort muss mindestens einen Großbuchstaben enthalten';
+  String get passwordUppercaseRule =>
+      'Das Passwort muss mindestens einen Großbuchstaben enthalten';
 
   @override
-  String get passwordLowercaseRule => 'Das Passwort muss mindestens einen Kleinbuchstaben enthalten';
+  String get passwordLowercaseRule =>
+      'Das Passwort muss mindestens einen Kleinbuchstaben enthalten';
 
   @override
-  String get passwordSpecialCharacterRule => 'Das Passwort muss mindestens ein Sonderzeichen (@\$!%*?&) enthalten';
+  String get passwordSpecialCharacterRule =>
+      'Das Passwort muss mindestens ein Sonderzeichen (@\$!%*?&) enthalten';
 
   @override
-  String get passwordDigitRule => 'Das Passwort muss mindestens eine Ziffer enthalten';
+  String get passwordDigitRule =>
+      'Das Passwort muss mindestens eine Ziffer enthalten';
 
   @override
-  String get confirmPasswordIsRequired => '„Passwort bestätigen“ ist erforderlich';
+  String get confirmPasswordIsRequired =>
+      '„Passwort bestätigen“ ist erforderlich';
 
   @override
   String get home => 'Heim';
@@ -835,10 +898,12 @@ class LanguageDe extends BaseLanguage {
   String get search => 'Suchen';
 
   @override
-  String get mobileNumberIsRequired => 'Die Mobiltelefonnummer ist ein Pflichtfeld';
+  String get mobileNumberIsRequired =>
+      'Die Mobiltelefonnummer ist ein Pflichtfeld';
 
   @override
-  String get youHaveAlreadyDownloadedThisMovie => 'Sie haben diesen Film bereits heruntergeladen';
+  String get youHaveAlreadyDownloadedThisMovie =>
+      'Sie haben diesen Film bereits heruntergeladen';
 
   @override
   String get imdb => 'IMDB';
@@ -860,6 +925,12 @@ class LanguageDe extends BaseLanguage {
 
   @override
   String get flutterWavePay => 'Flutterwave';
+
+  @override
+  String get cinetPay => 'CinetPay';
+
+  @override
+  String get lblCheckOutWithCinetPay => 'Bezahlen mit CinetPay';
 
   @override
   String get contextNotFound => 'Kontext nicht gefunden!!!!';
@@ -901,7 +972,8 @@ class LanguageDe extends BaseLanguage {
   String get helpSetting => 'Hilfe & Einstellung';
 
   @override
-  String get pleaseConfirmContent => 'Bitte bestätigen Sie den eingeschränkten Inhaltszugriff';
+  String get pleaseConfirmContent =>
+      'Bitte bestätigen Sie den eingeschränkten Inhaltszugriff';
 
   @override
   String get toWatch => 'Zum Anschauen';
@@ -916,16 +988,19 @@ class LanguageDe extends BaseLanguage {
   String get noDeviceAvailable => 'Keine Geräte verfügbar';
 
   @override
-  String get noItemsToContinueWatching => 'Keine Artikel zum Weiterschauen vorhanden';
+  String get noItemsToContinueWatching =>
+      'Keine Artikel zum Weiterschauen vorhanden';
 
   @override
-  String get noItemsAddedToTheWatchlist => 'Der Beobachtungsliste wurden keine Elemente hinzugefügt';
+  String get noItemsAddedToTheWatchlist =>
+      'Der Beobachtungsliste wurden keine Elemente hinzugefügt';
 
   @override
   String get ok => 'OK';
 
   @override
-  String removeFromContinueWatchingTitle(String title, String typeLabel) => 'Möchten Sie $title $typeLabel aus Ihrer „Weiter ansehen“-Liste entfernen?';
+  String removeFromContinueWatchingTitle(String title, String typeLabel) =>
+      'Möchten Sie $title $typeLabel aus Ihrer „Weiter ansehen“-Liste entfernen?';
 
   @override
   String get addedToWatchList => 'Beobachtungsliste erfolgreich hinzugefügt';
@@ -934,22 +1009,27 @@ class LanguageDe extends BaseLanguage {
   String get removedFromWatchList => 'Beobachtungsliste erfolgreich gelöscht';
 
   @override
-  String get removeSelectedFromWatchList => 'Möchten Sie ausgewählte Inhalte aus Ihrer Beobachtungsliste entfernen?';
+  String get removeSelectedFromWatchList =>
+      'Möchten Sie ausgewählte Inhalte aus Ihrer Beobachtungsliste entfernen?';
 
   @override
-  String get removedFromContinueWatch => 'Weiter beobachten, erfolgreich gelöscht';
+  String get removedFromContinueWatch =>
+      'Weiter beobachten, erfolgreich gelöscht';
 
   @override
-  String get pleaseEnterAValidMobileNo => 'Bitte geben Sie eine gültige Handynummer ein';
+  String get pleaseEnterAValidMobileNo =>
+      'Bitte geben Sie eine gültige Handynummer ein';
 
   @override
   String get pleaseAddYourReview => 'Bitte fügen Sie Ihre Bewertung hinzu';
 
   @override
-  String get thisMovieIsCurrentlUnavailableToWatch => 'Dieser Film kann derzeit nicht angesehen werden';
+  String get thisMovieIsCurrentlUnavailableToWatch =>
+      'Dieser Film kann derzeit nicht angesehen werden';
 
   @override
-  String get thisVideoIsCurrentlUnavailableToWatch => 'Dieses Video kann derzeit nicht angesehen werden';
+  String get thisVideoIsCurrentlUnavailableToWatch =>
+      'Dieses Video kann derzeit nicht angesehen werden';
 
   @override
   String get subscriptionHistory => 'Abonnementverlauf';
@@ -985,7 +1065,8 @@ class LanguageDe extends BaseLanguage {
   String get viewLess => 'Weniger anzeigen';
 
   @override
-  String get removeSelectedFromDownloads => 'Möchten Sie dies aus Ihren Downloads entfernen?';
+  String get removeSelectedFromDownloads =>
+      'Möchten Sie dies aus Ihren Downloads entfernen?';
 
   @override
   String get noPaymentMethodsFound => 'Keine Zahlungsmethoden gefunden';
@@ -997,7 +1078,8 @@ class LanguageDe extends BaseLanguage {
   String get completeProfile => 'Vervollständigen Sie Ihr Profil';
 
   @override
-  String get completeProfileSubtitle => 'Erzählen Sie uns zunächst mehr über sich';
+  String get completeProfileSubtitle =>
+      'Erzählen Sie uns zunächst mehr über sich';
 
   @override
   String get getVerificationCode => 'Holen Sie sich den Bestätigungscode';
@@ -1012,10 +1094,12 @@ class LanguageDe extends BaseLanguage {
   String get addProfile => 'Profil hinzufügen';
 
   @override
-  String get clearSearchHistoryConfirmation => 'Möchten Sie Ihren Suchverlauf löschen?';
+  String get clearSearchHistoryConfirmation =>
+      'Möchten Sie Ihren Suchverlauf löschen?';
 
   @override
-  String get clearSearchHistorySubtitle => 'Diese Aktion kann nicht rückgängig gemacht werden und alle vorherigen Suchvorgänge werden dauerhaft gelöscht.';
+  String get clearSearchHistorySubtitle =>
+      'Diese Aktion kann nicht rückgängig gemacht werden und alle vorherigen Suchvorgänge werden dauerhaft gelöscht.';
 
   @override
   String get searchingForDevice => 'Suche nach Geräten';
@@ -1132,10 +1216,12 @@ class LanguageDe extends BaseLanguage {
   String get goToYourDownloads => 'Gehen Sie zu Ihren Downloads';
 
   @override
-  String welcomeUserMessage(String appName, String name) => "Hey $name, willkommen bei $appName! Deine Reise in unbegrenzte Unterhaltung beginnt jetzt – tauche ein und genieße die Show!";
+  String welcomeUserMessage(String appName, String name) =>
+      "Hey $name, willkommen bei $appName! Deine Reise in unbegrenzte Unterhaltung beginnt jetzt – tauche ein und genieße die Show!";
 
   @override
-  String get bySigningYouAgreeTo => 'Mit Ihrer Unterschrift erklären Sie sich damit einverstanden';
+  String get bySigningYouAgreeTo =>
+      'Mit Ihrer Unterschrift erklären Sie sich damit einverstanden';
 
   @override
   String get lowQuality => 'Niedrige Qualität';
@@ -1162,10 +1248,12 @@ class LanguageDe extends BaseLanguage {
   String get servicesAnd => 'Dienstleistungen und ';
 
   @override
-  String get newProfileAddedSuccessfully => 'Neues Profil erfolgreich hinzugefügt';
+  String get newProfileAddedSuccessfully =>
+      'Neues Profil erfolgreich hinzugefügt';
 
   @override
-  String get doYouWantToDeleteYourReview => 'Möchten Sie Ihre Bewertung löschen?';
+  String get doYouWantToDeleteYourReview =>
+      'Möchten Sie Ihre Bewertung löschen?';
 
   @override
   String get noSearchDataFound => 'Keine Suchdaten gefunden';
@@ -1174,7 +1262,8 @@ class LanguageDe extends BaseLanguage {
   String get searchHistory => 'Suchverlauf';
 
   @override
-  String get youHaveBeenLoggedOutOfYourAccountOn => 'Sie wurden am von Ihrem Konto abgemeldet';
+  String get youHaveBeenLoggedOutOfYourAccountOn =>
+      'Sie wurden am von Ihrem Konto abgemeldet';
 
   @override
   String get faqs => 'FAQs';
@@ -1183,7 +1272,8 @@ class LanguageDe extends BaseLanguage {
   String get termsOfUse => 'Nutzungsbedingungen';
 
   @override
-  String get refundAndCancellationPolicy => 'Rückerstattungs- und Stornierungsbedingungen';
+  String get refundAndCancellationPolicy =>
+      'Rückerstattungs- und Stornierungsbedingungen';
 
   @override
   String get dataDeletionRequest => 'Antrag auf Datenlöschung';
@@ -1228,10 +1318,12 @@ class LanguageDe extends BaseLanguage {
   String get downloadHasBeenStarted => 'Der Download wurde gestartet';
 
   @override
-  String get yourDeviceIsNot => 'Ihr Gerät wird mit dem aktuellen Plan nicht unterstützt';
+  String get yourDeviceIsNot =>
+      'Ihr Gerät wird mit dem aktuellen Plan nicht unterstützt';
 
   @override
-  String get pleaseUpgradeToContinue => 'Bitte aktualisieren Sie, um den Service weiterhin nutzen zu können';
+  String get pleaseUpgradeToContinue =>
+      'Bitte aktualisieren Sie, um den Service weiterhin nutzen zu können';
 
   @override
   String get cancelled => 'Abgesagt';
@@ -1249,13 +1341,16 @@ class LanguageDe extends BaseLanguage {
   String get connectToWIFI => 'Bitte stellen Sie eine WLAN-Verbindung her';
 
   @override
-  String get logoutAllConfirmation => 'Möchten Sie alle anderen Geräte abmelden?';
+  String get logoutAllConfirmation =>
+      'Möchten Sie alle anderen Geräte abmelden?';
 
   @override
-  String get logoutAllConfirmationMessage => 'Um das Gerätelimit Ihres neuen Tarifs durchzusetzen, müssen Sie sich sofort von allen Geräten abmelden.';
+  String get logoutAllConfirmationMessage =>
+      'Um das Gerätelimit Ihres neuen Tarifs durchzusetzen, müssen Sie sich sofort von allen Geräten abmelden.';
 
   @override
-  String get changePasswordMessage => 'Ihr Passwort wurde aktualisiert. Bitte melden Sie sich erneut an, um fortzufahren.';
+  String get changePasswordMessage =>
+      'Ihr Passwort wurde aktualisiert. Bitte melden Sie sich erneut an, um fortzufahren.';
 
   @override
   String get share => 'Aktie';
@@ -1270,7 +1365,8 @@ class LanguageDe extends BaseLanguage {
   String get videoCast => 'Gießen';
 
   @override
-  String get castingNotSupported => 'Casting wird mit dem aktuellen Plan nicht unterstützt.';
+  String get castingNotSupported =>
+      'Casting wird mit dem aktuellen Plan nicht unterstützt.';
 
   @override
   String get left => "verbleibend";
@@ -1288,22 +1384,26 @@ class LanguageDe extends BaseLanguage {
   String get changePassword => 'Kennwort ändern';
 
   @override
-  String get yourNewPasswordMust => 'Ihr neues Passwort muss sich von Ihrem vorherigen Passwort unterscheiden';
+  String get yourNewPasswordMust =>
+      'Ihr neues Passwort muss sich von Ihrem vorherigen Passwort unterscheiden';
 
   @override
   String get yourOldPasswordDoesnT => 'Ihr altes Passwort ist nicht korrekt!';
 
   @override
-  String get yourNewPasswordDoesnT => "Ihr bestätigtes Passwort stimmt nicht mit dem neuen Passwort überein!";
+  String get yourNewPasswordDoesnT =>
+      "Ihr bestätigtes Passwort stimmt nicht mit dem neuen Passwort überein!";
 
   @override
   String get oldAndNewPassword => 'Altes und neues Passwort sind gleich.';
 
   @override
-  String get yourPasswordHasBeen => 'Ihr Passwort wurde erfolgreich zurückgesetzt';
+  String get yourPasswordHasBeen =>
+      'Ihr Passwort wurde erfolgreich zurückgesetzt';
 
   @override
-  String get youCanNowLog => 'Sie können sich jetzt mit Ihrem neuen Passwort bei Ihrem neuen Konto anmelden';
+  String get youCanNowLog =>
+      'Sie können sich jetzt mit Ihrem neuen Passwort bei Ihrem neuen Konto anmelden';
 
   @override
   String get done => 'Erledigt';
@@ -1336,7 +1436,8 @@ class LanguageDe extends BaseLanguage {
   String get otpSentSuccessfully => 'OTP erfolgreich gesendet';
 
   @override
-  String get weHaveSentYouOTPOnYourRegisterEmailAddress => 'Wir haben Ihnen OTP an Ihre registrierte E-Mail-Adresse gesendet';
+  String get weHaveSentYouOTPOnYourRegisterEmailAddress =>
+      'Wir haben Ihnen OTP an Ihre registrierte E-Mail-Adresse gesendet';
 
   @override
   String get otpVerification => 'OTP-Verifizierung';
@@ -1345,10 +1446,12 @@ class LanguageDe extends BaseLanguage {
   String get enterPIN => 'PIN eingeben';
 
   @override
-  String get enterYourNewParentalPinForYourKids => 'Geben Sie Ihre neue Eltern-PIN für Ihre Kinder ein';
+  String get enterYourNewParentalPinForYourKids =>
+      'Geben Sie Ihre neue Eltern-PIN für Ihre Kinder ein';
 
   @override
-  String get enterYourOldParentalPinForYourKids => 'Geben Sie Ihre alte Eltern-PIN für Ihre Kinder ein';
+  String get enterYourOldParentalPinForYourKids =>
+      'Geben Sie Ihre alte Eltern-PIN für Ihre Kinder ein';
 
   @override
   String get confirmPIN => 'PIN bestätigen';
@@ -1369,7 +1472,8 @@ class LanguageDe extends BaseLanguage {
   String get kids => 'KINDER';
 
   @override
-  String get enter4DigitParentalControlPIN => 'Geben Sie die 4-stellige Kindersicherungs-PIN ein';
+  String get enter4DigitParentalControlPIN =>
+      'Geben Sie die 4-stellige Kindersicherungs-PIN ein';
 
   @override
   String get parentalLock => 'Kindersicherung';
@@ -1387,7 +1491,8 @@ class LanguageDe extends BaseLanguage {
   String get pleaseEnterOldPIN => 'Bitte geben Sie Ihre alte PIN ein';
 
   @override
-  String get pleaseEnterConfirmPin => 'Bitte geben Sie die Bestätigungs-PIN ein';
+  String get pleaseEnterConfirmPin =>
+      'Bitte geben Sie die Bestätigungs-PIN ein';
 
   @override
   String get codeWithColon => 'Code eingeben:';
@@ -1417,10 +1522,12 @@ class LanguageDe extends BaseLanguage {
   String get allCoupons => 'Alle Gutscheine';
 
   @override
-  String get oopsWeCouldnTFind => 'Hoppla! Wir konnten keine passenden Gutscheincodes finden';
+  String get oopsWeCouldnTFind =>
+      'Hoppla! Wir konnten keine passenden Gutscheincodes finden';
 
   @override
-  String doYouWantToRemoveCoupon(String name) => 'Möchten Sie diesen $name Gutschein entfernen?';
+  String doYouWantToRemoveCoupon(String name) =>
+      'Möchten Sie diesen $name Gutschein entfernen?';
 
   @override
   String get noSubscriptionHistoryFound => 'Kein Abonnementverlauf gefunden';
@@ -1432,7 +1539,8 @@ class LanguageDe extends BaseLanguage {
   String get linkTv => 'Link-TV';
 
   @override
-  String get youHaveBeenLoggedOutSuccessfully => 'Sie wurden erfolgreich abgemeldet';
+  String get youHaveBeenLoggedOutSuccessfully =>
+      'Sie wurden erfolgreich abgemeldet';
 
   @override
   String get rented => 'GEMIETET';
@@ -1454,16 +1562,20 @@ class LanguageDe extends BaseLanguage {
       'Nach der Ausleihe haben Sie $availableFor ${availableFor > 1 ? 'Tage' : 'Tag'} Zeit, um mit dem Ansehen zu beginnen. Nach dem Start des Streamings haben Sie $duration ${duration > 1 ? 'Tage' : 'Tag'} Zeit, um das Video zu beenden.';
 
   @override
-  String youCanWatchThis(int duration) => 'Sie können diesen Inhalt während des Zeitraums von $duration ${duration > 1 ? 'Tage' : 'Tag'} mehrmals ansehen.';
+  String youCanWatchThis(int duration) =>
+      'Sie können diesen Inhalt während des Zeitraums von $duration ${duration > 1 ? 'Tage' : 'Tag'} mehrmals ansehen.';
 
   @override
-  String get thisIsANonRefundable => 'Dies ist eine nicht erstattungsfähige Transaktion.';
+  String get thisIsANonRefundable =>
+      'Dies ist eine nicht erstattungsfähige Transaktion.';
 
   @override
-  String get thisContentIsOnly => 'Dieser Inhalt ist nur zum Mieten verfügbar und nicht Teil des Premium-Abonnements.';
+  String get thisContentIsOnly =>
+      'Dieser Inhalt ist nur zum Mieten verfügbar und nicht Teil des Premium-Abonnements.';
 
   @override
-  String get youCanPlayYour => 'Sie können Ihre Inhalte auf unterstützten Geräten abspielen.';
+  String get youCanPlayYour =>
+      'Sie können Ihre Inhalte auf unterstützten Geräten abspielen.';
 
   @override
   String get validity => 'Gültigkeit';
@@ -1502,7 +1614,8 @@ class LanguageDe extends BaseLanguage {
   String get byRentingYouAgreeToOur => 'Mit der Anmietung stimmen Sie unseren';
 
   @override
-  String get pleaseAgreeToThe => 'Bitte stimmen Sie den Nutzungsbedingungen zu, bevor Sie fortfahren.';
+  String get pleaseAgreeToThe =>
+      'Bitte stimmen Sie den Nutzungsbedingungen zu, bevor Sie fortfahren.';
 
   @override
   String enjoyUntilDays(int days) => 'Genießen Sie bis zu $days Tage';
@@ -1511,7 +1624,8 @@ class LanguageDe extends BaseLanguage {
   String get beginWatching => 'Jetzt ansehen';
 
   @override
-  String doYouConfirmThis(String movieName) => 'Bestätigen Sie die Ausleihe von $movieName?';
+  String doYouConfirmThis(String movieName) =>
+      'Bestätigen Sie die Ausleihe von $movieName?';
 
   @override
   String get unlockedVideo => 'freigeschaltetes Video';
@@ -1520,7 +1634,8 @@ class LanguageDe extends BaseLanguage {
   String get info => 'Info';
 
   @override
-  String confirmDeleteDownload(String title) => 'Möchten Sie $title aus Ihren Downloads löschen?';
+  String confirmDeleteDownload(String title) =>
+      'Möchten Sie $title aus Ihren Downloads löschen?';
 
   @override
   String get payPerView => 'Bezahlung pro Ansicht';
@@ -1541,6 +1656,12 @@ class LanguageDe extends BaseLanguage {
   String get quality => 'Qualität';
 
   @override
+  String get audio => 'Audio';
+
+  @override
+  String get audioAndQuality => 'Audio & Qualität';
+
+  @override
   String get subtitle => 'Untertitel';
 
   @override
@@ -1559,19 +1680,22 @@ class LanguageDe extends BaseLanguage {
   String get rentalInfo => 'Mietinformationen';
 
   @override
-  String get pleaseSelectPaymentMethod => 'Bitte wählen Sie eine Zahlungsmethode.';
+  String get pleaseSelectPaymentMethod =>
+      'Bitte wählen Sie eine Zahlungsmethode.';
 
   @override
   String get tvLinkedSuccessfully => 'TV erfolgreich verbunden!';
 
   @override
-  String get cameraPermissionDenied => 'Kameraberechtigung verweigert. Bitte aktivieren Sie sie in den Einstellungen.';
+  String get cameraPermissionDenied =>
+      'Kameraberechtigung verweigert. Bitte aktivieren Sie sie in den Einstellungen.';
 
   @override
   String get advertisement => 'Werbung';
 
   @override
-  String get castConnectInfo => 'Stellen Sie sicher, dass Ihr Chromecast-Gerät eingeschaltet und mit demselben WLAN-Netzwerk verbunden ist.';
+  String get castConnectInfo =>
+      'Stellen Sie sicher, dass Ihr Chromecast-Gerät eingeschaltet und mit demselben WLAN-Netzwerk verbunden ist.';
 
   @override
   String get connect => 'Verbinden';
@@ -1586,10 +1710,12 @@ class LanguageDe extends BaseLanguage {
   String get readyToCastToYourDevice => 'Bereit zum Übertragen auf Ihr Gerät';
 
   @override
-  String get castSupportInfo => 'Casting wird nur für Videos vom Typ URL, HLS oder Lokal unterstützt. Andere Formate werden nicht unterstützt.';
+  String get castSupportInfo =>
+      'Casting wird nur für Videos vom Typ URL, HLS oder Lokal unterstützt. Andere Formate werden nicht unterstützt.';
 
   @override
-  String doYouConfirmThisPlanWithPlanName(String planName) => 'Bestätigen Sie diesen Plan $planName?';
+  String doYouConfirmThisPlanWithPlanName(String planName) =>
+      'Bestätigen Sie diesen Plan $planName?';
 
   @override
   String get pinVerifiedSuccessfully => 'PIN erfolgreich verifiziert';
@@ -1626,7 +1752,8 @@ class LanguageDe extends BaseLanguage {
       'Sie haben $duration ${duration > 1 ? 'Tage' : 'Tag'} Zeit, um nach dem Kauf mit dem Anschauen zu beginnen. Unbegrenzte Gültigkeit, um das Ansehen zu beenden, sobald das Streaming begonnen wurde.';
 
   @override
-  String get purchaseInfo2 => 'Sie können diesen Inhalt mehrfach ansehen, bis die Ablaufzeit erreicht ist.';
+  String get purchaseInfo2 =>
+      'Sie können diesen Inhalt mehrfach ansehen, bis die Ablaufzeit erreicht ist.';
 
   @override
   String get address => 'Adresse';
@@ -1638,25 +1765,29 @@ class LanguageDe extends BaseLanguage {
   String get subscriptionSuccessfulSubtitle => 'Ihr Abonnement ist jetzt aktiv';
 
   @override
-  String get startEnjoyingContent => 'Sie können jetzt unbegrenztes Streaming und alle Premium-Funktionen genießen';
+  String get startEnjoyingContent =>
+      'Sie können jetzt unbegrenztes Streaming und alle Premium-Funktionen genießen';
 
   @override
   String get noGenresFound => 'Keine Genres gefunden';
 
   @override
-  String get noGenresAvailableSubtitle => 'Im Moment sind keine Genres verfügbar';
+  String get noGenresAvailableSubtitle =>
+      'Im Moment sind keine Genres verfügbar';
 
   @override
   String get noSubscriptionPlans => 'Keine Abonnementpläne';
 
   @override
-  String get noSubscriptionPlansSubtitle => 'Derzeit sind keine Abonnementpläne verfügbar';
+  String get noSubscriptionPlansSubtitle =>
+      'Derzeit sind keine Abonnementpläne verfügbar';
 
   @override
   String get noContentFound => 'Kein Inhalt gefunden';
 
   @override
-  String get noContentMatchesFilter => 'Kein Inhalt stimmt mit Ihren Filterkriterien überein';
+  String get noContentMatchesFilter =>
+      'Kein Inhalt stimmt mit Ihren Filterkriterien überein';
 
   @override
   String get movie => 'Film';
@@ -1671,7 +1802,8 @@ class LanguageDe extends BaseLanguage {
   String get episodes => 'Episoden';
 
   @override
-  String get cancelSubscription => 'Sind Sie sicher, dass Sie Ihr Abonnement kündigen möchten?';
+  String get cancelSubscription =>
+      'Sind Sie sicher, dass Sie Ihr Abonnement kündigen möchten?';
 
   @override
   String get coupanApplied => 'Gutschein erfolgreich angewendet';
@@ -1683,19 +1815,22 @@ class LanguageDe extends BaseLanguage {
   String get controlYourDevices => "Steuern Sie Ihre Geräte";
 
   @override
-  String resendOtpCountText(int count) => 'Sie können den OTP-Code in $count Sekunden erneut senden.';
+  String resendOtpCountText(int count) =>
+      'Sie können den OTP-Code in $count Sekunden erneut senden.';
 
   @override
   String get comingSoonOn => 'Kommt bald am';
 
   @override
-  String get noComingSoonContentAvailable => 'Kein demnächst verfügbares Inhalt.';
+  String get noComingSoonContentAvailable =>
+      'Kein demnächst verfügbares Inhalt.';
 
   @override
   String get noComingSoonMovieAvailable => 'Kein demnächst verfügbarer Film.';
 
   @override
-  String get noComingSoonTvShowAvailable => 'Keine demnächst verfügbare TV-Sendung.';
+  String get noComingSoonTvShowAvailable =>
+      'Keine demnächst verfügbare TV-Sendung.';
 
   @override
   String get noComingSoonVideoAvailable => 'Kein demnächst verfügbares Video.';
@@ -1707,7 +1842,8 @@ class LanguageDe extends BaseLanguage {
   String get checkBackAgainShortly => 'Überprüfen Sie erneut in Kürze';
 
   @override
-  String get contentInformationIsNotAvailable => 'Inhaltsinformationen sind nicht verfügbar';
+  String get contentInformationIsNotAvailable =>
+      'Inhaltsinformationen sind nicht verfügbar';
 
   @override
   String get episodesAreNotAvailableYet => 'Episoden sind noch nicht verfügbar';
@@ -1719,7 +1855,8 @@ class LanguageDe extends BaseLanguage {
   String get stayTuned => 'Bleib auf dem Laufenden';
 
   @override
-  String get weArePreparingExcitingEpisodesForThisSeason => 'Wir bereiten spannende Episoden für dieses Jahr vor';
+  String get weArePreparingExcitingEpisodesForThisSeason =>
+      'Wir bereiten spannende Episoden für dieses Jahr vor';
 
   @override
   String get ad => 'Werbung';
@@ -1728,25 +1865,30 @@ class LanguageDe extends BaseLanguage {
   String get adsLoadingIn => 'Werbung wird geladen';
 
   @override
-  String get browseAndRentContentToWatchInstantly => 'Erkunden und leihen Sie Inhalte, um sofort anzusehen';
+  String get browseAndRentContentToWatchInstantly =>
+      'Erkunden und leihen Sie Inhalte, um sofort anzusehen';
 
   @override
-  String get byCreatingAnAccountYouAgreeTo => 'Durch die Erstellung eines Kontos stimmen Sie unseren';
+  String get byCreatingAnAccountYouAgreeTo =>
+      'Durch die Erstellung eines Kontos stimmen Sie unseren';
 
   @override
   String get categories => 'Kategorien';
 
   @override
-  String get channelInformationIsNotAvailable => 'Kanalinformationen sind nicht verfügbar';
+  String get channelInformationIsNotAvailable =>
+      'Kanalinformationen sind nicht verfügbar';
 
   @override
-  String get chooseTheQualityForDownloadingThisContent => 'Wählen Sie die Qualität für das Herunterladen dieses Inhalts';
+  String get chooseTheQualityForDownloadingThisContent =>
+      'Wählen Sie die Qualität für das Herunterladen dieses Inhalts';
 
   @override
   String get deviceLogins => 'Geräteanmeldungen';
 
   @override
-  String get downloadContentToWatchOffline => 'Inhalte herunterladen, um offline zu sehen';
+  String get downloadContentToWatchOffline =>
+      'Inhalte herunterladen, um offline zu sehen';
 
   @override
   String get inAppPurchase => 'In-App-Kauf';
@@ -1755,19 +1897,22 @@ class LanguageDe extends BaseLanguage {
   String get isAvailableInThisCategory => 'Verfügbar in dieser Kategorie';
 
   @override
-  String get noCastOrCrewMembersAvailable => 'Keine Schauspieler oder Regisseure verfügbar';
+  String get noCastOrCrewMembersAvailable =>
+      'Keine Schauspieler oder Regisseure verfügbar';
 
   @override
   String get noChannelDetails => 'Keine Kanaldetails';
 
   @override
-  String get noChannelsAreAvailableInThisCategory => 'Keine Kanäle verfügbar in dieser Kategorie';
+  String get noChannelsAreAvailableInThisCategory =>
+      'Keine Kanäle verfügbar in dieser Kategorie';
 
   @override
   String get noChannelsFound => 'Keine Kanäle gefunden';
 
   @override
-  String get noContentAvailableInThisGenre => 'Kein Inhalt verfügbar in diesem Genre';
+  String get noContentAvailableInThisGenre =>
+      'Kein Inhalt verfügbar in diesem Genre';
 
   @override
   String get noContentInGenre => 'Kein Inhalt in diesem Genre';
@@ -1779,10 +1924,12 @@ class LanguageDe extends BaseLanguage {
   String get noLiveTvChannels => 'Keine Live-TV-Kanäle gefunden';
 
   @override
-  String get noLiveTvChannelsAreCurrentlyAvailable => 'Keine Live-TV-Kanäle verfügbar in derzeit';
+  String get noLiveTvChannelsAreCurrentlyAvailable =>
+      'Keine Live-TV-Kanäle verfügbar in derzeit';
 
   @override
-  String noMoviesOrTvShowsFeaturing(String name) => 'Keine Filme oder TV-Sendungen mit $name';
+  String noMoviesOrTvShowsFeaturing(String name) =>
+      'Keine Filme oder TV-Sendungen mit $name';
 
   @override
   String get noPayPerViewContent => 'Kein Pay-Per-View-Inhalt verfügbar';
@@ -1834,22 +1981,26 @@ class LanguageDe extends BaseLanguage {
   String get unableToLoadDownload => 'Downloads nicht laden';
 
   @override
-  String get uploadCustomProfileImage => 'Benutzerdefinierte Profilbild hochladen';
+  String get uploadCustomProfileImage =>
+      'Benutzerdefinierte Profilbild hochladen';
 
   @override
   String get visitAdvertiser => 'Werbender besuchen';
 
   @override
-  String get youCanNotRevertThisActionLater => 'Sie können diese Aktion später nicht rückgängig machen';
+  String get youCanNotRevertThisActionLater =>
+      'Sie können diese Aktion später nicht rückgängig machen';
 
   @override
-  String get youDoNotHaveAccessToWatch => 'Sie haben keinen Zugriff auf diesen Inhalt';
+  String get youDoNotHaveAccessToWatch =>
+      'Sie haben keinen Zugriff auf diesen Inhalt';
 
   @override
   String get yourCurrentPlanSupports => 'Ihr aktueller Plan unterstützt';
 
   @override
-  String get yourPaymentWasCompleted => 'Ihre Zahlung wurde erfolgreich abgeschlossen';
+  String get yourPaymentWasCompleted =>
+      'Ihre Zahlung wurde erfolgreich abgeschlossen';
 
   @override
   String get otherSections => 'Andere Abschnitte';
@@ -1867,87 +2018,81 @@ class LanguageDe extends BaseLanguage {
   String get noVideosAvailable => 'Keine Videos verfügbar';
 
   @override
-  String noContentAvailableInContentType(String content, String contentType) => 'Kein $contentType verfügbar in $content';
+  String noContentAvailableInContentType(String content, String contentType) =>
+      'Kein $contentType verfügbar in $content';
 
   @override
   String get unableToDownloadFilePleaseTryAgainLater =>
       'Datei konnte nicht heruntergeladen werden. Bitte versuchen Sie es später erneut.';
-  
+
   @override
   String sorryCouldntShareThis(String type) =>
       'Entschuldigung, dieses $type konnte nicht geteilt werden';
-  
+
   @override
   String errorWhileMonitoringDownloadUpdates(String error) =>
       'Fehler beim Überwachen der Download-Aktualisierungen: $error';
-  
+
   @override
   String get pleaseSelectACastingDeviceFirst =>
       'Bitte wählen Sie zuerst ein Casting-Gerät aus';
-  
+
   @override
   String get noVideoUrlAvailableForCasting =>
       'Keine Video-URL für das Casting verfügbar';
-  
+
   @override
   String get contentTypeNotAvailableForCasting =>
       'Inhaltstyp für das Casting nicht verfügbar';
-  
+
   @override
-  String get invalidVideoUrlFormat =>
-      'Ungültiges Video-URL-Format';
-  
+  String get invalidVideoUrlFormat => 'Ungültiges Video-URL-Format';
+
   @override
   String get failedInitiateRazorpayPayment =>
       'Start der Razorpay-Zahlung fehlgeschlagen';
-  
+
   @override
   String cantFindPlanOnStore(String planName, String storeName) =>
       'Der Plan $planName konnte im Store $storeName nicht gefunden werden';
-  
+
   @override
   String get paymentNotCapturedContactSupport =>
       'Zahlung nicht erfasst. Bitte wenden Sie sich an den Support.';
-  
+
   @override
-  String get downloadDeletedSuccessfully =>
-      'Download erfolgreich gelöscht!';
-  
+  String get downloadDeletedSuccessfully => 'Download erfolgreich gelöscht!';
+
   @override
-  String get pleaseSelectRating =>
-      'Bitte wählen Sie eine Bewertung aus';
-  
+  String get pleaseSelectRating => 'Bitte wählen Sie eine Bewertung aus';
+
   @override
   String get downloadsAllowedOnWifiOnly =>
       'Downloads sind nur über WLAN erlaubt. Bitte verbinden Sie sich mit WLAN oder deaktivieren Sie diese Einstellung.';
-  
+
   @override
   String get thisContentIsNotDownloadable =>
       'Entschuldigung! Dieser Inhalt kann nicht heruntergeladen werden';
-  
+
   @override
-  String get failedToStartDownload =>
-      'Download konnte nicht gestartet werden';
-  
+  String get failedToStartDownload => 'Download konnte nicht gestartet werden';
+
   @override
   String get failedToResumeDownload =>
       'Download konnte nicht fortgesetzt werden';
-  
-  @override
-  String get downloadCancelled =>
-      'Download abgebrochen';
-  
-  @override
-  String get downloadCompleted =>
-      'Download abgeschlossen';
-  
-  @override
-  String get thePasswordDoesNotMatch =>
-      'Das Passwort stimmt nicht überein';
 
   @override
-  String get deleteMultipleDownload => 'Möchten Sie den ausgewählten Inhalt aus den Downloads löschen?';
+  String get downloadCancelled => 'Download abgebrochen';
 
+  @override
+  String get downloadCompleted => 'Download abgeschlossen';
+
+  @override
+  String get thePasswordDoesNotMatch => 'Das Passwort stimmt nicht überein';
+
+  @override
+  String get deleteMultipleDownload =>
+      'Möchten Sie den ausgewählten Inhalt aus den Downloads löschen?';
 
   @override
   String profileLimitIncreaseMessage({
@@ -1961,5 +2106,82 @@ class LanguageDe extends BaseLanguage {
   }
 
   @override
-  String get contectRestrictedForKidProfile => 'Dieser Inhalt ist für Kinderprofile nicht erlaubt.';
+  String get contectRestrictedForKidProfile =>
+      'Dieser Inhalt ist für Kinderprofile nicht erlaubt.';
+
+  @override
+  String get recommendedForYou => 'Für dich empfohlen';
+
+  @override
+  String get shortDrama => 'Kurzdrama';
+
+  @override
+  String get yourNextObsessionStartsHere =>
+      'Deine nächste Obsession beginnt hier';
+
+  @override
+  String get shortDramasIntenseStorytelling =>
+      'Kurzdramen, intensive Geschichten, emotionale Romanzen und spannende Wendungen. Entdecke Unterhaltung für jede Stimmung.';
+
+  @override
+  String get exploreMore => 'Mehr erkunden';
+
+  @override
+  String get dramaForYou => 'Drama für dich';
+
+  @override
+  String get noEpisodesAvailable => 'Keine Episoden verfügbar';
+
+  @override
+  String get audioLanguage => 'Audiosprache';
+
+  @override
+  String get cantPlayThisTitleRightNow =>
+      'Dieser Titel kann momentan nicht abgespielt werden';
+
+  @override
+  String get goBack => 'Zurückgehen';
+
+  @override
+  String get unableToFindThisDramaForPlayback =>
+      'Dieses Drama kann nicht zur Wiedergabe gefunden werden.';
+
+  @override
+  String get pleaseCheckYourConnectionAndTryAgain =>
+      'Bitte überprüfen Sie Ihre Verbindung und versuchen Sie es erneut.';
+
+  @override
+  String get seasons => 'Staffeln';
+
+  @override
+  String get mute => 'Stumm';
+
+  @override
+  String get unmute => 'Laut';
+
+  @override
+  String get noInternetConnection => 'Keine Internetverbindung';
+
+  @override
+  String get continueWatchingForYou => 'Für Sie weitersehen';
+
+  @override
+  String get playbackErrorGeneric =>
+      'Wir konnten diese Episode im Moment nicht abspielen. Bitte versuchen Sie es erneut.';
+
+  @override
+  String get playbackErrorSessionExpired =>
+      'Die Short-Drama-Sitzung ist abgelaufen. Bitte melden Sie sich erneut an und versuchen Sie es erneut.';
+  
+  @override
+  String get playbackErrorTokenExpired => 'Die Wiedergabe ist abgelaufen. Bitte versuchen Sie diese Episode erneut.';
+  
+  @override
+  String get playbackErrorVideoPluginUnavailable => 'Video-Player-Plugin ist nicht verfügbar. Bitte starten Sie die App neu und versuchen Sie es erneut.';
+
+  @override
+  String get less => 'Weniger';
+
+  @override
+  String get more => 'Weiterlesen';
 }

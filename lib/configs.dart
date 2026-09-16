@@ -18,11 +18,11 @@ const LIVE_AUTO_SLIDER_SECOND = 5;
 const API_VERSION = 3;
 
 ///DO NOT ADD SLASH HERE
-String DOMAIN_URL = 'https://tv.maxui.net';
+String DOMAIN_URL = "YOUR_DOMAIN_URL";
 
 bool isInReview = false;
 
-String get baseUrlKeyName => Platform.isAndroid ? 'baseUrl' : 'iosBaseUrl';
+String get baseUrlKeyName => Platform.isAndroid ? 'developingBaseUrl' : 'developingBaseUrl';
 
 String get BASE_URL => '$DOMAIN_URL/api/';
 
@@ -41,16 +41,16 @@ String get FIREBASE_CLIENT_ID => Platform.isAndroid ? 'YOUR_ANDROID_FIREBASE_CLI
 //region STRIPE
 const STRIPE_URL = 'https://api.stripe.com/v1/payment_intents';
 const STRIPE_merchantIdentifier = "merchant.flutter.stripe.test";
-const STRIPE_MERCHANT_COUNTRY_CODE = 'VN';
-const STRIPE_CURRENCY_CODE = 'VND';
+const STRIPE_MERCHANT_COUNTRY_CODE = 'IN';
+const STRIPE_CURRENCY_CODE = 'INR';
 //endregion
 
 //region RazorPay
-const String commonSupportedCurrency = 'VND';
+const String commonSupportedCurrency = 'INR';
 //endregion
 
 //region  PAYSTACK
-const String payStackCurrency = "VND";
+const String payStackCurrency = "NGN";
 //endregion
 
 // PAYPAl
@@ -58,25 +58,28 @@ const String payPalSupportedCurrency = 'USD';
 //endregion
 
 //ADs
-//Android
-const INTERSTITIAL_AD_ID = "ca-app-pub-3940256099942544/1033173712";
-const BANNER_AD_ID = "ca-app-pub-3 940256099942544/9214589741";
-//IOS
-const IOS_INTERSTITIAL_AD_ID = "ca-app-pub-3940256099942544/4411468910";
-const IOS_BANNER_AD_ID = "ca-app-pub-3940256099942544/2934735716";
+//Live keys
+// //Android
+const INTERSTITIAL_AD_ID = "YOUR_ANDROID_INTERSTITIAL_AD_ID";
+const BANNER_AD_ID = "YOUR_ANDROID_BANNER_AD_ID";
+
+// //IOS
+const IOS_INTERSTITIAL_AD_ID = "YOUR_IOS_INTERSTITIAL_AD_ID";
+const IOS_BANNER_AD_ID = "YOUR_IOS_BANNER_AD_ID";
+
 
 //region defaultCountry
 Country get defaultCountry => Country(
-      phoneCode: '84',
-      countryCode: 'VN',
+      phoneCode: '91',
+      countryCode: 'IN',
       e164Sc: 91,
       geographic: true,
       level: 1,
-      name: 'Vietnam',
+      name: 'India',
       example: '23456789',
-      displayName: 'Vietnam (VN) [+84]',
-      displayNameNoCountryCode: 'Vietnam (VN)',
-      e164Key: '84-VN-0',
-      fullExampleWithPlusSign: '+849123456789',
+      displayName: 'India (IN) [+91]',
+      displayNameNoCountryCode: 'India (IN)',
+      e164Key: '91-IN-0',
+      fullExampleWithPlusSign: '+919123456789',
     );
 //endregion

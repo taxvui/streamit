@@ -4,7 +4,7 @@
 Streamit is a powerful video streaming application built with Flutter, designed to offer a seamless and immersive entertainment experience. It supports movies, TV shows, and videos with a rich set of features including casting, downloading, and multiple payment gateways.
 
 ## Features
-- **Cross-Platform**: Supports Android, iOS, Web, Windows, macOS, and Linux.
+- **Cross-Platform**: Supports Android and iOS.
 - **Localization**: Full multi-language support including English, French, German, Arabic, Greek, and more.
 - **Dynamic Content**: Movies, TV Shows, Videos, and Live TV.
 - **User Engagement**: Reviews, Ratings, Watchlist, and Continue Watching.
@@ -17,23 +17,50 @@ Streamit is a powerful video streaming application built with Flutter, designed 
     - Video Player with quality selection, subtitles, and speed control.
 - **Offline Viewing**: Download content for offline access.
 - **Authentication**: Social Login (Google, Apple), OTP Verification.
+- **Add-on Ready**: Optional feature modules plug in without modifying app code.
+
+## Add-ons
+
+This app ships with an add-on bridge so optional feature modules — sold and
+installed separately — can be plugged in without touching app code.
+
+- `lib/addon_bridge/` — delegate interfaces and façades for each supported add-on
+- `lib/addon_registration.dart` — the single place where add-ons are registered
+
+Out of the box `addon_registration.dart` is an empty stub, and every bridge call
+returns a safe default. The app builds and runs normally with no add-ons
+installed.
+
+Installing an add-on is two steps: copy its folder into `lib/`, then fill in
+`register()`. Each add-on ships its own `INSTALLATION_GUIDE.md` with the exact
+snippet and any extra prerequisites.
+
+Available add-on:
+
+- **Short Drama** — short-form vertical drama, purchased separately.
+  Get it here: <https://iqonic.design/product/ott-streaming-short-drama/>
+  Bridge: `lib/addon_bridge/short_drama/short_drama_bridge.dart`
+
+> App code must never import an add-on's folder directly. Going through the
+> bridge is what keeps the app compiling when the add-on is absent.
 
 ## Development Environment
 
 ### 🐦 Flutter
 
-- **Version**: 3.41.1
-- **Framework Revision**: a0e9b9dbf7 (2025-11-11)
-- **DevTools**: 2.51.1
-- **Supported Platforms**: Android, iOS, Web, Windows, macOS, Linux
+- **Version**: 3.47.0 (stable)
+- **Supported Platforms**: Android, iOS
+- **Version pin**: `.fvmrc` (use [FVM](https://fvm.app/) to match it)
 
 ### 📱 Android
 
-- **Android SDK**: 36.1.0-rc1
-- **Build-tools**: 36.0.0
-- **Emulator**: 36.1.9.0
-- **Java (configured for Flutter)**: 17.0.15+6-LTS
-- **Java (from Android Studio)**: OpenJDK 21.0.7
+- **Android Gradle Plugin**: 9.1.0
+- **Gradle**: 9.3.1
+- **Kotlin**: 2.4.0
+- **Build scripts**: Kotlin DSL (`build.gradle.kts`, `settings.gradle.kts`)
+- **Java**: 17
+- **NDK**: 29.0.13599879
+- **compileSdk / targetSdk / minSdk**: taken from the Flutter SDK
 
 ### 💻 IDEs
 
@@ -41,10 +68,6 @@ Streamit is a powerful video streaming application built with Flutter, designed 
     - Plugins: Flutter, Dart
 - **Visual Studio Code**: 1.102.3
     - Extension: Flutter
-
-### 🖥️ OS
-
-- **Windows 11 (24H2, build 2009)**
 
 ## Configuration Guide
 
@@ -85,6 +108,49 @@ To customize the application for your environment, please follow these configura
 - **iOS**:
     - Check `ios/Runner/Info.plist` to update `CFBundleIdentifier` (Bundle ID).
     - Verify privacy descriptions (Camera, Photo Library, Microphone usage).
+
+### 7. Deep Linking
+
+Incoming links are routed by `MyApp.didPushRouteInformation` (warm start) and
+`onGenerateInitialRoutes` (cold start), then dispatched in
+`SplashScreenController.handleDeepLinking`.
+
+- **Android**: configured. Update the `<intent-filter>` host and `pathPrefix`
+  entries in `android/app/src/main/AndroidManifest.xml` to match your domain.
+  `autoVerify="true"` additionally requires an `assetlinks.json` served from
+  `https://your-domain/.well-known/`.
+- **iOS**: deep linking will be introduced in a later update.
+
+Add-ons that handle their own links receive them through their bridge, so no
+app code changes when one is installed.
+
+## Build Notes
+
+A few settings look unusual and are deliberate. Please read before "tidying"
+them:
+
+- **`dio` is pinned to `>=5.9.0 <5.10.0`** in `pubspec.yaml`. dio 5.10 added
+  `DioExceptionType.transformTimeout`, and `playx_network` (transitive via
+  `playx_version_update`) switches over that enum without a wildcard, which
+  fails the release AOT compile. A caret range does **not** work here — `^5.9.0`
+  still resolves to 5.11.0.
+- **`android/build.gradle.kts` re-applies the Kotlin plugin** to library modules
+  that ship `src/main/kotlin` without it. Several plugins skip
+  `apply plugin: 'kotlin-android'` when the AGP major version is ≥ 9, assuming
+  built-in Kotlin; Flutter requires `android.builtInKotlin=false`, so their
+  Kotlin would otherwise never compile.
+- **`android/gradle.properties` keeps `newDsl=false` and `builtInKotlin=false`.**
+  Both are required by the Flutter Gradle plugin; removing them breaks plugin
+  application outright.
+- **Proguard suppressions use package wildcards**, not specific inner-class
+  names. R8 re-letters obfuscated inner classes on every dependency bump.
+
+Release build:
+
+```bash
+flutter build apk --release
+flutter build appbundle --release
+```
 
 ## Postman Collection
 

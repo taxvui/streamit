@@ -120,8 +120,8 @@ class InAppPurchaseService extends BaseController {
       final purchaseResult = await Purchases.purchase(
         PurchaseParams.package(
           selectedRevenueCatPackage,
-          googleProductChangeInfo: currentSubscription.value.activePlanInAppPurchaseIdentifier.isNotEmpty
-              ? GoogleProductChangeInfo(
+          productChangeInfo: currentSubscription.value.activePlanInAppPurchaseIdentifier.isNotEmpty
+              ? StoreProductChangeInfo(
                   currentSubscription.value.activePlanInAppPurchaseIdentifier,
                 )
               : null,
